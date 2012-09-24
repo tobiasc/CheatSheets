@@ -1,15 +1,18 @@
 # Create clone from repo
 git clone <url>
 
-# Add
+# Add (no need when using the '-a' flag in commit)
 git add <filename>
 
 # Commit
-git commit
+git commit -a -m '<msg>'
 git push
 
 # Update
 git pull
+
+# Hard Update
+git reset --hard
 
 # Save Cretentials
 git config --global credential.helper cache
