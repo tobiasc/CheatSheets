@@ -11,3 +11,6 @@ git push
 # Update
 git pull
 
+# Save Cretentials
+git config --global credential.helper cache
+git config credential.helper 'cache --timeout=1209600'
