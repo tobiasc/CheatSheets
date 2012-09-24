@@ -1,0 +1,13 @@
+# Create clone from repo
+git clone <url>
+
+# Add
+git add <filename>
+
+# Commit
+git commit
+git push
+
+# Update
+git pull
+

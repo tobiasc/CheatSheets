@@ -1,0 +1,12 @@
+# MongoDB
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv 7F0CEB10
+sudo nano /etc/apt/sources.list.d/10gen.list
+	deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen
+sudo apt-get update
+sudo apt-get install mongodb-10gen
+
+# MongoDB PHP Extension
+sudo apt-get install php-pear make
+sudo pecl install mongo
+sudo nano /etc/php5/apache2/php.ini
+	extension=mongo.so
