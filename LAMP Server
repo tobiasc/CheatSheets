@@ -1,0 +1,13 @@
+# LAMP stack
+sudo apt-get install php5 php5-curl php5-gd mysql-server phpmyadmin apache2
+sudo apt-get update
+sudo apt-get upgrade
+
+sudo a2enmod rewrite
+sudo nano /etc/apache2/sites-available/default
+	Options Indexes FollowSymLinks MultiViews
+	AllowOverride all
+	Order allow,deny
+	allow from all
+sudo /etc/init.d/apache2 restart
+

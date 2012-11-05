@@ -1,0 +1,13 @@
+# Attach EBS
+sudo mkfs.ext4 /dev/xvdf
+sudo mkdir -m 000 /data
+echo "/dev/xvdf /data auto noatime 0 0" | sudo tee -a /etc/fstab
+sudo mount /data
+
+# Move Apache root to EBS
+sudo mkdir /data/www
+sudo chown -R ubuntu:ubuntu /data/www
+sudo nano /etc/apache2/sites-available/default
+	DocumentRoot /data/www
+	<Directory /data/www/>
+sudo /etc/init.d/apache2 restart

@@ -12,3 +12,15 @@ sudo nano /etc/php5/apache2/php.ini
 	extension=mongo.so
 sudo nano /etc/php5/cli/php.ini
 	extension=mongo.so
+sudo /etc/init.d/apache2 restart
+
+# Move MongoDB storage location
+sudo nano /etc/mongodb.conf
+	dbpath=/data/mongodb
+sudo mkdir /data/db/
+sudo chown -R mongodb:mongodb db/
+sudo chmod -R 755 db/
+sudo mkdir /data/mongodb/
+sudo chown -R mongodb:mongodb mongodb/
+sudo chmod -R 755 mongodb/
+sudo /etc/init.d/mongodb restart

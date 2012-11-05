@@ -1,0 +1,78 @@
+# Install Sun Java Dev Kit 1.6.0_u31
+sudo mkdir /usr/java/
+cd /usr/java/
+sudo wget http://www.zityzen.com/files/jdk-6u31-linux-x64.bin
+sudo chmod u+x jdk-6u31-linux-x64.bin
+sudo ./jdk-6u31-linux-x64.bin
+export JAVA_HOME=/usr/java/jdk1.6.0_31
+export PATH=$JAVA_HOME/bin:$PATH
+
+# Install Hadoop
+sudo nano /etc/apt/sources.list.d/cloudera.list
+	deb [arch=amd64] http://archive.cloudera.com/cdh4/ubuntu/precise/amd64/cdh precise-cdh4.1.1 contrib
+	deb-src http://archive.cloudera.com/cdh4/ubuntu/precise/amd64/cdh precise-cdh4.1.1 contrib
+curl -s http://archive.cloudera.com/cdh4/ubuntu/precise/amd64/cdh/archive.key | sudo apt-key add -
+sudo apt-get update
+sudo apt-get upgrade
+cd ~
+wget http://www.zityzen.com/files/key_ireland.pem
+chmod 400 key_ireland.pem
+
+# Pseudo
+sudo apt-get install hadoop-conf-pseudo
+sudo -u hdfs hdfs namenode -format
+for service in /etc/init.d/hadoop-hdfs-* 
+	do
+	sudo $service start
+	done
+sudo -u hdfs hadoop fs -rm -r /tmp
+sudo -u hdfs hadoop fs -mkdir /tmp
+sudo -u hdfs hadoop fs -chmod -R 1777 /tmp
+sudo -u hdfs hadoop fs -mkdir /tmp/hadoop-yarn/staging
+sudo -u hdfs hadoop fs -chmod -R 1777 /tmp/hadoop-yarn/staging
+sudo -u hdfs hadoop fs -mkdir /tmp/hadoopyarn/staging/history/done_intermediate
+sudo -u hdfs hadoop fs -chmod -R 1777 /tmp/hadoopyarn/staging/history/done_intermediate
+sudo -u hdfs hadoop fs -chown -R mapred:mapred /tmp/hadoop-yarn/staging
+sudo -u hdfs hadoop fs -mkdir /var/log/hadoop-yarn
+sudo -u hdfs hadoop fs -chown yarn:mapred /var/log/hadoop-yarn
+sudo -u hdfs hadoop fs -ls -R /
+sudo service hadoop-yarn-resourcemanager start
+sudo service hadoop-yarn-nodemanager start
+sudo service hadoop-mapreduce-historyserver start
+
+# Pseudo Example
+sudo -u hdfs hadoop fs -mkdir /user/ubuntu
+sudo -u hdfs hadoop fs -chown ubuntu /user/ubuntu
+hadoop fs -mkdir input
+hadoop fs -put /etc/hadoop/conf/*.xml input
+hadoop fs -ls input
+export HADOOP_MAPRED_HOME=/usr/lib/hadoop-mapreduce
+hadoop jar /usr/lib/hadoop-mapreduce/hadoop-mapreduce-examples.jar grep input output23 'dfs[a-z.]+'
+hadoop fs -ls
+hadoop fs -ls output23
+hadoop fs -cat output23/part-r-00000 | head
+
+# Master
+sudo apt-get install hadoop-yarn-resourcemanager
+sudo apt-get install hadoop-hdfs-namenode
+sudo apt-get install hadoop-hdfs-secondarynamenode
+sudo apt-get install hadoop-yarn-nodemanager hadoop-hdfs-datanode hadoop-mapreduce
+sudo apt-get install hadoop-mapreduce-historyserver hadoop-yarn-proxyserver
+sudo apt-get install hadoop-client
+sudo nano /etc/hostname
+	master
+sudo nano /etc/hosts
+	ip-10-55-94-134.eu-west-1.compute.internal master
+	ip-10-54-81-238.eu-west-1.compute.internal slave
+
+# Slave
+sudo apt-get install hadoop-yarn-nodemanager hadoop-hdfs-datanode hadoop-mapreduce
+sudo apt-get install hadoop-client
+sudo nano /etc/hostname
+	slave
+sudo nano /etc/hosts
+	ip-10-55-94-134.eu-west-1.compute.internal master
+	ip-10-54-81-238.eu-west-1.compute.internal slave
+
+		
+

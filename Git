@@ -1,3 +1,6 @@
+# Install Git
+sudo apt-get install git
+
 # Create clone from repo
 git clone <url>
 
@@ -17,3 +20,6 @@ git reset --hard
 # Save Cretentials
 git config --global credential.helper cache
 git config credential.helper 'cache --timeout=1209600'
+git config --global user.name "<username>"
+git config --global user.email you@example.com
+
