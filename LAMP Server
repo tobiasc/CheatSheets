@@ -11,3 +11,31 @@ sudo nano /etc/apache2/sites-available/default
 	allow from all
 sudo /etc/init.d/apache2 restart
 
+# SSL
+sudo mkdir /etc/apache2/ssl
+cd /etc/apache2/ssl
+
+openssl genrsa -out www.zityzen.com.key 2048
+openssl req -new -key www.zityzen.com.key -out www.zityzen.com.crt -subj '/C=DK/O=ZiTYZEN ApS/OU=/CN=www.zityzen.com'
+# copy/paste CSR to RapidSSL
+nano certificate.crt
+	# copy/paste content from RapidSSL certificate into file
+nano intermediate.crt
+	# copy/paste content from RapidSSL intermediate certificate into file
+
+sudo chown www-data:www-data /etc/apache2/ssl/*
+sudo chmod 600 /etc/apache2/ssl/www.zityzen.com.key 
+sudo a2enmod ssl
+
+sudo nano /etc/apache2/sites-enabled/zityzen-com_vhosts
+	SSLEngine on
+sudo nano /etc/apache2/httpd.conf
+	SSLProtocol -all +TLSv1 +SSLv3
+	#SSLRequireSSL
+	SSLCipherSuite HIGH:MEDIUM:!aNULL:+SHA1:+MD5:+HIGH:+MEDIUM
+	SSLCertificateFile    /etc/apache2/ssl/certificate.crt 
+	SSLCertificateKeyFile /etc/apache2/ssl/www.zityzen.com.key 
+	SSLCACertificateFile /etc/apache2/ssl/intermediate.crt
+	SSLVerifyClient none
+	SSLProxyEngine off
+
