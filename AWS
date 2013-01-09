@@ -1,4 +1,4 @@
-# Attach EBS
+# Attach EBS Drive
 sudo mkfs.ext4 /dev/xvdf
 sudo mkdir -m 000 /data
 echo "/dev/xvdf /data auto noatime 0 0" | sudo tee -a /etc/fstab
@@ -11,3 +11,46 @@ sudo nano /etc/apache2/sites-available/default
 	DocumentRoot /data/www
 	<Directory /data/www/>
 sudo /etc/init.d/apache2 restart
+
+# Attach Logs folder and move all logs to that location (G-drive)
+sudo mkfs.ext4 /dev/xvdg
+sudo mkdir -m 000 /logs
+echo "/dev/xvdg /logs auto noatime 0 0" | sudo tee -a /etc/fstab
+sudo mount /logs
+
+# Apache logs
+mkdir /logs/apache2
+cd /var/log/apache2
+cp * /logs/apache2/
+sudo chown root:adm *
+sudo nano /etc/apache2/sites-enabled/000-default
+	ErrorLog /logs/apache2/error.log
+	CustomLog /logs/apache2/access.log combined
+sudo /etc/init.d/apache2 restart
+
+# MongoDB logs
+mkdir /logs/mongodb
+sudo nano /etc/mongodb.conf
+	logpath=/logs/mongodb/mongodb.log 
+sudo /etc/init.d/mongodb restart
+
+# MongoDB Backup
+sudo mkfs.ext4 /dev/xvdi
+sudo mkdir -m 000 /backup
+echo "/dev/xvdi /backup auto noatime 0 0" | sudo tee -a /etc/fstab
+sudo mount /backup
+sudo mkdir /backup/mongodb
+sudo chmod -R 777 /backup
+
+# Set up 16GB dedicated Swap Drive (H-drive)
+sudo mkfs.ext4 /dev/xvdh
+sudo mkdir -m 000 /swap
+echo "/dev/xvdh /swap auto noatime 0 0" | sudo tee -a /etc/fstab
+sudo mount /swap
+sudo dd if=/dev/zero of=/swap/file bs=1024 count=16777216
+sudo mkswap /swap/file
+sudo chown -R root:root /swap
+sudo chmod -R 0600 /swap
+sudo swapon /swap/file
+echo "/swap/file swap swap defaults 0 0" | sudo tee -a /etc/fstab
+

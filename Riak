@@ -1,0 +1,18 @@
+# Install
+sudo apt-get install libssl0.9.8
+wget http://downloads.basho.com.s3-website-us-east-1.amazonaws.com/riak/CURRENT/ubuntu/precise/riak_1.2.1-1_amd64.deb
+sudo dpkg -i riak_1.2.1-1_amd64.deb
+
+# Start server
+riak start
+
+# Command line
+riak attach
+
+# PHP client
+git clone git://github.com/basho/riak-php-client.git
+
+# Links
+https://github.com/basho/riak-php-client
+http://docs.basho.com/riak/1.2.1/cookbooks/Basic-Cluster-Setup/
+

@@ -1,0 +1,25 @@
+# Install
+wget http://download.redis.io/redis-stable.tar.gz
+tar xvzf redis-stable.tar.gz
+cd redis-stable
+make
+
+# Start server
+screen
+./redis-stable/src/redis-server
+
+# Command line
+./redis-stable/src/redis-cli
+
+# PHP client
+sudo pear channel-discover pear.nrk.io
+pear remote-list -c nrk
+sudo pear install nrk/Predis
+
+# Links
+http://oldblog.antirez.com/post/take-advantage-of-redis-adding-it-to-your-stack.html
+http://www.paperplanes.de/2010/2/16/a_collection_of_redis_use_cases.html
+http://highscalability.com/blog/2011/7/6/11-common-web-use-cases-solved-in-redis.html
+http://redis.io/topics/quickstart
+https://github.com/nrk/predis
+

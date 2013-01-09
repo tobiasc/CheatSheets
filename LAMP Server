@@ -11,6 +11,14 @@ sudo nano /etc/apache2/sites-available/default
 	allow from all
 sudo /etc/init.d/apache2 restart
 
+# URL Rewrite
+sudo nano /etc/apache2/sites-available/zityzen.rewrite
+	RewriteEngine On
+	RewriteRule ^/(([0-9a-z-]+)_([0-9a-z-]+)_([0-9a-z-]+)_([a-z-]+)) /place.php?place_url=$1 [NC]
+sudo nano /etc/apache2/sites-available/default
+	Include /etc/apache2/sites-available/zityzen.rewrite
+sudo /etc/init.d/apache2 restart
+
 # SSL
 sudo mkdir /etc/apache2/ssl
 cd /etc/apache2/ssl
