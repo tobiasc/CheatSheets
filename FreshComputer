@@ -2,8 +2,11 @@
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
 sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
 
-# Install the basics; git, php, Google Chrome, & apache
+# Set up repository to fetch Skype
+sudo add-apt-repository "deb http://archive.canonical.com/ $(lsb_release -sc) partner"
+
+# Install the basics; git, php, Google Chrome, Skype, & apache
 sudo apt-get update
-sudo apt-get install git php5 apache2 google-chrome-stable
+sudo apt-get install git php5 apache2 google-chrome-stable skype
 sudo apt-get dist-upgrade
 
