@@ -1,0 +1,9 @@
+# Set up repository to fetch Google Chrome
+wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
+
+# Install the basics; git, php, Google Chrome, & apache
+sudo apt-get update
+sudo apt-get install git php5 apache2 google-chrome-stable
+sudo apt-get dist-upgrade
+
