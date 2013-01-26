@@ -5,10 +5,6 @@ sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /et
 # Set up repository to fetch Skype
 sudo add-apt-repository "deb http://archive.canonical.com/ $(lsb_release -sc) partner"
 
-# Set up repository to fetch Dropbox
-sudo apt-key adv --keyserver pgp.mit.edu --recv-keys 5044912E
-sudo add-apt-repository "deb http://linux.dropbox.com/ubuntu precise main"
-
 # Set up repository to fetch Spotify
 sudo sh -c 'echo "deb http://repository.spotify.com stable non-free" >> /etc/apt/sources.list.d/spotify.list'
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 94558F59
@@ -18,4 +14,6 @@ sudo apt-get update
 sudo apt-get install git php5 apache2 google-chrome-stable skype filezilla nautilus-dropbox spotify-client
 sudo apt-get dist-upgrade
 
+# Remove Amazon from local search
+sudo apt-get remove unity-lens-shopping
 
