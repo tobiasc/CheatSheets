@@ -1,0 +1,35 @@
+#! /bin/bash
+
+# copy to staging www
+cd /var/www/zityzen
+rm -rf *
+cp -r /home/tobias/Desktop/git/zityzen/ZiTYZEN-FrontEnd/* .
+
+# copy to staging api
+cd /var/www/api
+rm -rf *
+cp -r /home/tobias/Desktop/git/zityzen/ZiTYZEN-BackEnd/API/* .
+
+# copy to api includes
+cd /var/www/includes
+rm -rf *
+cp -r /home/tobias/Desktop/git/zityzen/ZiTYZEN-BackEnd/includes/* .
+
+# copy to files
+cd /var/www/files/static
+rm -rf *
+cp -r /home/tobias/Desktop/git/zityzen/ZiTYZEN-BackEnd/files/static/* .
+
+# copy to admin
+cd /var/www/admin
+rm -rf *
+cp -r /home/tobias/Desktop/git/zityzen/ZiTYZEN-BackEnd/admin/* .
+
+# copy to data
+cd /var/www/data
+rm -rf *
+cp -r /home/tobias/Desktop/git/zityzen/ZiTYZEN-BackEnd/data/* .
+
+# delete git files
+find /var/www/ -iname "*.git" -exec rm -rf '{}' ';'
+

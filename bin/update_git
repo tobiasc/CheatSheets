@@ -1,0 +1,30 @@
+#! /bin/bash
+
+# ZiTYZEN-FrontEnd
+cd /home/tobias/Desktop/git/zityzen/ZiTYZEN-FrontEnd
+git pull
+
+# ZiTYZEN-BackEnd
+cd /home/tobias/Desktop/git/zityzen/ZiTYZEN-BackEnd
+git pull
+
+# CheatSheets
+cd /home/tobias/Desktop/git/CheatSheets
+git pull
+
+# db-trial
+cd /home/tobias/Desktop/git/db-trial
+git pull
+
+# FacebookHacks
+cd /home/tobias/Desktop/git/FacebookHacks
+git pull
+
+# FindYourFriends
+cd /home/tobias/Desktop/git/FindYourFriends
+git pull
+
+# im24-mapper
+cd /home/tobias/Desktop/git/im24-mapper
+git pull
+
