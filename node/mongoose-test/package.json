@@ -1,0 +1,14 @@
+{
+  "name": "mongoose_test",
+  "subdomain": "mongoose_test",
+  "scripts": {
+    "start": "mongoose_test.js"
+  },
+  "version": "0.0.1",
+  "engines": {
+    "node": "0.6.x"
+  },
+  "dependencies": {
+    "mongoose": "3.5.x"
+  }
+}
