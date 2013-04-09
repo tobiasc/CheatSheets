@@ -1,0 +1,9 @@
+Tutorial (node.js, mongoDB, express):
+http://coenraets.org/blog/2012/10/creating-a-rest-api-using-node-js-express-and-mongodb/
+
+Tutorial (node.js, mongoDB, restify, Mongoose):
+http://backbonetutorials.com/nodejs-restify-mongodb-mongoose/
+
+Install Node.js:
+https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager
+

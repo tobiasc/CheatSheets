@@ -1,0 +1,4313 @@
+
+#INIT
+MODEL : GT-N7105
+P/N : CMAF7E10FF1F59F
+S/W : N7105ZHALJ4
+DATE : 2013/02/21
+TIME : 22:46:02
+TESTCODE : TOP42
+LOGVERSION : Ver 2.4
+INSTRUMENT : IQXS3178/LitePoint/IQxstream
+FIRMWARE : 1.20.0
+FIRMWARE_GPRF Gen/Meas/Sig : //
+FIRMWARE_GSM Gen/Meas/Sig : //
+FIRMWARE_WCDMA Gen/Meas/Sig : //
+FIRMWARE_LTE Gen/Meas/Sig : //
+FIRMWARE_1xEV-DO Gen/Meas/Sig : //
+FIRMWARE_CDMA2000 Gen/Meas/Sig : //
+FIRMWARE_TD-SCDMA Gen/Meas/Sig : //
+FIRMWARE_WiMAX Gen/Meas/Sig : //
+FIRMWARE_WLAN Gen/Meas/Sig : //
+WAVEFORM : 
+PC_CPU : 3.39 GHz/8-Core
+PC_RAM(Available) : 3558 MB
+PC_DISK(C-Drive free/Total) : 85188/122001 MB
+PC_OS : Microsoft Windows 7 Enterprise Edition (build 7600) 32-bit
+JIG : 1
+PROGRAM : DASEUL_Runtime_Ver_3.1.62.0
+ENTERPRISE : 
+INIFILE : GT-N7105_FINAL_AUTO_Ver_3.1.60.3_T1
+IMEINO : 
+SKU : 
+HW : 
+
+#TEST
+/*================================================================================
+Test Conditions, Measured Value, Lower Limit, Upper Limit, P/F, Sec, Code, Code Lsl, Code Usl
+================================================================================*/
+// Model info - Booting Time: 60 
+Booting Time,  35.00 ,   0.00 ,  35.00 , P , 39 ,,, 
+Final Call connect Type - NonSignaling,   1.00 ,   1.00 ,   1.00 , P , 39 ,,, 
+Line Type - Block Cell,   1.00 ,   1.00 ,   1.00 , P , 39 ,,, 
+
+// << RF Loss Check >>
+710MHz LOSS,  -7.28 , -25.00 ,   0.00 , P , 39 ,,, 
+750MHz LOSS,  -7.36 , -25.00 ,   0.00 , P , 39 ,,, 
+810MHz LOSS,  -7.21 , -25.00 ,   0.00 , P , 39 ,,, 
+950MHz LOSS,  -7.52 , -25.00 ,   0.00 , P , 39 ,,, 
+1710MHz LOSS,  -8.05 , -25.00 ,   0.00 , P , 39 ,,, 
+1790MHz LOSS,  -8.07 , -25.00 ,   0.00 , P , 39 ,,, 
+1810MHz LOSS,  -8.08 , -25.00 ,   0.00 , P , 39 ,,, 
+1910MHz LOSS,  -8.20 , -25.00 ,   0.00 , P , 39 ,,, 
+1930MHz LOSS,  -8.17 , -25.00 ,   0.00 , P , 39 ,,, 
+1990MHz LOSS,  -8.17 , -25.00 ,   0.00 , P , 39 ,,, 
+2100MHz LOSS,  -8.34 , -25.00 ,   0.00 , P , 39 ,,, 
+2170MHz LOSS,  -8.41 , -25.00 ,   0.00 , P , 39 ,,, 
+2200MHz LOSS,  -8.24 , -25.00 ,   0.00 , P , 39 ,,, 
+2400MHz LOSS,  -8.46 , -25.00 ,   0.00 , P , 39 ,,, 
+2700MHz LOSS,  -8.46 , -25.00 ,   0.00 , P , 39 ,,, 
+
+// << Initial Non-RF >>
+Model Name Read, GT-N7105, GT-N7105, GT-N7105, P, 39
+FactoLog On,   1.00 ,   1.00 ,   1.00 , P , 39 ,,, 
+
+// << Process Omission Check >>
+RF CAL SKIP, P, , , P, 39
+FINAL Test START, E, , , P, 39
+LTE FINAL START, E, , , P, 40
+LCD Off,   1.00 ,   1.00 ,   1.00 , P , 40 ,,, 
+Enter Test Mode,   1.00 ,   1.00 ,   1.00 , P , 42 ,,, 
+
+// << LTE03 19255(UL) >>
+LTE03 TEST CHANNEL, 19255.00 , 19200.00 , 19949.00 , P , 45 ,,, 
+LTE03 RX Ref-Sens -86.0 dBm,   0.00 ,   0.00 ,   5.00 , P , 48 ,,, 
+LTE03 Tx Power,  21.30 ,  20.50 ,  24.50 , P , 50 ,,, 
+LTE03 Low EVM,   2.15 ,   0.00 ,  17.50 , P , 50 ,,, 
+LTE03 High EVM,  14.25 ,   0.00 ,  17.50 , P , 50 ,,, 
+LTE03 I/Q Offset, -37.87 , -100.00 , -25.00 , P , 50 ,,, 
+LTE03 Frequency Error,  -7.30 , -170.00 , 170.00 , P , 50 ,,, 
+LTE03 RX 2nd RSSI -85.0 dBm, -84.60 , -95.00 , -75.00 , P , 51 ,,, 
+
+// << LTE07 20805(UL) >>
+LTE07 TEST CHANNEL, 20805.00 , 20750.00 , 20750.00 , P , 52 ,,, 
+LTE07 RX Ref-Sens -87.0 dBm,   0.00 ,   0.00 ,   5.00 , P , 54 ,,, 
+LTE07 Tx Power,  20.97 ,  20.50 ,  24.50 , P , 55 ,,, 
+LTE07 Low EVM,   3.30 ,   0.00 ,  17.50 , P , 55 ,,, 
+LTE07 High EVM,  13.73 ,   0.00 ,  17.50 , P , 55 ,,, 
+LTE07 I/Q Offset, -34.65 , -100.00 , -25.00 , P , 55 ,,, 
+LTE07 Frequency Error, -31.97 , -170.00 , 170.00 , P , 55 ,,, 
+LTE07 RX 2nd RSSI -85.0 dBm, -84.70 , -95.00 , -75.00 , P , 56 ,,, 
+
+// << LTE08 21505(UL) >>
+LTE08 TEST CHANNEL, 21505.00 , 21450.00 , 21799.00 , P , 57 ,,, 
+LTE08 Tx Power,  21.69 ,  20.50 ,  24.50 , P , 59 ,,, 
+LTE08 Low EVM,   1.12 ,   0.00 ,  17.50 , P , 59 ,,, 
+LTE08 High EVM,  12.69 ,   0.00 ,  17.50 , P , 59 ,,, 
+LTE08 I/Q Offset, -39.95 , -100.00 , -25.00 , P , 59 ,,, 
+LTE08 Frequency Error,  -3.56 , -80.00 ,  80.00 , P , 59 ,,, 
+LTE08 RX Ref-Sens -86.0 dBm,   0.20 ,   0.00 ,   5.00 , P , 59 ,,, 
+LTE08 RX 2nd RSSI -86.0 dBm, -86.40 , -95.00 , -75.00 , P , 60 ,,, 
+
+// << LTE20 24205(UL) >>
+LTE20 TEST CHANNEL, 24205.00 , 24150.00 , 24150.00 , P , 61 ,,, 
+LTE20 Tx Power,  21.84 ,  20.50 ,  24.50 , P , 63 ,,, 
+LTE20 Low EVM,   1.39 ,   0.00 ,  17.50 , P , 63 ,,, 
+LTE20 High EVM,   9.69 ,   0.00 ,  17.50 , P , 63 ,,, 
+LTE20 I/Q Offset, -39.55 , -100.00 , -25.00 , P , 63 ,,, 
+LTE20 Frequency Error,  -3.14 , -80.00 ,  80.00 , P , 63 ,,, 
+LTE20 RX Ref-Sens -86.0 dBm,   0.20 ,   0.00 ,   5.00 , P , 63 ,,, 
+LTE20 RX 2nd RSSI -85.0 dBm, -84.60 , -95.00 , -75.00 , P , 64 ,,, 
+
+// << WCDMA2100(BC1) 10570(DL) >>
+WCDMA2100 TEST CHANNEL, 10570.00 , 10562.00 , 10838.00 , P , 66 ,,, 
+WCDMA2100 Max Output Power,  22.49 ,  21.30 ,  23.70 , P , 67 ,,, 
+WCDMA2100 EVM,   2.17 ,   0.00 ,  15.50 , P , 67 ,,, 
+WCDMA2100 Frequency Error,   8.85 , -180.00 , 180.00 , P , 67 ,,, 
+WCDMA2100 BER -106.7 dBm,   0.00 ,   0.00 ,   0.08 , P , 69 ,,, 
+WCDMA2100 RSCP -75.0 dBm,   0.10 ,  -4.00 ,   4.00 , P , 70 ,,, 
+
+// << WCDMA900(BC8) 2959(DL) >>
+WCDMA900 TEST CHANNEL, 2959.00 , 2937.00 , 3088.00 , P , 70 ,,, 
+WCDMA900 Max Output Power,  21.94 ,  21.30 ,  23.70 , P , 72 ,,, 
+WCDMA900 EVM,   1.17 ,   0.00 ,  15.50 , P , 72 ,,, 
+WCDMA900 Frequency Error,   0.50 , -80.00 ,  80.00 , P , 72 ,,, 
+WCDMA900 BER -105.0 dBm,   0.00 ,   0.00 ,   0.08 , P , 74 ,,, 
+WCDMA900 RSCP -75.0 dBm,  -0.10 ,  -4.00 ,   4.00 , P , 74 ,,, 
+
+// << GSM900 CH: 980 >>
+GSM900 TEST CHANNEL, 980.00 , 975.00 , 1023.00 , P , 77 ,,, 
+GSM900 TX Power 5 Level,  32.89 ,  31.30 ,  33.70 , P , 78 ,,, 
+GSM900 Phase Error RMS,   0.83 ,   0.00 ,   4.50 , P , 78 ,,, 
+GSM900 Phase Error Peak,   4.05 ,   0.00 ,  18.00 , P , 78 ,,, 
+GSM900 Frequency Error,   6.10 , -80.00 ,  80.00 , P , 78 ,,, 
+GSM900 BER -103.0 dBm,   0.01 ,   0.00 ,   2.40 , P , 79 ,,, 
+GSM900 RX Level -103.0 dBm,   1.00 ,  -3.00 ,   3.00 , P , 79 ,,, 
+
+// << DCS1800 CH: 517 >>
+DCS1800 TEST CHANNEL, 517.00 , 512.00 , 885.00 , P , 79 ,,, 
+DCS1800 TX Power 0 Level,  29.89 ,  28.30 ,  30.70 , P , 81 ,,, 
+DCS1800 Phase Error RMS,   1.14 ,   0.00 ,   4.50 , P , 81 ,,, 
+DCS1800 Phase Error Peak,   5.46 ,   0.00 ,  18.00 , P , 81 ,,, 
+DCS1800 Frequency Error,  12.40 , -170.00 , 170.00 , P , 81 ,,, 
+DCS1800 BER -103.0 dBm,   0.01 ,   0.00 ,   2.40 , P , 81 ,,, 
+DCS1800 RX Level -103.0 dBm,   1.00 ,  -3.00 ,   3.00 , P , 82 ,,, 
+
+// << WCDMA2100(BC1) 10693(DL) 2nd RSSI >>
+WCDMA2100 2nd RSSI AGC -85.0 dBm, -294.00 , -520.00 , -170.00 , P , 83 ,,, 
+
+// << WCDMA900(BC8) 3012(DL) 2nd RSSI >>
+WCDMA900 2nd RSSI AGC -85.0 dBm, -299.00 , -520.00 , -170.00 , P , 85 ,,, 
+
+// << FTM Mode Change >>
+FTM Mode : Off,,,, P , 86 , 1 , 1 , 1 
+eMMC EFS Sync,,,, P , 89 , 1 , 1 , 1 
+
+// << Band Setting >>
+END BAND : AUTO,,,, P , 92 , 1 , 1 , 1 
+FINAL Test END, P, , , P, 92
+LTE FINAL END, P, , , P, 92
+FactoLog Off,   1.00 ,   1.00 ,   1.00 , P , 93 ,,, 
+
+#END
+RESULT : PASS
+ERROR-CODE : 
+TEST-TIME : 93
+RF TEST-TIME : 49
+NON-RF TEST-TIME : 44
+//PASS_AVERAGE_TIME : 1511828489
+//Total : 1 Pass : 1 Fail : 0
+//FAIL_RATE : 0%
+
+
+
+
+#INIT
+MODEL : GT-N7105
+P/N : CMAF7E10FF1F59F
+S/W : N7105ZHALJ4
+DATE : 2013/02/21
+TIME : 22:47:55
+TESTCODE : TOP42
+LOGVERSION : Ver 2.4
+INSTRUMENT : IQXS3178/LitePoint/IQxstream
+FIRMWARE : 1.20.0
+FIRMWARE_GPRF Gen/Meas/Sig : //
+FIRMWARE_GSM Gen/Meas/Sig : //
+FIRMWARE_WCDMA Gen/Meas/Sig : //
+FIRMWARE_LTE Gen/Meas/Sig : //
+FIRMWARE_1xEV-DO Gen/Meas/Sig : //
+FIRMWARE_CDMA2000 Gen/Meas/Sig : //
+FIRMWARE_TD-SCDMA Gen/Meas/Sig : //
+FIRMWARE_WiMAX Gen/Meas/Sig : //
+FIRMWARE_WLAN Gen/Meas/Sig : //
+WAVEFORM : 
+PC_CPU : 3.39 GHz/8-Core
+PC_RAM(Available) : 3558 MB
+PC_DISK(C-Drive free/Total) : 85188/122001 MB
+PC_OS : Microsoft Windows 7 Enterprise Edition (build 7600) 32-bit
+JIG : 1
+PROGRAM : DASEUL_Runtime_Ver_3.1.62.0
+ENTERPRISE : 
+INIFILE : GT-N7105_FINAL_AUTO_Ver_3.1.60.3_T1
+IMEINO : 
+SKU : 
+HW : 
+
+#TEST
+/*================================================================================
+Test Conditions, Measured Value, Lower Limit, Upper Limit, P/F, Sec, Code, Code Lsl, Code Usl
+================================================================================*/
+// Model info - Booting Time: 60 
+Booting Time,  34.00 ,   0.00 ,  34.00 , P , 37 ,,, 
+Final Call connect Type - NonSignaling,   1.00 ,   1.00 ,   1.00 , P , 37 ,,, 
+Line Type - Block Cell,   1.00 ,   1.00 ,   1.00 , P , 37 ,,, 
+
+// << RF Loss Check >>
+710MHz LOSS,  -7.28 , -25.00 ,   0.00 , P , 37 ,,, 
+750MHz LOSS,  -7.36 , -25.00 ,   0.00 , P , 37 ,,, 
+810MHz LOSS,  -7.21 , -25.00 ,   0.00 , P , 37 ,,, 
+950MHz LOSS,  -7.52 , -25.00 ,   0.00 , P , 37 ,,, 
+1710MHz LOSS,  -8.05 , -25.00 ,   0.00 , P , 37 ,,, 
+1790MHz LOSS,  -8.07 , -25.00 ,   0.00 , P , 37 ,,, 
+1810MHz LOSS,  -8.08 , -25.00 ,   0.00 , P , 37 ,,, 
+1910MHz LOSS,  -8.20 , -25.00 ,   0.00 , P , 37 ,,, 
+1930MHz LOSS,  -8.17 , -25.00 ,   0.00 , P , 37 ,,, 
+1990MHz LOSS,  -8.17 , -25.00 ,   0.00 , P , 37 ,,, 
+2100MHz LOSS,  -8.34 , -25.00 ,   0.00 , P , 37 ,,, 
+2170MHz LOSS,  -8.41 , -25.00 ,   0.00 , P , 37 ,,, 
+2200MHz LOSS,  -8.24 , -25.00 ,   0.00 , P , 37 ,,, 
+2400MHz LOSS,  -8.46 , -25.00 ,   0.00 , P , 37 ,,, 
+2700MHz LOSS,  -8.46 , -25.00 ,   0.00 , P , 37 ,,, 
+
+// << Initial Non-RF >>
+Model Name Read, GT-N7105, GT-N7105, GT-N7105, P, 37
+FactoLog On,   1.00 ,   1.00 ,   1.00 , P , 37 ,,, 
+
+// << Process Omission Check >>
+RF CAL SKIP, P, , , P, 37
+FINAL Test START, E, , , P, 37
+LTE FINAL START, E, , , P, 37
+LCD Off,   1.00 ,   1.00 ,   1.00 , P , 37 ,,, 
+Enter Test Mode,   1.00 ,   1.00 ,   1.00 , P , 40 ,,, 
+
+// << LTE03 19255(UL) >>
+LTE03 TEST CHANNEL, 19255.00 , 19200.00 , 19949.00 , P , 44 ,,, 
+LTE03 Tx Power,  21.25 ,  20.50 ,  24.50 , P , 46 ,,, 
+LTE03 Low EVM,   2.12 ,   0.00 ,  17.50 , P , 46 ,,, 
+LTE03 High EVM,  14.59 ,   0.00 ,  17.50 , P , 46 ,,, 
+LTE03 I/Q Offset, -37.86 , -100.00 , -25.00 , P , 46 ,,, 
+LTE03 Frequency Error,   7.70 , -170.00 , 170.00 , P , 46 ,,, 
+LTE03 RX Ref-Sens -86.0 dBm,   0.20 ,   0.00 ,   5.00 , P , 47 ,,, 
+LTE03 RX 2nd RSSI -85.0 dBm, -84.60 , -95.00 , -75.00 , P , 48 ,,, 
+
+// << LTE07 20805(UL) >>
+LTE07 TEST CHANNEL, 20805.00 , 20750.00 , 20750.00 , P , 49 ,,, 
+LTE07 Tx Power,  21.02 ,  20.50 ,  24.50 , P , 50 ,,, 
+LTE07 Low EVM,   3.35 ,   0.00 ,  17.50 , P , 50 ,,, 
+LTE07 High EVM,  13.96 ,   0.00 ,  17.50 , P , 50 ,,, 
+LTE07 I/Q Offset, -34.40 , -100.00 , -25.00 , P , 50 ,,, 
+LTE07 Frequency Error, -37.70 , -170.00 , 170.00 , P , 50 ,,, 
+LTE07 RX Ref-Sens -87.0 dBm,   0.20 ,   0.00 ,   5.00 , P , 51 ,,, 
+LTE07 RX 2nd RSSI -85.0 dBm, -84.70 , -95.00 , -75.00 , P , 52 ,,, 
+
+// << LTE08 21505(UL) >>
+LTE08 TEST CHANNEL, 21505.00 , 21450.00 , 21450.00 , P , 53 ,,, 
+LTE08 Tx Power,  21.67 ,  20.50 ,  24.50 , P , 54 ,,, 
+LTE08 Low EVM,   1.13 ,   0.00 ,  17.50 , P , 54 ,,, 
+LTE08 High EVM,  13.89 ,   0.00 ,  17.50 , P , 54 ,,, 
+LTE08 I/Q Offset, -39.93 , -100.00 , -25.00 , P , 54 ,,, 
+LTE08 Frequency Error,  -3.12 , -80.00 ,  80.00 , P , 54 ,,, 
+LTE08 RX Ref-Sens -86.0 dBm,   0.10 ,   0.00 ,   5.00 , P , 55 ,,, 
+LTE08 RX 2nd RSSI -86.0 dBm, -86.40 , -95.00 , -75.00 , P , 56 ,,, 
+
+// << LTE20 24205(UL) >>
+LTE20 TEST CHANNEL, 24205.00 , 24150.00 , 24150.00 , P , 57 ,,, 
+LTE20 Tx Power,  21.92 ,  20.50 ,  24.50 , P , 59 ,,, 
+LTE20 Low EVM,   1.40 ,   0.00 ,  17.50 , P , 59 ,,, 
+LTE20 High EVM,  10.48 ,   0.00 ,  17.50 , P , 59 ,,, 
+LTE20 I/Q Offset, -39.78 , -100.00 , -25.00 , P , 59 ,,, 
+LTE20 Frequency Error,   2.72 , -80.00 ,  80.00 , P , 59 ,,, 
+LTE20 RX Ref-Sens -86.0 dBm,   0.20 ,   0.00 ,   5.00 , P , 59 ,,, 
+LTE20 RX 2nd RSSI -85.0 dBm, -84.60 , -95.00 , -75.00 , P , 60 ,,, 
+
+// << WCDMA2100(BC1) 10570(DL) >>
+WCDMA2100 TEST CHANNEL, 10570.00 , 10562.00 , 10838.00 , P , 62 ,,, 
+WCDMA2100 Max Output Power,  22.55 ,  21.30 ,  23.70 , P , 63 ,,, 
+WCDMA2100 EVM,   2.08 ,   0.00 ,  15.50 , P , 63 ,,, 
+WCDMA2100 Frequency Error,   7.74 , -180.00 , 180.00 , P , 63 ,,, 
+WCDMA2100 BER -106.7 dBm,   0.00 ,   0.00 ,   0.08 , P , 65 ,,, 
+WCDMA2100 RSCP -75.0 dBm,   0.00 ,  -4.00 ,   4.00 , P , 66 ,,, 
+
+// << WCDMA900(BC8) 2959(DL) >>
+WCDMA900 TEST CHANNEL, 2959.00 , 2937.00 , 3088.00 , P , 66 ,,, 
+WCDMA900 Max Output Power,  22.13 ,  21.30 ,  23.70 , P , 68 ,,, 
+WCDMA900 EVM,   1.22 ,   0.00 ,  15.50 , P , 68 ,,, 
+WCDMA900 Frequency Error,   1.93 , -80.00 ,  80.00 , P , 68 ,,, 
+WCDMA900 BER -105.0 dBm,   0.00 ,   0.00 ,   0.08 , P , 70 ,,, 
+WCDMA900 RSCP -75.0 dBm,  -0.20 ,  -4.00 ,   4.00 , P , 70 ,,, 
+
+// << GSM900 CH: 980 >>
+GSM900 TEST CHANNEL, 980.00 , 975.00 , 1023.00 , P , 73 ,,, 
+GSM900 TX Power 5 Level,  32.95 ,  31.30 ,  33.70 , P , 74 ,,, 
+GSM900 Phase Error RMS,   0.85 ,   0.00 ,   4.50 , P , 74 ,,, 
+GSM900 Phase Error Peak,   4.41 ,   0.00 ,  18.00 , P , 74 ,,, 
+GSM900 Frequency Error,   1.40 , -80.00 ,  80.00 , P , 74 ,,, 
+GSM900 BER -103.0 dBm,   0.01 ,   0.00 ,   2.40 , P , 75 ,,, 
+GSM900 RX Level -103.0 dBm,   1.00 ,  -3.00 ,   3.00 , P , 75 ,,, 
+
+// << DCS1800 CH: 517 >>
+DCS1800 TEST CHANNEL, 517.00 , 512.00 , 885.00 , P , 75 ,,, 
+DCS1800 TX Power 0 Level,  29.88 ,  28.30 ,  30.70 , P , 77 ,,, 
+DCS1800 Phase Error RMS,   1.19 ,   0.00 ,   4.50 , P , 77 ,,, 
+DCS1800 Phase Error Peak,   5.92 ,   0.00 ,  18.00 , P , 77 ,,, 
+DCS1800 Frequency Error,  -3.50 , -170.00 , 170.00 , P , 77 ,,, 
+DCS1800 BER -103.0 dBm,   0.01 ,   0.00 ,   2.40 , P , 77 ,,, 
+DCS1800 RX Level -103.0 dBm,   1.00 ,  -3.00 ,   3.00 , P , 78 ,,, 
+
+// << WCDMA2100(BC1) 10693(DL) 2nd RSSI >>
+WCDMA2100 2nd RSSI AGC -85.0 dBm, -292.00 , -520.00 , -170.00 , P , 79 ,,, 
+
+// << WCDMA900(BC8) 3012(DL) 2nd RSSI >>
+WCDMA900 2nd RSSI AGC -85.0 dBm, -299.00 , -520.00 , -170.00 , P , 81 ,,, 
+
+// << FTM Mode Change >>
+FTM Mode : Off,,,, P , 82 , 1 , 1 , 1 
+eMMC EFS Sync,,,, P , 85 , 1 , 1 , 1 
+
+// << Band Setting >>
+END BAND : AUTO,,,, P , 88 , 1 , 1 , 1 
+FINAL Test END, P, , , P, 88
+LTE FINAL END, P, , , P, 88
+FactoLog Off,   1.00 ,   1.00 ,   1.00 , P , 89 ,,, 
+
+#END
+RESULT : PASS
+ERROR-CODE : 
+TEST-TIME : 89
+RF TEST-TIME : 45
+NON-RF TEST-TIME : 44
+//PASS_AVERAGE_TIME : 1511828489
+//Total : 2 Pass : 2 Fail : 0
+//FAIL_RATE : 0%
+
+
+
+
+#INIT
+MODEL : GT-N7105
+P/N : CMAF7E10FF1F59F
+S/W : N7105ZHALJ4
+DATE : 2013/02/21
+TIME : 22:49:48
+TESTCODE : TOP42
+LOGVERSION : Ver 2.4
+INSTRUMENT : IQXS3178/LitePoint/IQxstream
+FIRMWARE : 1.20.0
+FIRMWARE_GPRF Gen/Meas/Sig : //
+FIRMWARE_GSM Gen/Meas/Sig : //
+FIRMWARE_WCDMA Gen/Meas/Sig : //
+FIRMWARE_LTE Gen/Meas/Sig : //
+FIRMWARE_1xEV-DO Gen/Meas/Sig : //
+FIRMWARE_CDMA2000 Gen/Meas/Sig : //
+FIRMWARE_TD-SCDMA Gen/Meas/Sig : //
+FIRMWARE_WiMAX Gen/Meas/Sig : //
+FIRMWARE_WLAN Gen/Meas/Sig : //
+WAVEFORM : 
+PC_CPU : 3.39 GHz/8-Core
+PC_RAM(Available) : 3558 MB
+PC_DISK(C-Drive free/Total) : 85188/122001 MB
+PC_OS : Microsoft Windows 7 Enterprise Edition (build 7600) 32-bit
+JIG : 1
+PROGRAM : DASEUL_Runtime_Ver_3.1.62.0
+ENTERPRISE : 
+INIFILE : GT-N7105_FINAL_AUTO_Ver_3.1.60.3_T1
+IMEINO : 
+SKU : 
+HW : 
+
+#TEST
+/*================================================================================
+Test Conditions, Measured Value, Lower Limit, Upper Limit, P/F, Sec, Code, Code Lsl, Code Usl
+================================================================================*/
+// Model info - Booting Time: 60 
+Booting Time,  34.00 ,   0.00 ,  34.00 , P , 37 ,,, 
+Final Call connect Type - NonSignaling,   1.00 ,   1.00 ,   1.00 , P , 37 ,,, 
+Line Type - Block Cell,   1.00 ,   1.00 ,   1.00 , P , 37 ,,, 
+
+// << RF Loss Check >>
+710MHz LOSS,  -7.28 , -25.00 ,   0.00 , P , 37 ,,, 
+750MHz LOSS,  -7.36 , -25.00 ,   0.00 , P , 37 ,,, 
+810MHz LOSS,  -7.21 , -25.00 ,   0.00 , P , 37 ,,, 
+950MHz LOSS,  -7.52 , -25.00 ,   0.00 , P , 37 ,,, 
+1710MHz LOSS,  -8.05 , -25.00 ,   0.00 , P , 37 ,,, 
+1790MHz LOSS,  -8.07 , -25.00 ,   0.00 , P , 37 ,,, 
+1810MHz LOSS,  -8.08 , -25.00 ,   0.00 , P , 37 ,,, 
+1910MHz LOSS,  -8.20 , -25.00 ,   0.00 , P , 37 ,,, 
+1930MHz LOSS,  -8.17 , -25.00 ,   0.00 , P , 37 ,,, 
+1990MHz LOSS,  -8.17 , -25.00 ,   0.00 , P , 37 ,,, 
+2100MHz LOSS,  -8.34 , -25.00 ,   0.00 , P , 37 ,,, 
+2170MHz LOSS,  -8.41 , -25.00 ,   0.00 , P , 37 ,,, 
+2200MHz LOSS,  -8.24 , -25.00 ,   0.00 , P , 37 ,,, 
+2400MHz LOSS,  -8.46 , -25.00 ,   0.00 , P , 37 ,,, 
+2700MHz LOSS,  -8.46 , -25.00 ,   0.00 , P , 37 ,,, 
+
+// << Initial Non-RF >>
+Model Name Read, GT-N7105, GT-N7105, GT-N7105, P, 37
+FactoLog On,   1.00 ,   1.00 ,   1.00 , P , 37 ,,, 
+
+// << Process Omission Check >>
+RF CAL SKIP, P, , , P, 37
+FINAL Test START, E, , , P, 38
+LTE FINAL START, E, , , P, 38
+LCD Off,   1.00 ,   1.00 ,   1.00 , P , 38 ,,, 
+Enter Test Mode,   1.00 ,   1.00 ,   1.00 , P , 40 ,,, 
+
+// << LTE03 19255(UL) >>
+LTE03 TEST CHANNEL, 19255.00 , 19200.00 , 19949.00 , P , 45 ,,, 
+LTE03 Tx Power,  21.23 ,  20.50 ,  24.50 , P , 47 ,,, 
+LTE03 Low EVM,   2.14 ,   0.00 ,  17.50 , P , 47 ,,, 
+LTE03 High EVM,  13.25 ,   0.00 ,  17.50 , P , 47 ,,, 
+LTE03 I/Q Offset, -37.87 , -100.00 , -25.00 , P , 47 ,,, 
+LTE03 Frequency Error,   7.36 , -170.00 , 170.00 , P , 47 ,,, 
+LTE03 RX Ref-Sens -86.0 dBm,   0.20 ,   0.00 ,   5.00 , P , 47 ,,, 
+LTE03 RX 2nd RSSI -85.0 dBm, -84.60 , -95.00 , -75.00 , P , 48 ,,, 
+
+// << LTE07 20805(UL) >>
+LTE07 TEST CHANNEL, 20805.00 , 20750.00 , 20750.00 , P , 49 ,,, 
+LTE07 Tx Power,  21.11 ,  20.50 ,  24.50 , P , 51 ,,, 
+LTE07 Low EVM,   3.33 ,   0.00 ,  17.50 , P , 51 ,,, 
+LTE07 High EVM,  14.94 ,   0.00 ,  17.50 , P , 51 ,,, 
+LTE07 I/Q Offset, -34.94 , -100.00 , -25.00 , P , 51 ,,, 
+LTE07 Frequency Error,  -9.06 , -170.00 , 170.00 , P , 51 ,,, 
+LTE07 RX Ref-Sens -87.0 dBm,   0.00 ,   0.00 ,   5.00 , P , 51 ,,, 
+LTE07 RX 2nd RSSI -85.0 dBm, -84.80 , -95.00 , -75.00 , P , 52 ,,, 
+
+// << LTE08 21505(UL) >>
+LTE08 TEST CHANNEL, 21505.00 , 21450.00 , 21450.00 , P , 53 ,,, 
+LTE08 RX Ref-Sens -86.0 dBm,   0.00 ,   0.00 ,   5.00 , P , 55 ,,, 
+LTE08 Low EVM,   1.15 ,   0.00 ,  17.50 , P , 55 ,,, 
+LTE08 Tx Power,  21.62 ,  20.50 ,  24.50 , P , 55 ,,, 
+LTE08 High EVM,  12.41 ,   0.00 ,  17.50 , P , 55 ,,, 
+LTE08 Low EVM,   1.15 ,   0.00 ,  17.50 , P , 55 ,,, 
+LTE08 I/Q Offset, -40.17 , -100.00 , -25.00 , P , 55 ,,, 
+LTE08 High EVM,  12.41 ,   0.00 ,  17.50 , P , 55 ,,, 
+LTE08 Frequency Error,  -4.69 , -80.00 ,  80.00 , P , 55 ,,, 
+LTE08 I/Q Offset, -40.17 , -100.00 , -25.00 , P , 55 ,,, 
+LTE08 Frequency Error,  -4.69 , -80.00 ,  80.00 , P , 55 ,,, 
+LTE08 RX 2nd RSSI -86.0 dBm, -86.40 , -95.00 , -75.00 , P , 56 ,,, 
+
+// << LTE20 24205(UL) >>
+LTE20 TEST CHANNEL, 24205.00 , 24150.00 , 24150.00 , P , 57 ,,, 
+LTE20 Tx Power,  21.91 ,  20.50 ,  24.50 , P , 59 ,,, 
+LTE20 Low EVM,   1.42 ,   0.00 ,  17.50 , P , 59 ,,, 
+LTE20 High EVM,   9.39 ,   0.00 ,  17.50 , P , 59 ,,, 
+LTE20 I/Q Offset, -39.78 , -100.00 , -25.00 , P , 59 ,,, 
+LTE20 Frequency Error,  -3.29 , -80.00 ,  80.00 , P , 59 ,,, 
+LTE20 RX Ref-Sens -86.0 dBm,   0.20 ,   0.00 ,   5.00 , P , 60 ,,, 
+LTE20 RX 2nd RSSI -85.0 dBm, -84.60 , -95.00 , -75.00 , P , 61 ,,, 
+
+// << WCDMA2100(BC1) 10570(DL) >>
+WCDMA2100 TEST CHANNEL, 10570.00 , 10562.00 , 10838.00 , P , 62 ,,, 
+WCDMA2100 Max Output Power,  22.55 ,  21.30 ,  23.70 , P , 63 ,,, 
+WCDMA2100 EVM,   2.16 ,   0.00 ,  15.50 , P , 63 ,,, 
+WCDMA2100 Frequency Error,   8.20 , -180.00 , 180.00 , P , 63 ,,, 
+WCDMA2100 BER -106.7 dBm,   0.00 ,   0.00 ,   0.08 , P , 66 ,,, 
+WCDMA2100 RSCP -75.0 dBm,  -0.10 ,  -4.00 ,   4.00 , P , 66 ,,, 
+
+// << WCDMA900(BC8) 2959(DL) >>
+WCDMA900 TEST CHANNEL, 2959.00 , 2937.00 , 3088.00 , P , 67 ,,, 
+WCDMA900 Max Output Power,  21.98 ,  21.30 ,  23.70 , P , 68 ,,, 
+WCDMA900 EVM,   1.18 ,   0.00 ,  15.50 , P , 68 ,,, 
+WCDMA900 Frequency Error,   0.72 , -80.00 ,  80.00 , P , 68 ,,, 
+WCDMA900 BER -105.0 dBm,   0.00 ,   0.00 ,   0.08 , P , 70 ,,, 
+WCDMA900 RSCP -75.0 dBm,   0.10 ,  -4.00 ,   4.00 , P , 71 ,,, 
+
+// << GSM900 CH: 980 >>
+GSM900 TEST CHANNEL, 980.00 , 975.00 , 1023.00 , P , 73 ,,, 
+GSM900 TX Power 5 Level,  32.93 ,  31.30 ,  33.70 , P , 74 ,,, 
+GSM900 Phase Error RMS,   0.87 ,   0.00 ,   4.50 , P , 74 ,,, 
+GSM900 Phase Error Peak,   4.49 ,   0.00 ,  18.00 , P , 74 ,,, 
+GSM900 Frequency Error,   9.40 , -80.00 ,  80.00 , P , 74 ,,, 
+GSM900 BER -103.0 dBm,   0.03 ,   0.00 ,   2.40 , P , 75 ,,, 
+GSM900 RX Level -103.0 dBm,   1.00 ,  -3.00 ,   3.00 , P , 75 ,,, 
+
+// << DCS1800 CH: 517 >>
+DCS1800 TEST CHANNEL, 517.00 , 512.00 , 885.00 , P , 76 ,,, 
+DCS1800 TX Power 0 Level,  29.91 ,  28.30 ,  30.70 , P , 77 ,,, 
+DCS1800 Phase Error RMS,   1.16 ,   0.00 ,   4.50 , P , 77 ,,, 
+DCS1800 Phase Error Peak,   5.43 ,   0.00 ,  18.00 , P , 77 ,,, 
+DCS1800 Frequency Error,   6.00 , -170.00 , 170.00 , P , 77 ,,, 
+DCS1800 BER -103.0 dBm,   0.01 ,   0.00 ,   2.40 , P , 78 ,,, 
+DCS1800 RX Level -103.0 dBm,   1.00 ,  -3.00 ,   3.00 , P , 78 ,,, 
+
+// << WCDMA2100(BC1) 10693(DL) 2nd RSSI >>
+WCDMA2100 2nd RSSI AGC -85.0 dBm, -283.00 , -520.00 , -170.00 , P , 80 ,,, 
+
+// << WCDMA900(BC8) 3012(DL) 2nd RSSI >>
+WCDMA900 2nd RSSI AGC -85.0 dBm, -299.00 , -520.00 , -170.00 , P , 81 ,,, 
+
+// << FTM Mode Change >>
+FTM Mode : Off,,,, P , 82 , 1 , 1 , 1 
+eMMC EFS Sync,,,, P , 85 , 1 , 1 , 1 
+
+// << Band Setting >>
+END BAND : AUTO,,,, P , 88 , 1 , 1 , 1 
+FINAL Test END, P, , , P, 89
+LTE FINAL END, P, , , P, 89
+FactoLog Off,   1.00 ,   1.00 ,   1.00 , P , 89 ,,, 
+
+#END
+RESULT : PASS
+ERROR-CODE : 
+TEST-TIME : 90
+RF TEST-TIME : 45
+NON-RF TEST-TIME : 45
+//PASS_AVERAGE_TIME : 1511828489
+//Total : 3 Pass : 3 Fail : 0
+//FAIL_RATE : 0%
+
+
+
+
+#INIT
+MODEL : GT-N7105
+P/N : CMAF7E10FF1F59F
+S/W : N7105ZHALJ4
+DATE : 2013/02/21
+TIME : 22:51:39
+TESTCODE : TOP42
+LOGVERSION : Ver 2.4
+INSTRUMENT : IQXS3178/LitePoint/IQxstream
+FIRMWARE : 1.20.0
+FIRMWARE_GPRF Gen/Meas/Sig : //
+FIRMWARE_GSM Gen/Meas/Sig : //
+FIRMWARE_WCDMA Gen/Meas/Sig : //
+FIRMWARE_LTE Gen/Meas/Sig : //
+FIRMWARE_1xEV-DO Gen/Meas/Sig : //
+FIRMWARE_CDMA2000 Gen/Meas/Sig : //
+FIRMWARE_TD-SCDMA Gen/Meas/Sig : //
+FIRMWARE_WiMAX Gen/Meas/Sig : //
+FIRMWARE_WLAN Gen/Meas/Sig : //
+WAVEFORM : 
+PC_CPU : 3.39 GHz/8-Core
+PC_RAM(Available) : 3558 MB
+PC_DISK(C-Drive free/Total) : 85188/122001 MB
+PC_OS : Microsoft Windows 7 Enterprise Edition (build 7600) 32-bit
+JIG : 1
+PROGRAM : DASEUL_Runtime_Ver_3.1.62.0
+ENTERPRISE : 
+INIFILE : GT-N7105_FINAL_AUTO_Ver_3.1.60.3_T1
+IMEINO : 
+SKU : 
+HW : 
+
+#TEST
+/*================================================================================
+Test Conditions, Measured Value, Lower Limit, Upper Limit, P/F, Sec, Code, Code Lsl, Code Usl
+================================================================================*/
+// Model info - Booting Time: 60 
+Booting Time,  34.00 ,   0.00 ,  34.00 , P , 37 ,,, 
+Final Call connect Type - NonSignaling,   1.00 ,   1.00 ,   1.00 , P , 37 ,,, 
+Line Type - Block Cell,   1.00 ,   1.00 ,   1.00 , P , 37 ,,, 
+
+// << RF Loss Check >>
+710MHz LOSS,  -7.28 , -25.00 ,   0.00 , P , 37 ,,, 
+750MHz LOSS,  -7.36 , -25.00 ,   0.00 , P , 37 ,,, 
+810MHz LOSS,  -7.21 , -25.00 ,   0.00 , P , 37 ,,, 
+950MHz LOSS,  -7.52 , -25.00 ,   0.00 , P , 37 ,,, 
+1710MHz LOSS,  -8.05 , -25.00 ,   0.00 , P , 37 ,,, 
+1790MHz LOSS,  -8.07 , -25.00 ,   0.00 , P , 37 ,,, 
+1810MHz LOSS,  -8.08 , -25.00 ,   0.00 , P , 37 ,,, 
+1910MHz LOSS,  -8.20 , -25.00 ,   0.00 , P , 37 ,,, 
+1930MHz LOSS,  -8.17 , -25.00 ,   0.00 , P , 37 ,,, 
+1990MHz LOSS,  -8.17 , -25.00 ,   0.00 , P , 37 ,,, 
+2100MHz LOSS,  -8.34 , -25.00 ,   0.00 , P , 37 ,,, 
+2170MHz LOSS,  -8.41 , -25.00 ,   0.00 , P , 37 ,,, 
+2200MHz LOSS,  -8.24 , -25.00 ,   0.00 , P , 37 ,,, 
+2400MHz LOSS,  -8.46 , -25.00 ,   0.00 , P , 37 ,,, 
+2700MHz LOSS,  -8.46 , -25.00 ,   0.00 , P , 37 ,,, 
+
+// << Initial Non-RF >>
+Model Name Read, GT-N7105, GT-N7105, GT-N7105, P, 37
+FactoLog On,   1.00 ,   1.00 ,   1.00 , P , 37 ,,, 
+
+// << Process Omission Check >>
+RF CAL SKIP, P, , , P, 37
+FINAL Test START, E, , , P, 37
+LTE FINAL START, E, , , P, 37
+LCD Off,   1.00 ,   1.00 ,   1.00 , P , 37 ,,, 
+Enter Test Mode,   1.00 ,   1.00 ,   1.00 , P , 40 ,,, 
+
+// << LTE03 19255(UL) >>
+LTE03 TEST CHANNEL, 19255.00 , 19200.00 , 19949.00 , P , 44 ,,, 
+LTE03 RX Ref-Sens -86.0 dBm,   0.00 ,   0.00 ,   5.00 , P , 47 ,,, 
+LTE03 Tx Power,  21.25 ,  20.50 ,  24.50 , P , 48 ,,, 
+LTE03 Low EVM,   2.13 ,   0.00 ,  17.50 , P , 48 ,,, 
+LTE03 High EVM,  14.11 ,   0.00 ,  17.50 , P , 48 ,,, 
+LTE03 I/Q Offset, -37.90 , -100.00 , -25.00 , P , 48 ,,, 
+LTE03 Frequency Error, -12.04 , -170.00 , 170.00 , P , 48 ,,, 
+LTE03 RX 2nd RSSI -85.0 dBm, -84.60 , -95.00 , -75.00 , P , 49 ,,, 
+
+// << LTE07 20805(UL) >>
+LTE07 TEST CHANNEL, 20805.00 , 20750.00 , 20750.00 , P , 50 ,,, 
+LTE07 RX Ref-Sens -87.0 dBm,   0.00 ,   0.00 ,   5.00 , P , 52 ,,, 
+LTE07 Tx Power,  21.04 ,  20.50 ,  24.50 , P , 52 ,,, 
+LTE07 Low EVM,   3.37 ,   0.00 ,  17.50 , P , 52 ,,, 
+LTE07 High EVM,  14.89 ,   0.00 ,  17.50 , P , 52 ,,, 
+LTE07 I/Q Offset, -34.81 , -100.00 , -25.00 , P , 52 ,,, 
+LTE07 Frequency Error, -15.35 , -170.00 , 170.00 , P , 52 ,,, 
+LTE07 RX 2nd RSSI -85.0 dBm, -84.70 , -95.00 , -75.00 , P , 53 ,,, 
+
+// << LTE08 21505(UL) >>
+LTE08 TEST CHANNEL, 21505.00 , 21450.00 , 21450.00 , P , 54 ,,, 
+LTE08 Tx Power,  21.62 ,  20.50 ,  24.50 , P , 56 ,,, 
+LTE08 Low EVM,   1.11 ,   0.00 ,  17.50 , P , 56 ,,, 
+LTE08 High EVM,  13.57 ,   0.00 ,  17.50 , P , 56 ,,, 
+LTE08 I/Q Offset, -40.07 , -100.00 , -25.00 , P , 56 ,,, 
+LTE08 Frequency Error,  -5.45 , -80.00 ,  80.00 , P , 56 ,,, 
+LTE08 RX Ref-Sens -86.0 dBm,   0.20 ,   0.00 ,   5.00 , P , 56 ,,, 
+LTE08 RX 2nd RSSI -86.0 dBm, -86.40 , -95.00 , -75.00 , P , 57 ,,, 
+
+// << LTE20 24205(UL) >>
+LTE20 TEST CHANNEL, 24205.00 , 24150.00 , 24150.00 , P , 58 ,,, 
+LTE20 Tx Power,  21.88 ,  20.50 ,  24.50 , P , 60 ,,, 
+LTE20 Low EVM,   1.42 ,   0.00 ,  17.50 , P , 60 ,,, 
+LTE20 High EVM,  11.35 ,   0.00 ,  17.50 , P , 60 ,,, 
+LTE20 I/Q Offset, -39.85 , -100.00 , -25.00 , P , 60 ,,, 
+LTE20 Frequency Error,   2.83 , -80.00 ,  80.00 , P , 60 ,,, 
+LTE20 RX Ref-Sens -86.0 dBm,   0.20 ,   0.00 ,   5.00 , P , 60 ,,, 
+LTE20 RX 2nd RSSI -85.0 dBm, -84.60 , -95.00 , -75.00 , P , 61 ,,, 
+
+// << WCDMA2100(BC1) 10570(DL) >>
+WCDMA2100 TEST CHANNEL, 10570.00 , 10562.00 , 10838.00 , P , 63 ,,, 
+WCDMA2100 Max Output Power,  22.53 ,  21.30 ,  23.70 , P , 64 ,,, 
+WCDMA2100 EVM,   2.05 ,   0.00 ,  15.50 , P , 64 ,,, 
+WCDMA2100 Frequency Error,   9.34 , -180.00 , 180.00 , P , 64 ,,, 
+WCDMA2100 BER -106.7 dBm,   0.00 ,   0.00 ,   0.08 , P , 66 ,,, 
+WCDMA2100 RSCP -75.0 dBm,  -0.10 ,  -4.00 ,   4.00 , P , 67 ,,, 
+
+// << WCDMA900(BC8) 2959(DL) >>
+WCDMA900 TEST CHANNEL, 2959.00 , 2937.00 , 3088.00 , P , 67 ,,, 
+WCDMA900 Max Output Power,  21.99 ,  21.30 ,  23.70 , P , 69 ,,, 
+WCDMA900 EVM,   1.23 ,   0.00 ,  15.50 , P , 69 ,,, 
+WCDMA900 Frequency Error,   0.02 , -80.00 ,  80.00 , P , 69 ,,, 
+WCDMA900 BER -105.0 dBm,   0.00 ,   0.00 ,   0.08 , P , 71 ,,, 
+WCDMA900 RSCP -75.0 dBm,   0.10 ,  -4.00 ,   4.00 , P , 72 ,,, 
+
+// << GSM900 CH: 980 >>
+GSM900 TEST CHANNEL, 980.00 , 975.00 , 1023.00 , P , 74 ,,, 
+GSM900 TX Power 5 Level,  32.96 ,  31.30 ,  33.70 , P , 75 ,,, 
+GSM900 Phase Error RMS,   0.86 ,   0.00 ,   4.50 , P , 75 ,,, 
+GSM900 Phase Error Peak,   4.37 ,   0.00 ,  18.00 , P , 75 ,,, 
+GSM900 Frequency Error,   1.40 , -80.00 ,  80.00 , P , 75 ,,, 
+GSM900 BER -103.0 dBm,   0.03 ,   0.00 ,   2.40 , P , 76 ,,, 
+GSM900 RX Level -103.0 dBm,   1.00 ,  -3.00 ,   3.00 , P , 76 ,,, 
+
+// << DCS1800 CH: 517 >>
+DCS1800 TEST CHANNEL, 517.00 , 512.00 , 885.00 , P , 77 ,,, 
+DCS1800 TX Power 0 Level,  29.91 ,  28.30 ,  30.70 , P , 78 ,,, 
+DCS1800 Phase Error RMS,   1.18 ,   0.00 ,   4.50 , P , 78 ,,, 
+DCS1800 Phase Error Peak,   6.20 ,   0.00 ,  18.00 , P , 78 ,,, 
+DCS1800 Frequency Error,   3.80 , -170.00 , 170.00 , P , 78 ,,, 
+DCS1800 BER -103.0 dBm,   0.00 ,   0.00 ,   2.40 , P , 79 ,,, 
+DCS1800 RX Level -103.0 dBm,   1.00 ,  -3.00 ,   3.00 , P , 79 ,,, 
+
+// << WCDMA2100(BC1) 10693(DL) 2nd RSSI >>
+WCDMA2100 2nd RSSI AGC -85.0 dBm, -292.00 , -520.00 , -170.00 , P , 81 ,,, 
+
+// << WCDMA900(BC8) 3012(DL) 2nd RSSI >>
+WCDMA900 2nd RSSI AGC -85.0 dBm, -300.00 , -520.00 , -170.00 , P , 82 ,,, 
+
+// << FTM Mode Change >>
+FTM Mode : Off,,,, P , 83 , 1 , 1 , 1 
+eMMC EFS Sync,,,, P , 86 , 1 , 1 , 1 
+
+// << Band Setting >>
+END BAND : AUTO,,,, P , 89 , 1 , 1 , 1 
+FINAL Test END, P, , , P, 89
+LTE FINAL END, P, , , P, 89
+FactoLog Off,   1.00 ,   1.00 ,   1.00 , P , 90 ,,, 
+
+#END
+RESULT : PASS
+ERROR-CODE : 
+TEST-TIME : 91
+RF TEST-TIME : 47
+NON-RF TEST-TIME : 44
+//PASS_AVERAGE_TIME : 1511828489
+//Total : 4 Pass : 4 Fail : 0
+//FAIL_RATE : 0%
+
+
+
+
+#INIT
+MODEL : GT-N7105
+P/N : CMAF7E10FF1F59F
+S/W : N7105ZHALJ4
+DATE : 2013/02/21
+TIME : 22:53:33
+TESTCODE : TOP42
+LOGVERSION : Ver 2.4
+INSTRUMENT : IQXS3178/LitePoint/IQxstream
+FIRMWARE : 1.20.0
+FIRMWARE_GPRF Gen/Meas/Sig : //
+FIRMWARE_GSM Gen/Meas/Sig : //
+FIRMWARE_WCDMA Gen/Meas/Sig : //
+FIRMWARE_LTE Gen/Meas/Sig : //
+FIRMWARE_1xEV-DO Gen/Meas/Sig : //
+FIRMWARE_CDMA2000 Gen/Meas/Sig : //
+FIRMWARE_TD-SCDMA Gen/Meas/Sig : //
+FIRMWARE_WiMAX Gen/Meas/Sig : //
+FIRMWARE_WLAN Gen/Meas/Sig : //
+WAVEFORM : 
+PC_CPU : 3.39 GHz/8-Core
+PC_RAM(Available) : 3558 MB
+PC_DISK(C-Drive free/Total) : 85188/122001 MB
+PC_OS : Microsoft Windows 7 Enterprise Edition (build 7600) 32-bit
+JIG : 1
+PROGRAM : DASEUL_Runtime_Ver_3.1.62.0
+ENTERPRISE : 
+INIFILE : GT-N7105_FINAL_AUTO_Ver_3.1.60.3_T1
+IMEINO : 
+SKU : 
+HW : 
+
+#TEST
+/*================================================================================
+Test Conditions, Measured Value, Lower Limit, Upper Limit, P/F, Sec, Code, Code Lsl, Code Usl
+================================================================================*/
+// Model info - Booting Time: 60 
+Booting Time,  35.00 ,   0.00 ,  35.00 , P , 37 ,,, 
+Final Call connect Type - NonSignaling,   1.00 ,   1.00 ,   1.00 , P , 37 ,,, 
+Line Type - Block Cell,   1.00 ,   1.00 ,   1.00 , P , 37 ,,, 
+
+// << RF Loss Check >>
+710MHz LOSS,  -7.28 , -25.00 ,   0.00 , P , 37 ,,, 
+750MHz LOSS,  -7.36 , -25.00 ,   0.00 , P , 37 ,,, 
+810MHz LOSS,  -7.21 , -25.00 ,   0.00 , P , 37 ,,, 
+950MHz LOSS,  -7.52 , -25.00 ,   0.00 , P , 37 ,,, 
+1710MHz LOSS,  -8.05 , -25.00 ,   0.00 , P , 37 ,,, 
+1790MHz LOSS,  -8.07 , -25.00 ,   0.00 , P , 37 ,,, 
+1810MHz LOSS,  -8.08 , -25.00 ,   0.00 , P , 37 ,,, 
+1910MHz LOSS,  -8.20 , -25.00 ,   0.00 , P , 37 ,,, 
+1930MHz LOSS,  -8.17 , -25.00 ,   0.00 , P , 37 ,,, 
+1990MHz LOSS,  -8.17 , -25.00 ,   0.00 , P , 37 ,,, 
+2100MHz LOSS,  -8.34 , -25.00 ,   0.00 , P , 37 ,,, 
+2170MHz LOSS,  -8.41 , -25.00 ,   0.00 , P , 37 ,,, 
+2200MHz LOSS,  -8.24 , -25.00 ,   0.00 , P , 37 ,,, 
+2400MHz LOSS,  -8.46 , -25.00 ,   0.00 , P , 37 ,,, 
+2700MHz LOSS,  -8.46 , -25.00 ,   0.00 , P , 37 ,,, 
+
+// << Initial Non-RF >>
+Model Name Read, GT-N7105, GT-N7105, GT-N7105, P, 37
+FactoLog On,   1.00 ,   1.00 ,   1.00 , P , 37 ,,, 
+
+// << Process Omission Check >>
+RF CAL SKIP, P, , , P, 37
+FINAL Test START, E, , , P, 38
+LTE FINAL START, E, , , P, 38
+LCD Off,   1.00 ,   1.00 ,   1.00 , P , 38 ,,, 
+Enter Test Mode,   1.00 ,   1.00 ,   1.00 , P , 40 ,,, 
+
+// << LTE03 19255(UL) >>
+LTE03 TEST CHANNEL, 19255.00 , 19200.00 , 19949.00 , P , 45 ,,, 
+LTE03 Tx Power,  21.49 ,  20.50 ,  24.50 , P , 47 ,,, 
+LTE03 Low EVM,   2.30 ,   0.00 ,  17.50 , P , 47 ,,, 
+LTE03 High EVM,  14.52 ,   0.00 ,  17.50 , P , 47 ,,, 
+LTE03 I/Q Offset, -37.72 , -100.00 , -25.00 , P , 47 ,,, 
+LTE03 Frequency Error,   6.75 , -170.00 , 170.00 , P , 47 ,,, 
+LTE03 RX Ref-Sens -86.0 dBm,   0.20 ,   0.00 ,   5.00 , P , 47 ,,, 
+LTE03 RX 2nd RSSI -85.0 dBm, -84.60 , -95.00 , -75.00 , P , 48 ,,, 
+
+// << LTE07 20805(UL) >>
+LTE07 TEST CHANNEL, 20805.00 , 20750.00 , 20750.00 , P , 49 ,,, 
+LTE07 RX Ref-Sens -87.0 dBm,   0.20 ,   0.00 ,   5.00 , P , 51 ,,, 
+LTE07 Tx Power,  21.00 ,  20.50 ,  24.50 , P , 52 ,,, 
+LTE07 Low EVM,   3.39 ,   0.00 ,  17.50 , P , 52 ,,, 
+LTE07 High EVM,  13.94 ,   0.00 ,  17.50 , P , 52 ,,, 
+LTE07 I/Q Offset, -34.79 , -100.00 , -25.00 , P , 52 ,,, 
+LTE07 Frequency Error, -10.02 , -170.00 , 170.00 , P , 52 ,,, 
+LTE07 RX 2nd RSSI -85.0 dBm, -84.70 , -95.00 , -75.00 , P , 53 ,,, 
+
+// << LTE08 21505(UL) >>
+LTE08 TEST CHANNEL, 21505.00 , 21450.00 , 21450.00 , P , 54 ,,, 
+LTE08 Tx Power,  21.61 ,  20.50 ,  24.50 , P , 56 ,,, 
+LTE08 Low EVM,   1.18 ,   0.00 ,  17.50 , P , 56 ,,, 
+LTE08 High EVM,  14.62 ,   0.00 ,  17.50 , P , 56 ,,, 
+LTE08 I/Q Offset, -39.97 , -100.00 , -25.00 , P , 56 ,,, 
+LTE08 Frequency Error,  -4.85 , -80.00 ,  80.00 , P , 56 ,,, 
+LTE08 RX Ref-Sens -86.0 dBm,   0.20 ,   0.00 ,   5.00 , P , 57 ,,, 
+LTE08 RX 2nd RSSI -86.0 dBm, -86.40 , -95.00 , -75.00 , P , 58 ,,, 
+
+// << LTE20 24205(UL) >>
+LTE20 TEST CHANNEL, 24205.00 , 24150.00 , 24150.00 , P , 58 ,,, 
+LTE20 Tx Power,  21.99 ,  20.50 ,  24.50 , P , 60 ,,, 
+LTE20 Low EVM,   1.39 ,   0.00 ,  17.50 , P , 60 ,,, 
+LTE20 High EVM,   8.47 ,   0.00 ,  17.50 , P , 60 ,,, 
+LTE20 I/Q Offset, -39.99 , -100.00 , -25.00 , P , 60 ,,, 
+LTE20 Frequency Error,  -3.01 , -80.00 ,  80.00 , P , 60 ,,, 
+LTE20 RX Ref-Sens -86.0 dBm,   0.20 ,   0.00 ,   5.00 , P , 61 ,,, 
+LTE20 RX 2nd RSSI -85.0 dBm, -84.60 , -95.00 , -75.00 , P , 62 ,,, 
+
+// << WCDMA2100(BC1) 10570(DL) >>
+WCDMA2100 TEST CHANNEL, 10570.00 , 10562.00 , 10838.00 , P , 63 ,,, 
+WCDMA2100 Max Output Power,  22.54 ,  21.30 ,  23.70 , P , 64 ,,, 
+WCDMA2100 EVM,   2.20 ,   0.00 ,  15.50 , P , 64 ,,, 
+WCDMA2100 Frequency Error,  13.04 , -180.00 , 180.00 , P , 64 ,,, 
+WCDMA2100 BER -106.7 dBm,   0.00 ,   0.00 ,   0.08 , P , 67 ,,, 
+WCDMA2100 RSCP -75.0 dBm,  -0.30 ,  -4.00 ,   4.00 , P , 67 ,,, 
+
+// << WCDMA900(BC8) 2959(DL) >>
+WCDMA900 TEST CHANNEL, 2959.00 , 2937.00 , 3088.00 , P , 68 ,,, 
+WCDMA900 Max Output Power,  21.95 ,  21.30 ,  23.70 , P , 69 ,,, 
+WCDMA900 EVM,   1.19 ,   0.00 ,  15.50 , P , 69 ,,, 
+WCDMA900 Frequency Error,   0.26 , -80.00 ,  80.00 , P , 69 ,,, 
+WCDMA900 BER -105.0 dBm,   0.00 ,   0.00 ,   0.08 , P , 71 ,,, 
+WCDMA900 RSCP -75.0 dBm,   0.10 ,  -4.00 ,   4.00 , P , 72 ,,, 
+
+// << GSM900 CH: 980 >>
+GSM900 TEST CHANNEL, 980.00 , 975.00 , 1023.00 , P , 74 ,,, 
+GSM900 TX Power 5 Level,  32.95 ,  31.30 ,  33.70 , P , 76 ,,, 
+GSM900 Phase Error RMS,   0.88 ,   0.00 ,   4.50 , P , 76 ,,, 
+GSM900 Phase Error Peak,   4.57 ,   0.00 ,  18.00 , P , 76 ,,, 
+GSM900 Frequency Error,   7.00 , -80.00 ,  80.00 , P , 76 ,,, 
+GSM900 BER -103.0 dBm,   0.04 ,   0.00 ,   2.40 , P , 76 ,,, 
+GSM900 RX Level -103.0 dBm,   1.00 ,  -3.00 ,   3.00 , P , 76 ,,, 
+
+// << DCS1800 CH: 517 >>
+DCS1800 TEST CHANNEL, 517.00 , 512.00 , 885.00 , P , 77 ,,, 
+DCS1800 TX Power 0 Level,  29.90 ,  28.30 ,  30.70 , P , 78 ,,, 
+DCS1800 Phase Error RMS,   1.12 ,   0.00 ,   4.50 , P , 78 ,,, 
+DCS1800 Phase Error Peak,   5.79 ,   0.00 ,  18.00 , P , 78 ,,, 
+DCS1800 Frequency Error,   4.80 , -170.00 , 170.00 , P , 78 ,,, 
+DCS1800 BER -103.0 dBm,   0.01 ,   0.00 ,   2.40 , P , 79 ,,, 
+DCS1800 RX Level -103.0 dBm,   1.00 ,  -3.00 ,   3.00 , P , 79 ,,, 
+
+// << WCDMA2100(BC1) 10693(DL) 2nd RSSI >>
+WCDMA2100 2nd RSSI AGC -85.0 dBm, -284.00 , -520.00 , -170.00 , P , 81 ,,, 
+
+// << WCDMA900(BC8) 3012(DL) 2nd RSSI >>
+WCDMA900 2nd RSSI AGC -85.0 dBm, -300.00 , -520.00 , -170.00 , P , 82 ,,, 
+
+// << FTM Mode Change >>
+FTM Mode : Off,,,, P , 83 , 1 , 1 , 1 
+eMMC EFS Sync,,,, P , 86 , 1 , 1 , 1 
+
+// << Band Setting >>
+END BAND : AUTO,,,, P , 89 , 1 , 1 , 1 
+FINAL Test END, P, , , P, 90
+LTE FINAL END, P, , , P, 90
+FactoLog Off,   1.00 ,   1.00 ,   1.00 , P , 90 ,,, 
+
+#END
+RESULT : PASS
+ERROR-CODE : 
+TEST-TIME : 91
+RF TEST-TIME : 46
+NON-RF TEST-TIME : 45
+//PASS_AVERAGE_TIME : 1511828489
+//Total : 5 Pass : 5 Fail : 0
+//FAIL_RATE : 0%
+
+
+
+
+#INIT
+MODEL : GT-N7105
+P/N : CMAF7E10FF1F59F
+S/W : N7105ZHALJ4
+DATE : 2013/02/21
+TIME : 22:55:30
+TESTCODE : TOP42
+LOGVERSION : Ver 2.4
+INSTRUMENT : IQXS3178/LitePoint/IQxstream
+FIRMWARE : 1.20.0
+FIRMWARE_GPRF Gen/Meas/Sig : //
+FIRMWARE_GSM Gen/Meas/Sig : //
+FIRMWARE_WCDMA Gen/Meas/Sig : //
+FIRMWARE_LTE Gen/Meas/Sig : //
+FIRMWARE_1xEV-DO Gen/Meas/Sig : //
+FIRMWARE_CDMA2000 Gen/Meas/Sig : //
+FIRMWARE_TD-SCDMA Gen/Meas/Sig : //
+FIRMWARE_WiMAX Gen/Meas/Sig : //
+FIRMWARE_WLAN Gen/Meas/Sig : //
+WAVEFORM : 
+PC_CPU : 3.39 GHz/8-Core
+PC_RAM(Available) : 3558 MB
+PC_DISK(C-Drive free/Total) : 85188/122001 MB
+PC_OS : Microsoft Windows 7 Enterprise Edition (build 7600) 32-bit
+JIG : 1
+PROGRAM : DASEUL_Runtime_Ver_3.1.62.0
+ENTERPRISE : 
+INIFILE : GT-N7105_FINAL_AUTO_Ver_3.1.60.3_T1
+IMEINO : 
+SKU : 
+HW : 
+
+#TEST
+/*================================================================================
+Test Conditions, Measured Value, Lower Limit, Upper Limit, P/F, Sec, Code, Code Lsl, Code Usl
+================================================================================*/
+// Model info - Booting Time: 60 
+Booting Time,  35.00 ,   0.00 ,  35.00 , P , 38 ,,, 
+Final Call connect Type - NonSignaling,   1.00 ,   1.00 ,   1.00 , P , 38 ,,, 
+Line Type - Block Cell,   1.00 ,   1.00 ,   1.00 , P , 38 ,,, 
+
+// << RF Loss Check >>
+710MHz LOSS,  -7.28 , -25.00 ,   0.00 , P , 38 ,,, 
+750MHz LOSS,  -7.36 , -25.00 ,   0.00 , P , 38 ,,, 
+810MHz LOSS,  -7.21 , -25.00 ,   0.00 , P , 38 ,,, 
+950MHz LOSS,  -7.52 , -25.00 ,   0.00 , P , 38 ,,, 
+1710MHz LOSS,  -8.05 , -25.00 ,   0.00 , P , 38 ,,, 
+1790MHz LOSS,  -8.07 , -25.00 ,   0.00 , P , 38 ,,, 
+1810MHz LOSS,  -8.08 , -25.00 ,   0.00 , P , 38 ,,, 
+1910MHz LOSS,  -8.20 , -25.00 ,   0.00 , P , 38 ,,, 
+1930MHz LOSS,  -8.17 , -25.00 ,   0.00 , P , 38 ,,, 
+1990MHz LOSS,  -8.17 , -25.00 ,   0.00 , P , 38 ,,, 
+2100MHz LOSS,  -8.34 , -25.00 ,   0.00 , P , 38 ,,, 
+2170MHz LOSS,  -8.41 , -25.00 ,   0.00 , P , 38 ,,, 
+2200MHz LOSS,  -8.24 , -25.00 ,   0.00 , P , 38 ,,, 
+2400MHz LOSS,  -8.46 , -25.00 ,   0.00 , P , 38 ,,, 
+2700MHz LOSS,  -8.46 , -25.00 ,   0.00 , P , 38 ,,, 
+
+// << Initial Non-RF >>
+Model Name Read, GT-N7105, GT-N7105, GT-N7105, P, 38
+FactoLog On,   1.00 ,   1.00 ,   1.00 , P , 38 ,,, 
+
+// << Process Omission Check >>
+RF CAL SKIP, P, , , P, 38
+FINAL Test START, E, , , P, 38
+LTE FINAL START, E, , , P, 38
+LCD Off,   1.00 ,   1.00 ,   1.00 , P , 38 ,,, 
+Enter Test Mode,   1.00 ,   1.00 ,   1.00 , P , 41 ,,, 
+
+// << LTE03 19255(UL) >>
+LTE03 TEST CHANNEL, 19255.00 , 19200.00 , 19949.00 , P , 45 ,,, 
+LTE03 Tx Power,  21.19 ,  20.50 ,  24.50 , P , 48 ,,, 
+LTE03 Low EVM,   2.05 ,   0.00 ,  17.50 , P , 48 ,,, 
+LTE03 High EVM,  14.34 ,   0.00 ,  17.50 , P , 48 ,,, 
+LTE03 I/Q Offset, -37.75 , -100.00 , -25.00 , P , 48 ,,, 
+LTE03 Frequency Error,   4.26 , -170.00 , 170.00 , P , 48 ,,, 
+LTE03 RX Ref-Sens -86.0 dBm,   0.00 ,   0.00 ,   5.00 , P , 48 ,,, 
+LTE03 RX 2nd RSSI -85.0 dBm, -84.60 , -95.00 , -75.00 , P , 49 ,,, 
+
+// << LTE07 20805(UL) >>
+LTE07 TEST CHANNEL, 20805.00 , 20750.00 , 20750.00 , P , 50 ,,, 
+LTE07 Tx Power,  21.06 ,  20.50 ,  24.50 , P , 52 ,,, 
+LTE07 Low EVM,   3.59 ,   0.00 ,  17.50 , P , 52 ,,, 
+LTE07 High EVM,  14.39 ,   0.00 ,  17.50 , P , 52 ,,, 
+LTE07 I/Q Offset, -34.78 , -100.00 , -25.00 , P , 52 ,,, 
+LTE07 Frequency Error, -48.94 , -170.00 , 170.00 , P , 52 ,,, 
+LTE07 RX Ref-Sens -87.0 dBm,   0.20 ,   0.00 ,   5.00 , P , 53 ,,, 
+LTE07 RX 2nd RSSI -85.0 dBm, -84.70 , -95.00 , -75.00 , P , 54 ,,, 
+
+// << LTE08 21505(UL) >>
+LTE08 TEST CHANNEL, 21505.00 , 21450.00 , 21450.00 , P , 54 ,,, 
+LTE08 Tx Power,  21.61 ,  20.50 ,  24.50 , P , 56 ,,, 
+LTE08 Low EVM,   1.20 ,   0.00 ,  17.50 , P , 56 ,,, 
+LTE08 High EVM,  13.64 ,   0.00 ,  17.50 , P , 56 ,,, 
+LTE08 I/Q Offset, -40.07 , -100.00 , -25.00 , P , 56 ,,, 
+LTE08 Frequency Error,  -1.84 , -80.00 ,  80.00 , P , 56 ,,, 
+LTE08 RX Ref-Sens -86.0 dBm,   0.00 ,   0.00 ,   5.00 , P , 57 ,,, 
+LTE08 RX 2nd RSSI -86.0 dBm, -86.40 , -95.00 , -75.00 , P , 58 ,,, 
+
+// << LTE20 24205(UL) >>
+LTE20 TEST CHANNEL, 24205.00 , 24150.00 , 24150.00 , P , 59 ,,, 
+LTE20 Tx Power,  21.82 ,  20.50 ,  24.50 , P , 61 ,,, 
+LTE20 Low EVM,   1.57 ,   0.00 ,  17.50 , P , 61 ,,, 
+LTE20 High EVM,   8.79 ,   0.00 ,  17.50 , P , 61 ,,, 
+LTE20 I/Q Offset, -40.91 , -100.00 , -25.00 , P , 61 ,,, 
+LTE20 Frequency Error,   3.97 , -80.00 ,  80.00 , P , 61 ,,, 
+LTE20 RX Ref-Sens -86.0 dBm,   0.20 ,   0.00 ,   5.00 , P , 61 ,,, 
+LTE20 RX 2nd RSSI -85.0 dBm, -84.60 , -95.00 , -75.00 , P , 62 ,,, 
+
+// << WCDMA2100(BC1) 10570(DL) >>
+WCDMA2100 TEST CHANNEL, 10570.00 , 10562.00 , 10838.00 , P , 63 ,,, 
+WCDMA2100 Max Output Power,  22.53 ,  21.30 ,  23.70 , P , 65 ,,, 
+WCDMA2100 EVM,   2.29 ,   0.00 ,  15.50 , P , 65 ,,, 
+WCDMA2100 Frequency Error,   9.09 , -180.00 , 180.00 , P , 65 ,,, 
+WCDMA2100 BER -106.7 dBm,   0.00 ,   0.00 ,   0.08 , P , 67 ,,, 
+WCDMA2100 RSCP -75.0 dBm,  -0.20 ,  -4.00 ,   4.00 , P , 67 ,,, 
+
+// << WCDMA900(BC8) 2959(DL) >>
+WCDMA900 TEST CHANNEL, 2959.00 , 2937.00 , 3088.00 , P , 68 ,,, 
+WCDMA900 Max Output Power,  22.06 ,  21.30 ,  23.70 , P , 69 ,,, 
+WCDMA900 EVM,   1.18 ,   0.00 ,  15.50 , P , 69 ,,, 
+WCDMA900 Frequency Error,   1.13 , -80.00 ,  80.00 , P , 69 ,,, 
+WCDMA900 BER -105.0 dBm,   0.00 ,   0.00 ,   0.08 , P , 72 ,,, 
+WCDMA900 RSCP -75.0 dBm,   0.00 ,  -4.00 ,   4.00 , P , 72 ,,, 
+
+// << GSM900 CH: 980 >>
+GSM900 TEST CHANNEL, 980.00 , 975.00 , 1023.00 , P , 75 ,,, 
+GSM900 TX Power 5 Level,  32.95 ,  31.30 ,  33.70 , P , 76 ,,, 
+GSM900 Phase Error RMS,   0.85 ,   0.00 ,   4.50 , P , 76 ,,, 
+GSM900 Phase Error Peak,   4.40 ,   0.00 ,  18.00 , P , 76 ,,, 
+GSM900 Frequency Error,  -3.10 , -80.00 ,  80.00 , P , 76 ,,, 
+GSM900 BER -103.0 dBm,   0.00 ,   0.00 ,   2.40 , P , 76 ,,, 
+GSM900 RX Level -103.0 dBm,   1.00 ,  -3.00 ,   3.00 , P , 77 ,,, 
+
+// << DCS1800 CH: 517 >>
+DCS1800 TEST CHANNEL, 517.00 , 512.00 , 885.00 , P , 77 ,,, 
+DCS1800 TX Power 0 Level,  29.90 ,  28.30 ,  30.70 , P , 78 ,,, 
+DCS1800 Phase Error RMS,   1.20 ,   0.00 ,   4.50 , P , 78 ,,, 
+DCS1800 Phase Error Peak,   5.98 ,   0.00 ,  18.00 , P , 78 ,,, 
+DCS1800 Frequency Error,  -3.20 , -170.00 , 170.00 , P , 78 ,,, 
+DCS1800 BER -103.0 dBm,   0.02 ,   0.00 ,   2.40 , P , 79 ,,, 
+DCS1800 RX Level -103.0 dBm,   1.00 ,  -3.00 ,   3.00 , P , 79 ,,, 
+
+// << WCDMA2100(BC1) 10693(DL) 2nd RSSI >>
+WCDMA2100 2nd RSSI AGC -85.0 dBm, -292.00 , -520.00 , -170.00 , P , 81 ,,, 
+
+// << WCDMA900(BC8) 3012(DL) 2nd RSSI >>
+WCDMA900 2nd RSSI AGC -85.0 dBm, -299.00 , -520.00 , -170.00 , P , 82 ,,, 
+
+// << FTM Mode Change >>
+FTM Mode : Off,,,, P , 84 , 1 , 1 , 1 
+eMMC EFS Sync,,,, P , 87 , 1 , 1 , 1 
+
+// << Band Setting >>
+END BAND : AUTO,,,, P , 90 , 1 , 1 , 1 
+FINAL Test END, P, , , P, 90
+LTE FINAL END, P, , , P, 90
+FactoLog Off,   1.00 ,   1.00 ,   1.00 , P , 90 ,,, 
+
+#END
+RESULT : PASS
+ERROR-CODE : 
+TEST-TIME : 91
+RF TEST-TIME : 46
+NON-RF TEST-TIME : 45
+//PASS_AVERAGE_TIME : 1511828489
+//Total : 6 Pass : 6 Fail : 0
+//FAIL_RATE : 0%
+
+
+
+
+#INIT
+MODEL : GT-N7105
+P/N : CMAF7E10FF1F59F
+S/W : N7105ZHALJ4
+DATE : 2013/02/21
+TIME : 22:57:23
+TESTCODE : TOP42
+LOGVERSION : Ver 2.4
+INSTRUMENT : IQXS3178/LitePoint/IQxstream
+FIRMWARE : 1.20.0
+FIRMWARE_GPRF Gen/Meas/Sig : //
+FIRMWARE_GSM Gen/Meas/Sig : //
+FIRMWARE_WCDMA Gen/Meas/Sig : //
+FIRMWARE_LTE Gen/Meas/Sig : //
+FIRMWARE_1xEV-DO Gen/Meas/Sig : //
+FIRMWARE_CDMA2000 Gen/Meas/Sig : //
+FIRMWARE_TD-SCDMA Gen/Meas/Sig : //
+FIRMWARE_WiMAX Gen/Meas/Sig : //
+FIRMWARE_WLAN Gen/Meas/Sig : //
+WAVEFORM : 
+PC_CPU : 3.39 GHz/8-Core
+PC_RAM(Available) : 3558 MB
+PC_DISK(C-Drive free/Total) : 85188/122001 MB
+PC_OS : Microsoft Windows 7 Enterprise Edition (build 7600) 32-bit
+JIG : 1
+PROGRAM : DASEUL_Runtime_Ver_3.1.62.0
+ENTERPRISE : 
+INIFILE : GT-N7105_FINAL_AUTO_Ver_3.1.60.3_T1
+IMEINO : 
+SKU : 
+HW : 
+
+#TEST
+/*================================================================================
+Test Conditions, Measured Value, Lower Limit, Upper Limit, P/F, Sec, Code, Code Lsl, Code Usl
+================================================================================*/
+// Model info - Booting Time: 60 
+Booting Time,  34.00 ,   0.00 ,  34.00 , P , 37 ,,, 
+Final Call connect Type - NonSignaling,   1.00 ,   1.00 ,   1.00 , P , 37 ,,, 
+Line Type - Block Cell,   1.00 ,   1.00 ,   1.00 , P , 37 ,,, 
+
+// << RF Loss Check >>
+710MHz LOSS,  -7.28 , -25.00 ,   0.00 , P , 37 ,,, 
+750MHz LOSS,  -7.36 , -25.00 ,   0.00 , P , 37 ,,, 
+810MHz LOSS,  -7.21 , -25.00 ,   0.00 , P , 37 ,,, 
+950MHz LOSS,  -7.52 , -25.00 ,   0.00 , P , 37 ,,, 
+1710MHz LOSS,  -8.05 , -25.00 ,   0.00 , P , 37 ,,, 
+1790MHz LOSS,  -8.07 , -25.00 ,   0.00 , P , 37 ,,, 
+1810MHz LOSS,  -8.08 , -25.00 ,   0.00 , P , 37 ,,, 
+1910MHz LOSS,  -8.20 , -25.00 ,   0.00 , P , 37 ,,, 
+1930MHz LOSS,  -8.17 , -25.00 ,   0.00 , P , 37 ,,, 
+1990MHz LOSS,  -8.17 , -25.00 ,   0.00 , P , 37 ,,, 
+2100MHz LOSS,  -8.34 , -25.00 ,   0.00 , P , 37 ,,, 
+2170MHz LOSS,  -8.41 , -25.00 ,   0.00 , P , 37 ,,, 
+2200MHz LOSS,  -8.24 , -25.00 ,   0.00 , P , 37 ,,, 
+2400MHz LOSS,  -8.46 , -25.00 ,   0.00 , P , 37 ,,, 
+2700MHz LOSS,  -8.46 , -25.00 ,   0.00 , P , 37 ,,, 
+
+// << Initial Non-RF >>
+Model Name Read, GT-N7105, GT-N7105, GT-N7105, P, 37
+FactoLog On,   1.00 ,   1.00 ,   1.00 , P , 37 ,,, 
+
+// << Process Omission Check >>
+RF CAL SKIP, P, , , P, 37
+FINAL Test START, E, , , P, 37
+LTE FINAL START, E, , , P, 37
+LCD Off,   1.00 ,   1.00 ,   1.00 , P , 38 ,,, 
+Enter Test Mode,   1.00 ,   1.00 ,   1.00 , P , 40 ,,, 
+
+// << LTE03 19255(UL) >>
+LTE03 TEST CHANNEL, 19255.00 , 19200.00 , 19949.00 , P , 45 ,,, 
+LTE03 Tx Power,  21.52 ,  20.50 ,  24.50 , P , 47 ,,, 
+LTE03 Low EVM,   2.31 ,   0.00 ,  17.50 , P , 47 ,,, 
+LTE03 High EVM,  14.71 ,   0.00 ,  17.50 , P , 47 ,,, 
+LTE03 I/Q Offset, -37.73 , -100.00 , -25.00 , P , 47 ,,, 
+LTE03 Frequency Error,   2.80 , -170.00 , 170.00 , P , 47 ,,, 
+LTE03 RX Ref-Sens -86.0 dBm,   0.20 ,   0.00 ,   5.00 , P , 47 ,,, 
+LTE03 RX 2nd RSSI -85.0 dBm, -84.60 , -95.00 , -75.00 , P , 48 ,,, 
+
+// << LTE07 20805(UL) >>
+LTE07 TEST CHANNEL, 20805.00 , 20750.00 , 20750.00 , P , 49 ,,, 
+LTE07 RX Ref-Sens -87.0 dBm,   0.20 ,   0.00 ,   5.00 , P , 51 ,,, 
+LTE07 Tx Power,  21.03 ,  20.50 ,  24.50 , P , 51 ,,, 
+LTE07 Low EVM,   3.39 ,   0.00 ,  17.50 , P , 51 ,,, 
+LTE07 Low EVM,   3.39 ,   0.00 ,  17.50 , P , 51 ,,, 
+LTE07 High EVM,  14.21 ,   0.00 ,  17.50 , P , 51 ,,, 
+LTE07 High EVM,  14.21 ,   0.00 ,  17.50 , P , 51 ,,, 
+LTE07 I/Q Offset, -34.78 , -100.00 , -25.00 , P , 51 ,,, 
+LTE07 I/Q Offset, -34.78 , -100.00 , -25.00 , P , 51 ,,, 
+LTE07 Frequency Error, -31.18 , -170.00 , 170.00 , P , 51 ,,, 
+LTE07 Frequency Error, -31.18 , -170.00 , 170.00 , P , 51 ,,, 
+LTE07 RX 2nd RSSI -85.0 dBm, -84.70 , -95.00 , -75.00 , P , 52 ,,, 
+
+// << LTE08 21505(UL) >>
+LTE08 TEST CHANNEL, 21505.00 , 21450.00 , 21450.00 , P , 53 ,,, 
+LTE08 Tx Power,  21.60 ,  20.50 ,  24.50 , P , 55 ,,, 
+LTE08 Low EVM,   1.16 ,   0.00 ,  17.50 , P , 55 ,,, 
+LTE08 High EVM,  14.52 ,   0.00 ,  17.50 , P , 55 ,,, 
+LTE08 I/Q Offset, -40.28 , -100.00 , -25.00 , P , 55 ,,, 
+LTE08 Frequency Error,  -2.02 , -80.00 ,  80.00 , P , 55 ,,, 
+LTE08 RX Ref-Sens -86.0 dBm,   0.29 ,   0.00 ,   5.00 , P , 55 ,,, 
+LTE08 RX 2nd RSSI -86.0 dBm, -86.30 , -95.00 , -75.00 , P , 56 ,,, 
+
+// << LTE20 24205(UL) >>
+LTE20 TEST CHANNEL, 24205.00 , 24150.00 , 24150.00 , P , 57 ,,, 
+LTE20 Tx Power,  21.87 ,  20.50 ,  24.50 , P , 59 ,,, 
+LTE20 Low EVM,   1.40 ,   0.00 ,  17.50 , P , 59 ,,, 
+LTE20 High EVM,   9.69 ,   0.00 ,  17.50 , P , 59 ,,, 
+LTE20 I/Q Offset, -39.75 , -100.00 , -25.00 , P , 59 ,,, 
+LTE20 Frequency Error,   5.59 , -80.00 ,  80.00 , P , 59 ,,, 
+LTE20 RX Ref-Sens -86.0 dBm,   0.20 ,   0.00 ,   5.00 , P , 59 ,,, 
+LTE20 RX 2nd RSSI -85.0 dBm, -84.60 , -95.00 , -75.00 , P , 60 ,,, 
+
+// << WCDMA2100(BC1) 10570(DL) >>
+WCDMA2100 TEST CHANNEL, 10570.00 , 10562.00 , 10838.00 , P , 62 ,,, 
+WCDMA2100 Max Output Power,  22.49 ,  21.30 ,  23.70 , P , 63 ,,, 
+WCDMA2100 EVM,   2.42 ,   0.00 ,  15.50 , P , 63 ,,, 
+WCDMA2100 Frequency Error,   9.21 , -180.00 , 180.00 , P , 63 ,,, 
+WCDMA2100 BER -106.7 dBm,   0.00 ,   0.00 ,   0.08 , P , 65 ,,, 
+WCDMA2100 RSCP -75.0 dBm,   0.10 ,  -4.00 ,   4.00 , P , 66 ,,, 
+
+// << WCDMA900(BC8) 2959(DL) >>
+WCDMA900 TEST CHANNEL, 2959.00 , 2937.00 , 3088.00 , P , 66 ,,, 
+WCDMA900 Max Output Power,  22.06 ,  21.30 ,  23.70 , P , 68 ,,, 
+WCDMA900 EVM,   1.31 ,   0.00 ,  15.50 , P , 68 ,,, 
+WCDMA900 Frequency Error,   0.79 , -80.00 ,  80.00 , P , 68 ,,, 
+WCDMA900 BER -105.0 dBm,   0.00 ,   0.00 ,   0.08 , P , 70 ,,, 
+WCDMA900 RSCP -75.0 dBm,   0.10 ,  -4.00 ,   4.00 , P , 71 ,,, 
+
+// << GSM900 CH: 980 >>
+GSM900 TEST CHANNEL, 980.00 , 975.00 , 1023.00 , P , 73 ,,, 
+GSM900 TX Power 5 Level,  33.55 ,  31.30 ,  33.70 , P , 74 ,,, 
+GSM900 Phase Error RMS,   0.89 ,   0.00 ,   4.50 , P , 74 ,,, 
+GSM900 Phase Error Peak,   4.59 ,   0.00 ,  18.00 , P , 74 ,,, 
+GSM900 Frequency Error,   9.70 , -80.00 ,  80.00 , P , 74 ,,, 
+GSM900 BER -103.0 dBm,   0.02 ,   0.00 ,   2.40 , P , 75 ,,, 
+GSM900 RX Level -103.0 dBm,   1.00 ,  -3.00 ,   3.00 , P , 75 ,,, 
+
+// << DCS1800 CH: 517 >>
+DCS1800 TEST CHANNEL, 517.00 , 512.00 , 885.00 , P , 76 ,,, 
+DCS1800 TX Power 0 Level,  29.90 ,  28.30 ,  30.70 , P , 77 ,,, 
+DCS1800 Phase Error RMS,   1.15 ,   0.00 ,   4.50 , P , 77 ,,, 
+DCS1800 Phase Error Peak,   5.62 ,   0.00 ,  18.00 , P , 77 ,,, 
+DCS1800 Frequency Error,   1.80 , -170.00 , 170.00 , P , 77 ,,, 
+DCS1800 BER -103.0 dBm,   0.00 ,   0.00 ,   2.40 , P , 78 ,,, 
+DCS1800 RX Level -103.0 dBm,   1.00 ,  -3.00 ,   3.00 , P , 78 ,,, 
+
+// << WCDMA2100(BC1) 10693(DL) 2nd RSSI >>
+WCDMA2100 2nd RSSI AGC -85.0 dBm, -292.00 , -520.00 , -170.00 , P , 80 ,,, 
+
+// << WCDMA900(BC8) 3012(DL) 2nd RSSI >>
+WCDMA900 2nd RSSI AGC -85.0 dBm, -299.00 , -520.00 , -170.00 , P , 81 ,,, 
+
+// << FTM Mode Change >>
+FTM Mode : Off,,,, P , 82 , 1 , 1 , 1 
+eMMC EFS Sync,,,, P , 85 , 1 , 1 , 1 
+
+// << Band Setting >>
+END BAND : AUTO,,,, P , 88 , 1 , 1 , 1 
+FINAL Test END, P, , , P, 88
+LTE FINAL END, P, , , P, 88
+FactoLog Off,   1.00 ,   1.00 ,   1.00 , P , 89 ,,, 
+
+#END
+RESULT : PASS
+ERROR-CODE : 
+TEST-TIME : 90
+RF TEST-TIME : 45
+NON-RF TEST-TIME : 45
+//PASS_AVERAGE_TIME : 1511828489
+//Total : 7 Pass : 7 Fail : 0
+//FAIL_RATE : 0%
+
+
+
+
+#INIT
+MODEL : GT-N7105
+P/N : CMAF7E10FF1F59F
+S/W : N7105ZHALJ4
+DATE : 2013/02/21
+TIME : 22:59:16
+TESTCODE : TOP42
+LOGVERSION : Ver 2.4
+INSTRUMENT : IQXS3178/LitePoint/IQxstream
+FIRMWARE : 1.20.0
+FIRMWARE_GPRF Gen/Meas/Sig : //
+FIRMWARE_GSM Gen/Meas/Sig : //
+FIRMWARE_WCDMA Gen/Meas/Sig : //
+FIRMWARE_LTE Gen/Meas/Sig : //
+FIRMWARE_1xEV-DO Gen/Meas/Sig : //
+FIRMWARE_CDMA2000 Gen/Meas/Sig : //
+FIRMWARE_TD-SCDMA Gen/Meas/Sig : //
+FIRMWARE_WiMAX Gen/Meas/Sig : //
+FIRMWARE_WLAN Gen/Meas/Sig : //
+WAVEFORM : 
+PC_CPU : 3.39 GHz/8-Core
+PC_RAM(Available) : 3558 MB
+PC_DISK(C-Drive free/Total) : 85188/122001 MB
+PC_OS : Microsoft Windows 7 Enterprise Edition (build 7600) 32-bit
+JIG : 1
+PROGRAM : DASEUL_Runtime_Ver_3.1.62.0
+ENTERPRISE : 
+INIFILE : GT-N7105_FINAL_AUTO_Ver_3.1.60.3_T1
+IMEINO : 
+SKU : 
+HW : 
+
+#TEST
+/*================================================================================
+Test Conditions, Measured Value, Lower Limit, Upper Limit, P/F, Sec, Code, Code Lsl, Code Usl
+================================================================================*/
+// Model info - Booting Time: 60 
+Booting Time,  35.00 ,   0.00 ,  35.00 , P , 38 ,,, 
+Final Call connect Type - NonSignaling,   1.00 ,   1.00 ,   1.00 , P , 38 ,,, 
+Line Type - Block Cell,   1.00 ,   1.00 ,   1.00 , P , 38 ,,, 
+
+// << RF Loss Check >>
+710MHz LOSS,  -7.28 , -25.00 ,   0.00 , P , 38 ,,, 
+750MHz LOSS,  -7.36 , -25.00 ,   0.00 , P , 38 ,,, 
+810MHz LOSS,  -7.21 , -25.00 ,   0.00 , P , 38 ,,, 
+950MHz LOSS,  -7.52 , -25.00 ,   0.00 , P , 38 ,,, 
+1710MHz LOSS,  -8.05 , -25.00 ,   0.00 , P , 38 ,,, 
+1790MHz LOSS,  -8.07 , -25.00 ,   0.00 , P , 38 ,,, 
+1810MHz LOSS,  -8.08 , -25.00 ,   0.00 , P , 38 ,,, 
+1910MHz LOSS,  -8.20 , -25.00 ,   0.00 , P , 38 ,,, 
+1930MHz LOSS,  -8.17 , -25.00 ,   0.00 , P , 38 ,,, 
+1990MHz LOSS,  -8.17 , -25.00 ,   0.00 , P , 38 ,,, 
+2100MHz LOSS,  -8.34 , -25.00 ,   0.00 , P , 38 ,,, 
+2170MHz LOSS,  -8.41 , -25.00 ,   0.00 , P , 38 ,,, 
+2200MHz LOSS,  -8.24 , -25.00 ,   0.00 , P , 38 ,,, 
+2400MHz LOSS,  -8.46 , -25.00 ,   0.00 , P , 38 ,,, 
+2700MHz LOSS,  -8.46 , -25.00 ,   0.00 , P , 38 ,,, 
+
+// << Initial Non-RF >>
+Model Name Read, GT-N7105, GT-N7105, GT-N7105, P, 38
+FactoLog On,   1.00 ,   1.00 ,   1.00 , P , 38 ,,, 
+
+// << Process Omission Check >>
+RF CAL SKIP, P, , , P, 38
+FINAL Test START, E, , , P, 38
+LTE FINAL START, E, , , P, 39
+LCD Off,   1.00 ,   1.00 ,   1.00 , P , 39 ,,, 
+Enter Test Mode,   1.00 ,   1.00 ,   1.00 , P , 41 ,,, 
+
+// << LTE03 19255(UL) >>
+LTE03 TEST CHANNEL, 19255.00 , 19200.00 , 19949.00 , P , 46 ,,, 
+LTE03 Tx Power,  21.21 ,  20.50 ,  24.50 , P , 47 ,,, 
+LTE03 Low EVM,   2.07 ,   0.00 ,  17.50 , P , 47 ,,, 
+LTE03 High EVM,  13.77 ,   0.00 ,  17.50 , P , 47 ,,, 
+LTE03 I/Q Offset, -37.81 , -100.00 , -25.00 , P , 47 ,,, 
+LTE03 Frequency Error, -12.62 , -170.00 , 170.00 , P , 47 ,,, 
+LTE03 RX Ref-Sens -86.0 dBm,   0.10 ,   0.00 ,   5.00 , P , 48 ,,, 
+LTE03 RX 2nd RSSI -85.0 dBm, -84.60 , -95.00 , -75.00 , P , 49 ,,, 
+
+// << LTE07 20805(UL) >>
+LTE07 TEST CHANNEL, 20805.00 , 20750.00 , 20750.00 , P , 50 ,,, 
+LTE07 Tx Power,  20.95 ,  20.50 ,  24.50 , P , 52 ,,, 
+LTE07 Low EVM,   3.36 ,   0.00 ,  17.50 , P , 52 ,,, 
+LTE07 High EVM,  14.72 ,   0.00 ,  17.50 , P , 52 ,,, 
+LTE07 I/Q Offset, -34.37 , -100.00 , -25.00 , P , 52 ,,, 
+LTE07 Frequency Error, -37.02 , -170.00 , 170.00 , P , 52 ,,, 
+LTE07 RX Ref-Sens -87.0 dBm,   0.20 ,   0.00 ,   5.00 , P , 52 ,,, 
+LTE07 RX 2nd RSSI -85.0 dBm, -84.70 , -95.00 , -75.00 , P , 53 ,,, 
+
+// << LTE08 21505(UL) >>
+LTE08 TEST CHANNEL, 21505.00 , 21450.00 , 21450.00 , P , 54 ,,, 
+LTE08 Tx Power,  21.71 ,  20.50 ,  24.50 , P , 56 ,,, 
+LTE08 Low EVM,   1.14 ,   0.00 ,  17.50 , P , 56 ,,, 
+LTE08 High EVM,  12.46 ,   0.00 ,  17.50 , P , 56 ,,, 
+LTE08 I/Q Offset, -40.08 , -100.00 , -25.00 , P , 56 ,,, 
+LTE08 Frequency Error,   2.37 , -80.00 ,  80.00 , P , 56 ,,, 
+LTE08 RX Ref-Sens -86.0 dBm,   0.19 ,   0.00 ,   5.00 , P , 56 ,,, 
+LTE08 RX 2nd RSSI -86.0 dBm, -86.40 , -95.00 , -75.00 , P , 57 ,,, 
+
+// << LTE20 24205(UL) >>
+LTE20 TEST CHANNEL, 24205.00 , 24150.00 , 24150.00 , P , 58 ,,, 
+LTE20 Tx Power,  21.81 ,  20.50 ,  24.50 , P , 60 ,,, 
+LTE20 Low EVM,   1.55 ,   0.00 ,  17.50 , P , 60 ,,, 
+LTE20 High EVM,   8.70 ,   0.00 ,  17.50 , P , 60 ,,, 
+LTE20 I/Q Offset, -40.96 , -100.00 , -25.00 , P , 60 ,,, 
+LTE20 Frequency Error,   2.68 , -80.00 ,  80.00 , P , 60 ,,, 
+LTE20 RX Ref-Sens -86.0 dBm,   0.10 ,   0.00 ,   5.00 , P , 60 ,,, 
+LTE20 RX 2nd RSSI -85.0 dBm, -84.60 , -95.00 , -75.00 , P , 61 ,,, 
+
+// << WCDMA2100(BC1) 10570(DL) >>
+WCDMA2100 TEST CHANNEL, 10570.00 , 10562.00 , 10838.00 , P , 63 ,,, 
+WCDMA2100 Max Output Power,  22.51 ,  21.30 ,  23.70 , P , 64 ,,, 
+WCDMA2100 EVM,   2.04 ,   0.00 ,  15.50 , P , 64 ,,, 
+WCDMA2100 Frequency Error,   9.83 , -180.00 , 180.00 , P , 64 ,,, 
+WCDMA2100 BER -106.7 dBm,   0.00 ,   0.00 ,   0.08 , P , 66 ,,, 
+WCDMA2100 RSCP -75.0 dBm,  -0.30 ,  -4.00 ,   4.00 , P , 67 ,,, 
+
+// << WCDMA900(BC8) 2959(DL) >>
+WCDMA900 TEST CHANNEL, 2959.00 , 2937.00 , 3088.00 , P , 68 ,,, 
+WCDMA900 Max Output Power,  22.06 ,  21.30 ,  23.70 , P , 69 ,,, 
+WCDMA900 EVM,   1.19 ,   0.00 ,  15.50 , P , 69 ,,, 
+WCDMA900 Frequency Error,   1.58 , -80.00 ,  80.00 , P , 69 ,,, 
+WCDMA900 BER -105.0 dBm,   0.00 ,   0.00 ,   0.08 , P , 71 ,,, 
+WCDMA900 RSCP -75.0 dBm,   0.10 ,  -4.00 ,   4.00 , P , 72 ,,, 
+
+// << GSM900 CH: 980 >>
+GSM900 TEST CHANNEL, 980.00 , 975.00 , 1023.00 , P , 74 ,,, 
+GSM900 TX Power 5 Level,  33.54 ,  31.30 ,  33.70 , P , 75 ,,, 
+GSM900 Phase Error RMS,   0.87 ,   0.00 ,   4.50 , P , 75 ,,, 
+GSM900 Phase Error Peak,   4.32 ,   0.00 ,  18.00 , P , 75 ,,, 
+GSM900 Frequency Error,   1.60 , -80.00 ,  80.00 , P , 75 ,,, 
+GSM900 BER -103.0 dBm,   0.02 ,   0.00 ,   2.40 , P , 76 ,,, 
+GSM900 RX Level -103.0 dBm,   1.00 ,  -3.00 ,   3.00 , P , 76 ,,, 
+
+// << DCS1800 CH: 517 >>
+DCS1800 TEST CHANNEL, 517.00 , 512.00 , 885.00 , P , 77 ,,, 
+DCS1800 TX Power 0 Level,  29.90 ,  28.30 ,  30.70 , P , 78 ,,, 
+DCS1800 Phase Error RMS,   1.18 ,   0.00 ,   4.50 , P , 78 ,,, 
+DCS1800 Phase Error Peak,   6.09 ,   0.00 ,  18.00 , P , 78 ,,, 
+DCS1800 Frequency Error, -16.50 , -170.00 , 170.00 , P , 78 ,,, 
+DCS1800 BER -103.0 dBm,   0.01 ,   0.00 ,   2.40 , P , 79 ,,, 
+DCS1800 RX Level -103.0 dBm,   1.00 ,  -3.00 ,   3.00 , P , 79 ,,, 
+
+// << WCDMA2100(BC1) 10693(DL) 2nd RSSI >>
+WCDMA2100 2nd RSSI AGC -85.0 dBm, -292.00 , -520.00 , -170.00 , P , 81 ,,, 
+
+// << WCDMA900(BC8) 3012(DL) 2nd RSSI >>
+WCDMA900 2nd RSSI AGC -85.0 dBm, -299.00 , -520.00 , -170.00 , P , 82 ,,, 
+
+// << FTM Mode Change >>
+FTM Mode : Off,,,, P , 83 , 1 , 1 , 1 
+eMMC EFS Sync,,,, P , 86 , 1 , 1 , 1 
+
+// << Band Setting >>
+END BAND : AUTO,,,, P , 89 , 1 , 1 , 1 
+FINAL Test END, P, , , P, 89
+LTE FINAL END, P, , , P, 90
+FactoLog Off,   1.00 ,   1.00 ,   1.00 , P , 90 ,,, 
+
+#END
+RESULT : PASS
+ERROR-CODE : 
+TEST-TIME : 91
+RF TEST-TIME : 45
+NON-RF TEST-TIME : 46
+//PASS_AVERAGE_TIME : 1511828489
+//Total : 8 Pass : 8 Fail : 0
+//FAIL_RATE : 0%
+
+
+
+
+#INIT
+MODEL : GT-N7105
+P/N : CMAF7E10FF1F59F
+S/W : N7105ZHALJ4
+DATE : 2013/02/21
+TIME : 23:01:08
+TESTCODE : TOP42
+LOGVERSION : Ver 2.4
+INSTRUMENT : IQXS3178/LitePoint/IQxstream
+FIRMWARE : 1.20.0
+FIRMWARE_GPRF Gen/Meas/Sig : //
+FIRMWARE_GSM Gen/Meas/Sig : //
+FIRMWARE_WCDMA Gen/Meas/Sig : //
+FIRMWARE_LTE Gen/Meas/Sig : //
+FIRMWARE_1xEV-DO Gen/Meas/Sig : //
+FIRMWARE_CDMA2000 Gen/Meas/Sig : //
+FIRMWARE_TD-SCDMA Gen/Meas/Sig : //
+FIRMWARE_WiMAX Gen/Meas/Sig : //
+FIRMWARE_WLAN Gen/Meas/Sig : //
+WAVEFORM : 
+PC_CPU : 3.39 GHz/8-Core
+PC_RAM(Available) : 3558 MB
+PC_DISK(C-Drive free/Total) : 85188/122001 MB
+PC_OS : Microsoft Windows 7 Enterprise Edition (build 7600) 32-bit
+JIG : 1
+PROGRAM : DASEUL_Runtime_Ver_3.1.62.0
+ENTERPRISE : 
+INIFILE : GT-N7105_FINAL_AUTO_Ver_3.1.60.3_T1
+IMEINO : 
+SKU : 
+HW : 
+
+#TEST
+/*================================================================================
+Test Conditions, Measured Value, Lower Limit, Upper Limit, P/F, Sec, Code, Code Lsl, Code Usl
+================================================================================*/
+// Model info - Booting Time: 60 
+Booting Time,  34.00 ,   0.00 ,  34.00 , P , 37 ,,, 
+Final Call connect Type - NonSignaling,   1.00 ,   1.00 ,   1.00 , P , 37 ,,, 
+Line Type - Block Cell,   1.00 ,   1.00 ,   1.00 , P , 37 ,,, 
+
+// << RF Loss Check >>
+710MHz LOSS,  -7.28 , -25.00 ,   0.00 , P , 37 ,,, 
+750MHz LOSS,  -7.36 , -25.00 ,   0.00 , P , 37 ,,, 
+810MHz LOSS,  -7.21 , -25.00 ,   0.00 , P , 37 ,,, 
+950MHz LOSS,  -7.52 , -25.00 ,   0.00 , P , 37 ,,, 
+1710MHz LOSS,  -8.05 , -25.00 ,   0.00 , P , 37 ,,, 
+1790MHz LOSS,  -8.07 , -25.00 ,   0.00 , P , 37 ,,, 
+1810MHz LOSS,  -8.08 , -25.00 ,   0.00 , P , 37 ,,, 
+1910MHz LOSS,  -8.20 , -25.00 ,   0.00 , P , 37 ,,, 
+1930MHz LOSS,  -8.17 , -25.00 ,   0.00 , P , 37 ,,, 
+1990MHz LOSS,  -8.17 , -25.00 ,   0.00 , P , 37 ,,, 
+2100MHz LOSS,  -8.34 , -25.00 ,   0.00 , P , 37 ,,, 
+2170MHz LOSS,  -8.41 , -25.00 ,   0.00 , P , 37 ,,, 
+2200MHz LOSS,  -8.24 , -25.00 ,   0.00 , P , 37 ,,, 
+2400MHz LOSS,  -8.46 , -25.00 ,   0.00 , P , 37 ,,, 
+2700MHz LOSS,  -8.46 , -25.00 ,   0.00 , P , 37 ,,, 
+
+// << Initial Non-RF >>
+Model Name Read, GT-N7105, GT-N7105, GT-N7105, P, 37
+FactoLog On,   1.00 ,   1.00 ,   1.00 , P , 37 ,,, 
+
+// << Process Omission Check >>
+RF CAL SKIP, P, , , P, 37
+FINAL Test START, E, , , P, 38
+LTE FINAL START, E, , , P, 38
+LCD Off,   1.00 ,   1.00 ,   1.00 , P , 38 ,,, 
+Enter Test Mode,   1.00 ,   1.00 ,   1.00 , P , 40 ,,, 
+
+// << LTE03 19255(UL) >>
+LTE03 TEST CHANNEL, 19255.00 , 19200.00 , 19949.00 , P , 45 ,,, 
+LTE03 RX Ref-Sens -86.0 dBm,   0.00 ,   0.00 ,   5.00 , P , 47 ,,, 
+LTE03 Tx Power,  21.59 ,  20.50 ,  24.50 , P , 48 ,,, 
+LTE03 Low EVM,   2.24 ,   0.00 ,  17.50 , P , 48 ,,, 
+LTE03 High EVM,  14.72 ,   0.00 ,  17.50 , P , 48 ,,, 
+LTE03 I/Q Offset, -37.79 , -100.00 , -25.00 , P , 48 ,,, 
+LTE03 Frequency Error, -10.07 , -170.00 , 170.00 , P , 48 ,,, 
+LTE03 RX 2nd RSSI -85.0 dBm, -84.70 , -95.00 , -75.00 , P , 49 ,,, 
+
+// << LTE07 20805(UL) >>
+LTE07 TEST CHANNEL, 20805.00 , 20750.00 , 20750.00 , P , 50 ,,, 
+LTE07 RX Ref-Sens -87.0 dBm,   0.29 ,   0.00 ,   5.00 , P , 52 ,,, 
+LTE07 Tx Power,  21.02 ,  20.50 ,  24.50 , P , 52 ,,, 
+LTE07 Low EVM,   3.33 ,   0.00 ,  17.50 , P , 52 ,,, 
+LTE07 High EVM,  14.68 ,   0.00 ,  17.50 , P , 52 ,,, 
+LTE07 I/Q Offset, -34.85 , -100.00 , -25.00 , P , 52 ,,, 
+LTE07 Frequency Error, -21.34 , -170.00 , 170.00 , P , 52 ,,, 
+LTE07 RX 2nd RSSI -85.0 dBm, -84.70 , -95.00 , -75.00 , P , 53 ,,, 
+
+// << LTE08 21505(UL) >>
+LTE08 TEST CHANNEL, 21505.00 , 21450.00 , 21450.00 , P , 54 ,,, 
+LTE08 Tx Power,  21.70 ,  20.50 ,  24.50 , P , 55 ,,, 
+LTE08 Low EVM,   1.19 ,   0.00 ,  17.50 , P , 55 ,,, 
+LTE08 High EVM,  14.34 ,   0.00 ,  17.50 , P , 55 ,,, 
+LTE08 I/Q Offset, -40.43 , -100.00 , -25.00 , P , 55 ,,, 
+LTE08 Frequency Error,   0.98 , -80.00 ,  80.00 , P , 55 ,,, 
+LTE08 RX Ref-Sens -86.0 dBm,   0.29 ,   0.00 ,   5.00 , P , 56 ,,, 
+LTE08 RX 2nd RSSI -86.0 dBm, -86.40 , -95.00 , -75.00 , P , 57 ,,, 
+
+// << LTE20 24205(UL) >>
+LTE20 TEST CHANNEL, 24205.00 , 24150.00 , 24150.00 , P , 58 ,,, 
+LTE20 Tx Power,  21.86 ,  20.50 ,  24.50 , P , 60 ,,, 
+LTE20 Low EVM,   1.39 ,   0.00 ,  17.50 , P , 60 ,,, 
+LTE20 High EVM,   9.20 ,   0.00 ,  17.50 , P , 60 ,,, 
+LTE20 I/Q Offset, -39.75 , -100.00 , -25.00 , P , 60 ,,, 
+LTE20 Frequency Error,   6.84 , -80.00 ,  80.00 , P , 60 ,,, 
+LTE20 RX Ref-Sens -86.0 dBm,   0.00 ,   0.00 ,   5.00 , P , 60 ,,, 
+LTE20 RX 2nd RSSI -85.0 dBm, -84.60 , -95.00 , -75.00 , P , 61 ,,, 
+
+// << WCDMA2100(BC1) 10570(DL) >>
+WCDMA2100 TEST CHANNEL, 10570.00 , 10562.00 , 10838.00 , P , 63 ,,, 
+WCDMA2100 Max Output Power,  22.54 ,  21.30 ,  23.70 , P , 64 ,,, 
+WCDMA2100 EVM,   2.18 ,   0.00 ,  15.50 , P , 64 ,,, 
+WCDMA2100 Frequency Error,   8.73 , -180.00 , 180.00 , P , 64 ,,, 
+WCDMA2100 BER -106.7 dBm,   0.00 ,   0.00 ,   0.08 , P , 66 ,,, 
+WCDMA2100 RSCP -75.0 dBm,  -0.30 ,  -4.00 ,   4.00 , P , 67 ,,, 
+
+// << WCDMA900(BC8) 2959(DL) >>
+WCDMA900 TEST CHANNEL, 2959.00 , 2937.00 , 3088.00 , P , 67 ,,, 
+WCDMA900 Max Output Power,  21.92 ,  21.30 ,  23.70 , P , 69 ,,, 
+WCDMA900 EVM,   1.26 ,   0.00 ,  15.50 , P , 69 ,,, 
+WCDMA900 Frequency Error,  -0.25 , -80.00 ,  80.00 , P , 69 ,,, 
+WCDMA900 BER -105.0 dBm,   0.00 ,   0.00 ,   0.08 , P , 71 ,,, 
+WCDMA900 RSCP -75.0 dBm,  -0.20 ,  -4.00 ,   4.00 , P , 71 ,,, 
+
+// << GSM900 CH: 980 >>
+GSM900 TEST CHANNEL, 980.00 , 975.00 , 1023.00 , P , 74 ,,, 
+GSM900 TX Power 5 Level,  33.54 ,  31.30 ,  33.70 , P , 75 ,,, 
+GSM900 Phase Error RMS,   0.90 ,   0.00 ,   4.50 , P , 75 ,,, 
+GSM900 Phase Error Peak,   4.45 ,   0.00 ,  18.00 , P , 75 ,,, 
+GSM900 Frequency Error,   3.70 , -80.00 ,  80.00 , P , 75 ,,, 
+GSM900 BER -103.0 dBm,   0.01 ,   0.00 ,   2.40 , P , 76 ,,, 
+GSM900 RX Level -103.0 dBm,   1.00 ,  -3.00 ,   3.00 , P , 76 ,,, 
+
+// << DCS1800 CH: 517 >>
+DCS1800 TEST CHANNEL, 517.00 , 512.00 , 885.00 , P , 76 ,,, 
+DCS1800 TX Power 0 Level,  29.89 ,  28.30 ,  30.70 , P , 78 ,,, 
+DCS1800 Phase Error RMS,   1.20 ,   0.00 ,   4.50 , P , 78 ,,, 
+DCS1800 Phase Error Peak,   6.15 ,   0.00 ,  18.00 , P , 78 ,,, 
+DCS1800 Frequency Error,  -0.60 , -170.00 , 170.00 , P , 78 ,,, 
+DCS1800 BER -103.0 dBm,   0.01 ,   0.00 ,   2.40 , P , 78 ,,, 
+DCS1800 RX Level -103.0 dBm,   1.00 ,  -3.00 ,   3.00 , P , 79 ,,, 
+
+// << WCDMA2100(BC1) 10693(DL) 2nd RSSI >>
+WCDMA2100 2nd RSSI AGC -85.0 dBm, -291.00 , -520.00 , -170.00 , P , 80 ,,, 
+
+// << WCDMA900(BC8) 3012(DL) 2nd RSSI >>
+WCDMA900 2nd RSSI AGC -85.0 dBm, -299.00 , -520.00 , -170.00 , P , 82 ,,, 
+
+// << FTM Mode Change >>
+FTM Mode : Off,,,, P , 83 , 1 , 1 , 1 
+eMMC EFS Sync,,,, P , 86 , 1 , 1 , 1 
+
+// << Band Setting >>
+END BAND : AUTO,,,, P , 89 , 1 , 1 , 1 
+FINAL Test END, P, , , P, 89
+LTE FINAL END, P, , , P, 89
+FactoLog Off,   1.00 ,   1.00 ,   1.00 , P , 90 ,,, 
+
+#END
+RESULT : PASS
+ERROR-CODE : 
+TEST-TIME : 90
+RF TEST-TIME : 46
+NON-RF TEST-TIME : 44
+//PASS_AVERAGE_TIME : 1511828489
+//Total : 9 Pass : 9 Fail : 0
+//FAIL_RATE : 0%
+
+
+
+
+#INIT
+MODEL : GT-N7105
+P/N : CMAF7E10FF1F59F
+S/W : N7105ZHALJ4
+DATE : 2013/02/21
+TIME : 23:03:00
+TESTCODE : TOP42
+LOGVERSION : Ver 2.4
+INSTRUMENT : IQXS3178/LitePoint/IQxstream
+FIRMWARE : 1.20.0
+FIRMWARE_GPRF Gen/Meas/Sig : //
+FIRMWARE_GSM Gen/Meas/Sig : //
+FIRMWARE_WCDMA Gen/Meas/Sig : //
+FIRMWARE_LTE Gen/Meas/Sig : //
+FIRMWARE_1xEV-DO Gen/Meas/Sig : //
+FIRMWARE_CDMA2000 Gen/Meas/Sig : //
+FIRMWARE_TD-SCDMA Gen/Meas/Sig : //
+FIRMWARE_WiMAX Gen/Meas/Sig : //
+FIRMWARE_WLAN Gen/Meas/Sig : //
+WAVEFORM : 
+PC_CPU : 3.39 GHz/8-Core
+PC_RAM(Available) : 3558 MB
+PC_DISK(C-Drive free/Total) : 85188/122001 MB
+PC_OS : Microsoft Windows 7 Enterprise Edition (build 7600) 32-bit
+JIG : 1
+PROGRAM : DASEUL_Runtime_Ver_3.1.62.0
+ENTERPRISE : 
+INIFILE : GT-N7105_FINAL_AUTO_Ver_3.1.60.3_T1
+IMEINO : 
+SKU : 
+HW : 
+
+#TEST
+/*================================================================================
+Test Conditions, Measured Value, Lower Limit, Upper Limit, P/F, Sec, Code, Code Lsl, Code Usl
+================================================================================*/
+// Model info - Booting Time: 60 
+Booting Time,  34.00 ,   0.00 ,  34.00 , P , 37 ,,, 
+Final Call connect Type - NonSignaling,   1.00 ,   1.00 ,   1.00 , P , 37 ,,, 
+Line Type - Block Cell,   1.00 ,   1.00 ,   1.00 , P , 37 ,,, 
+
+// << RF Loss Check >>
+710MHz LOSS,  -7.28 , -25.00 ,   0.00 , P , 37 ,,, 
+750MHz LOSS,  -7.36 , -25.00 ,   0.00 , P , 37 ,,, 
+810MHz LOSS,  -7.21 , -25.00 ,   0.00 , P , 37 ,,, 
+950MHz LOSS,  -7.52 , -25.00 ,   0.00 , P , 37 ,,, 
+1710MHz LOSS,  -8.05 , -25.00 ,   0.00 , P , 37 ,,, 
+1790MHz LOSS,  -8.07 , -25.00 ,   0.00 , P , 37 ,,, 
+1810MHz LOSS,  -8.08 , -25.00 ,   0.00 , P , 37 ,,, 
+1910MHz LOSS,  -8.20 , -25.00 ,   0.00 , P , 37 ,,, 
+1930MHz LOSS,  -8.17 , -25.00 ,   0.00 , P , 37 ,,, 
+1990MHz LOSS,  -8.17 , -25.00 ,   0.00 , P , 37 ,,, 
+2100MHz LOSS,  -8.34 , -25.00 ,   0.00 , P , 37 ,,, 
+2170MHz LOSS,  -8.41 , -25.00 ,   0.00 , P , 37 ,,, 
+2200MHz LOSS,  -8.24 , -25.00 ,   0.00 , P , 37 ,,, 
+2400MHz LOSS,  -8.46 , -25.00 ,   0.00 , P , 37 ,,, 
+2700MHz LOSS,  -8.46 , -25.00 ,   0.00 , P , 37 ,,, 
+
+// << Initial Non-RF >>
+Model Name Read, GT-N7105, GT-N7105, GT-N7105, P, 37
+FactoLog On,   1.00 ,   1.00 ,   1.00 , P , 37 ,,, 
+
+// << Process Omission Check >>
+RF CAL SKIP, P, , , P, 37
+FINAL Test START, E, , , P, 37
+LTE FINAL START, E, , , P, 38
+LCD Off,   1.00 ,   1.00 ,   1.00 , P , 38 ,,, 
+Enter Test Mode,   1.00 ,   1.00 ,   1.00 , P , 40 ,,, 
+
+// << LTE03 19255(UL) >>
+LTE03 TEST CHANNEL, 19255.00 , 19200.00 , 19949.00 , P , 45 ,,, 
+LTE03 Tx Power,  21.46 ,  20.50 ,  24.50 , P , 46 ,,, 
+LTE03 Low EVM,   2.24 ,   0.00 ,  17.50 , P , 46 ,,, 
+LTE03 High EVM,  13.96 ,   0.00 ,  17.50 , P , 46 ,,, 
+LTE03 I/Q Offset, -38.35 , -100.00 , -25.00 , P , 46 ,,, 
+LTE03 Frequency Error,   3.64 , -170.00 , 170.00 , P , 46 ,,, 
+LTE03 RX Ref-Sens -86.0 dBm,   0.00 ,   0.00 ,   5.00 , P , 47 ,,, 
+LTE03 RX 2nd RSSI -85.0 dBm, -84.60 , -95.00 , -75.00 , P , 48 ,,, 
+
+// << LTE07 20805(UL) >>
+LTE07 TEST CHANNEL, 20805.00 , 20750.00 , 20750.00 , P , 49 ,,, 
+LTE07 Tx Power,  21.03 ,  20.50 ,  24.50 , P , 51 ,,, 
+LTE07 Low EVM,   3.28 ,   0.00 ,  17.50 , P , 51 ,,, 
+LTE07 High EVM,  14.27 ,   0.00 ,  17.50 , P , 51 ,,, 
+LTE07 I/Q Offset, -34.55 , -100.00 , -25.00 , P , 51 ,,, 
+LTE07 Frequency Error, -34.17 , -170.00 , 170.00 , P , 51 ,,, 
+LTE07 RX Ref-Sens -87.0 dBm,   0.00 ,   0.00 ,   5.00 , P , 51 ,,, 
+LTE07 RX 2nd RSSI -85.0 dBm, -84.70 , -95.00 , -75.00 , P , 52 ,,, 
+
+// << LTE08 21505(UL) >>
+LTE08 TEST CHANNEL, 21505.00 , 21450.00 , 21450.00 , P , 53 ,,, 
+LTE08 Tx Power,  21.64 ,  20.50 ,  24.50 , P , 55 ,,, 
+LTE08 Low EVM,   1.14 ,   0.00 ,  17.50 , P , 55 ,,, 
+LTE08 High EVM,  12.87 ,   0.00 ,  17.50 , P , 55 ,,, 
+LTE08 I/Q Offset, -40.28 , -100.00 , -25.00 , P , 55 ,,, 
+LTE08 Frequency Error,  -1.01 , -80.00 ,  80.00 , P , 55 ,,, 
+LTE08 RX Ref-Sens -86.0 dBm,   0.20 ,   0.00 ,   5.00 , P , 55 ,,, 
+LTE08 RX 2nd RSSI -86.0 dBm, -86.40 , -95.00 , -75.00 , P , 56 ,,, 
+
+// << LTE20 24205(UL) >>
+LTE20 TEST CHANNEL, 24205.00 , 24150.00 , 24150.00 , P , 57 ,,, 
+LTE20 Tx Power,  21.82 ,  20.50 ,  24.50 , P , 59 ,,, 
+LTE20 Low EVM,   1.61 ,   0.00 ,  17.50 , P , 59 ,,, 
+LTE20 High EVM,  11.24 ,   0.00 ,  17.50 , P , 59 ,,, 
+LTE20 I/Q Offset, -40.96 , -100.00 , -25.00 , P , 59 ,,, 
+LTE20 Frequency Error,   3.86 , -80.00 ,  80.00 , P , 59 ,,, 
+LTE20 RX Ref-Sens -86.0 dBm,   0.20 ,   0.00 ,   5.00 , P , 59 ,,, 
+LTE20 RX 2nd RSSI -85.0 dBm, -84.60 , -95.00 , -75.00 , P , 60 ,,, 
+
+// << WCDMA2100(BC1) 10570(DL) >>
+WCDMA2100 TEST CHANNEL, 10570.00 , 10562.00 , 10838.00 , P , 62 ,,, 
+WCDMA2100 Max Output Power,  22.52 ,  21.30 ,  23.70 , P , 63 ,,, 
+WCDMA2100 EVM,   2.31 ,   0.00 ,  15.50 , P , 63 ,,, 
+WCDMA2100 Frequency Error,   8.29 , -180.00 , 180.00 , P , 63 ,,, 
+WCDMA2100 BER -106.7 dBm,   0.00 ,   0.00 ,   0.08 , P , 65 ,,, 
+WCDMA2100 RSCP -75.0 dBm,  -0.30 ,  -4.00 ,   4.00 , P , 66 ,,, 
+
+// << WCDMA900(BC8) 2959(DL) >>
+WCDMA900 TEST CHANNEL, 2959.00 , 2937.00 , 3088.00 , P , 66 ,,, 
+WCDMA900 Max Output Power,  21.94 ,  21.30 ,  23.70 , P , 68 ,,, 
+WCDMA900 EVM,   1.18 ,   0.00 ,  15.50 , P , 68 ,,, 
+WCDMA900 Frequency Error,   1.01 , -80.00 ,  80.00 , P , 68 ,,, 
+WCDMA900 BER -105.0 dBm,   0.00 ,   0.00 ,   0.08 , P , 70 ,,, 
+WCDMA900 RSCP -75.0 dBm,   0.10 ,  -4.00 ,   4.00 , P , 71 ,,, 
+
+// << GSM900 CH: 980 >>
+GSM900 TEST CHANNEL, 980.00 , 975.00 , 1023.00 , P , 73 ,,, 
+GSM900 TX Power 5 Level,  32.94 ,  31.30 ,  33.70 , P , 74 ,,, 
+GSM900 Phase Error RMS,   0.86 ,   0.00 ,   4.50 , P , 74 ,,, 
+GSM900 Phase Error Peak,   4.61 ,   0.00 ,  18.00 , P , 74 ,,, 
+GSM900 Frequency Error, -10.60 , -80.00 ,  80.00 , P , 74 ,,, 
+GSM900 BER -103.0 dBm,   0.00 ,   0.00 ,   2.40 , P , 75 ,,, 
+GSM900 RX Level -103.0 dBm,   1.00 ,  -3.00 ,   3.00 , P , 76 ,,, 
+
+// << DCS1800 CH: 517 >>
+DCS1800 TEST CHANNEL, 517.00 , 512.00 , 885.00 , P , 76 ,,, 
+DCS1800 TX Power 0 Level,  29.89 ,  28.30 ,  30.70 , P , 78 ,,, 
+DCS1800 Phase Error RMS,   1.17 ,   0.00 ,   4.50 , P , 78 ,,, 
+DCS1800 Phase Error Peak,   5.62 ,   0.00 ,  18.00 , P , 78 ,,, 
+DCS1800 Frequency Error,   3.60 , -170.00 , 170.00 , P , 78 ,,, 
+DCS1800 BER -103.0 dBm,   0.00 ,   0.00 ,   2.40 , P , 78 ,,, 
+DCS1800 RX Level -103.0 dBm,   1.00 ,  -3.00 ,   3.00 , P , 79 ,,, 
+
+// << WCDMA2100(BC1) 10693(DL) 2nd RSSI >>
+WCDMA2100 2nd RSSI AGC -85.0 dBm, -293.00 , -520.00 , -170.00 , P , 80 ,,, 
+
+// << WCDMA900(BC8) 3012(DL) 2nd RSSI >>
+WCDMA900 2nd RSSI AGC -85.0 dBm, -299.00 , -520.00 , -170.00 , P , 82 ,,, 
+
+// << FTM Mode Change >>
+FTM Mode : Off,,,, P , 83 , 1 , 1 , 1 
+eMMC EFS Sync,,,, P , 86 , 1 , 1 , 1 
+
+// << Band Setting >>
+END BAND : AUTO,,,, P , 89 , 1 , 1 , 1 
+FINAL Test END, P, , , P, 89
+LTE FINAL END, P, , , P, 89
+FactoLog Off,   1.00 ,   1.00 ,   1.00 , P , 89 ,,, 
+
+#END
+RESULT : PASS
+ERROR-CODE : 
+TEST-TIME : 90
+RF TEST-TIME : 46
+NON-RF TEST-TIME : 44
+//PASS_AVERAGE_TIME : 1511828489
+//Total : 10 Pass : 10 Fail : 0
+//FAIL_RATE : 0%
+
+
+
+
+#INIT
+MODEL : GT-N7105
+P/N : CMAF7E10FF1F59F
+S/W : N7105ZHALJ4
+DATE : 2013/02/21
+TIME : 23:04:53
+TESTCODE : TOP42
+LOGVERSION : Ver 2.4
+INSTRUMENT : IQXS3178/LitePoint/IQxstream
+FIRMWARE : 1.20.0
+FIRMWARE_GPRF Gen/Meas/Sig : //
+FIRMWARE_GSM Gen/Meas/Sig : //
+FIRMWARE_WCDMA Gen/Meas/Sig : //
+FIRMWARE_LTE Gen/Meas/Sig : //
+FIRMWARE_1xEV-DO Gen/Meas/Sig : //
+FIRMWARE_CDMA2000 Gen/Meas/Sig : //
+FIRMWARE_TD-SCDMA Gen/Meas/Sig : //
+FIRMWARE_WiMAX Gen/Meas/Sig : //
+FIRMWARE_WLAN Gen/Meas/Sig : //
+WAVEFORM : 
+PC_CPU : 3.39 GHz/8-Core
+PC_RAM(Available) : 3558 MB
+PC_DISK(C-Drive free/Total) : 85188/122001 MB
+PC_OS : Microsoft Windows 7 Enterprise Edition (build 7600) 32-bit
+JIG : 1
+PROGRAM : DASEUL_Runtime_Ver_3.1.62.0
+ENTERPRISE : 
+INIFILE : GT-N7105_FINAL_AUTO_Ver_3.1.60.3_T1
+IMEINO : 
+SKU : 
+HW : 
+
+#TEST
+/*================================================================================
+Test Conditions, Measured Value, Lower Limit, Upper Limit, P/F, Sec, Code, Code Lsl, Code Usl
+================================================================================*/
+// Model info - Booting Time: 60 
+Booting Time,  34.00 ,   0.00 ,  34.00 , P , 37 ,,, 
+Final Call connect Type - NonSignaling,   1.00 ,   1.00 ,   1.00 , P , 37 ,,, 
+Line Type - Block Cell,   1.00 ,   1.00 ,   1.00 , P , 37 ,,, 
+
+// << RF Loss Check >>
+710MHz LOSS,  -7.28 , -25.00 ,   0.00 , P , 37 ,,, 
+750MHz LOSS,  -7.36 , -25.00 ,   0.00 , P , 37 ,,, 
+810MHz LOSS,  -7.21 , -25.00 ,   0.00 , P , 37 ,,, 
+950MHz LOSS,  -7.52 , -25.00 ,   0.00 , P , 37 ,,, 
+1710MHz LOSS,  -8.05 , -25.00 ,   0.00 , P , 37 ,,, 
+1790MHz LOSS,  -8.07 , -25.00 ,   0.00 , P , 37 ,,, 
+1810MHz LOSS,  -8.08 , -25.00 ,   0.00 , P , 37 ,,, 
+1910MHz LOSS,  -8.20 , -25.00 ,   0.00 , P , 37 ,,, 
+1930MHz LOSS,  -8.17 , -25.00 ,   0.00 , P , 37 ,,, 
+1990MHz LOSS,  -8.17 , -25.00 ,   0.00 , P , 37 ,,, 
+2100MHz LOSS,  -8.34 , -25.00 ,   0.00 , P , 37 ,,, 
+2170MHz LOSS,  -8.41 , -25.00 ,   0.00 , P , 37 ,,, 
+2200MHz LOSS,  -8.24 , -25.00 ,   0.00 , P , 37 ,,, 
+2400MHz LOSS,  -8.46 , -25.00 ,   0.00 , P , 37 ,,, 
+2700MHz LOSS,  -8.46 , -25.00 ,   0.00 , P , 37 ,,, 
+
+// << Initial Non-RF >>
+Model Name Read, GT-N7105, GT-N7105, GT-N7105, P, 37
+FactoLog On,   1.00 ,   1.00 ,   1.00 , P , 37 ,,, 
+
+// << Process Omission Check >>
+RF CAL SKIP, P, , , P, 37
+FINAL Test START, E, , , P, 37
+LTE FINAL START, E, , , P, 38
+LCD Off,   1.00 ,   1.00 ,   1.00 , P , 38 ,,, 
+Enter Test Mode,   1.00 ,   1.00 ,   1.00 , P , 40 ,,, 
+
+// << LTE03 19255(UL) >>
+LTE03 TEST CHANNEL, 19255.00 , 19200.00 , 19949.00 , P , 45 ,,, 
+LTE03 RX Ref-Sens -86.0 dBm,   0.20 ,   0.00 ,   5.00 , P , 47 ,,, 
+LTE03 Tx Power,  21.24 ,  20.50 ,  24.50 , P , 47 ,,, 
+LTE03 Low EVM,   2.11 ,   0.00 ,  17.50 , P , 47 ,,, 
+LTE03 High EVM,  13.68 ,   0.00 ,  17.50 , P , 47 ,,, 
+LTE03 I/Q Offset, -37.84 , -100.00 , -25.00 , P , 47 ,,, 
+LTE03 Frequency Error,  -0.80 , -170.00 , 170.00 , P , 47 ,,, 
+LTE03 RX 2nd RSSI -85.0 dBm, -84.60 , -95.00 , -75.00 , P , 48 ,,, 
+
+// << LTE07 20805(UL) >>
+LTE07 TEST CHANNEL, 20805.00 , 20750.00 , 20750.00 , P , 49 ,,, 
+LTE07 Tx Power,  21.05 ,  20.50 ,  24.50 , P , 51 ,,, 
+LTE07 Low EVM,   3.39 ,   0.00 ,  17.50 , P , 51 ,,, 
+LTE07 High EVM,  13.59 ,   0.00 ,  17.50 , P , 51 ,,, 
+LTE07 I/Q Offset, -34.92 , -100.00 , -25.00 , P , 51 ,,, 
+LTE07 Frequency Error, -25.55 , -170.00 , 170.00 , P , 51 ,,, 
+LTE07 RX Ref-Sens -87.0 dBm,   0.20 ,   0.00 ,   5.00 , P , 51 ,,, 
+LTE07 RX 2nd RSSI -85.0 dBm, -84.70 , -95.00 , -75.00 , P , 52 ,,, 
+
+// << LTE08 21505(UL) >>
+LTE08 TEST CHANNEL, 21505.00 , 21450.00 , 21450.00 , P , 53 ,,, 
+LTE08 Tx Power,  21.70 ,  20.50 ,  24.50 , P , 55 ,,, 
+LTE08 Low EVM,   1.14 ,   0.00 ,  17.50 , P , 55 ,,, 
+LTE08 High EVM,  14.07 ,   0.00 ,  17.50 , P , 55 ,,, 
+LTE08 I/Q Offset, -40.47 , -100.00 , -25.00 , P , 55 ,,, 
+LTE08 Frequency Error,  -3.63 , -80.00 ,  80.00 , P , 55 ,,, 
+LTE08 RX Ref-Sens -86.0 dBm,   0.29 ,   0.00 ,   5.00 , P , 55 ,,, 
+LTE08 RX 2nd RSSI -86.0 dBm, -86.40 , -95.00 , -75.00 , P , 56 ,,, 
+
+// << LTE20 24205(UL) >>
+LTE20 TEST CHANNEL, 24205.00 , 24150.00 , 24150.00 , P , 57 ,,, 
+LTE20 Tx Power,  21.86 ,  20.50 ,  24.50 , P , 59 ,,, 
+LTE20 Low EVM,   1.35 ,   0.00 ,  17.50 , P , 59 ,,, 
+LTE20 High EVM,   9.19 ,   0.00 ,  17.50 , P , 59 ,,, 
+LTE20 I/Q Offset, -39.87 , -100.00 , -25.00 , P , 59 ,,, 
+LTE20 Frequency Error,   4.46 , -80.00 ,  80.00 , P , 59 ,,, 
+LTE20 RX Ref-Sens -86.0 dBm,   0.20 ,   0.00 ,   5.00 , P , 59 ,,, 
+LTE20 RX 2nd RSSI -85.0 dBm, -84.60 , -95.00 , -75.00 , P , 60 ,,, 
+
+// << WCDMA2100(BC1) 10570(DL) >>
+WCDMA2100 TEST CHANNEL, 10570.00 , 10562.00 , 10838.00 , P , 62 ,,, 
+WCDMA2100 Max Output Power,  22.51 ,  21.30 ,  23.70 , P , 63 ,,, 
+WCDMA2100 EVM,   2.26 ,   0.00 ,  15.50 , P , 63 ,,, 
+WCDMA2100 Frequency Error,  11.21 , -180.00 , 180.00 , P , 63 ,,, 
+WCDMA2100 BER -106.7 dBm,   0.00 ,   0.00 ,   0.08 , P , 65 ,,, 
+WCDMA2100 RSCP -75.0 dBm,   0.00 ,  -4.00 ,   4.00 , P , 66 ,,, 
+
+// << WCDMA900(BC8) 2959(DL) >>
+WCDMA900 TEST CHANNEL, 2959.00 , 2937.00 , 3088.00 , P , 67 ,,, 
+WCDMA900 Max Output Power,  22.15 ,  21.30 ,  23.70 , P , 68 ,,, 
+WCDMA900 EVM,   1.31 ,   0.00 ,  15.50 , P , 68 ,,, 
+WCDMA900 Frequency Error,   0.56 , -80.00 ,  80.00 , P , 68 ,,, 
+WCDMA900 BER -105.0 dBm,   0.00 ,   0.00 ,   0.08 , P , 70 ,,, 
+WCDMA900 RSCP -75.0 dBm,  -0.10 ,  -4.00 ,   4.00 , P , 71 ,,, 
+
+// << GSM900 CH: 980 >>
+GSM900 TEST CHANNEL, 980.00 , 975.00 , 1023.00 , P , 73 ,,, 
+GSM900 TX Power 5 Level,  33.54 ,  31.30 ,  33.70 , P , 74 ,,, 
+GSM900 Phase Error RMS,   0.85 ,   0.00 ,   4.50 , P , 74 ,,, 
+GSM900 Phase Error Peak,   4.19 ,   0.00 ,  18.00 , P , 74 ,,, 
+GSM900 Frequency Error,   0.30 , -80.00 ,  80.00 , P , 74 ,,, 
+GSM900 BER -103.0 dBm,   0.03 ,   0.00 ,   2.40 , P , 75 ,,, 
+GSM900 RX Level -103.0 dBm,   1.00 ,  -3.00 ,   3.00 , P , 75 ,,, 
+
+// << DCS1800 CH: 517 >>
+DCS1800 TEST CHANNEL, 517.00 , 512.00 , 885.00 , P , 76 ,,, 
+DCS1800 TX Power 0 Level,  29.89 ,  28.30 ,  30.70 , P , 77 ,,, 
+DCS1800 Phase Error RMS,   1.18 ,   0.00 ,   4.50 , P , 77 ,,, 
+DCS1800 Phase Error Peak,   5.76 ,   0.00 ,  18.00 , P , 77 ,,, 
+DCS1800 Frequency Error,  -4.40 , -170.00 , 170.00 , P , 77 ,,, 
+DCS1800 BER -103.0 dBm,   0.00 ,   0.00 ,   2.40 , P , 78 ,,, 
+DCS1800 RX Level -103.0 dBm,   1.00 ,  -3.00 ,   3.00 , P , 78 ,,, 
+
+// << WCDMA2100(BC1) 10693(DL) 2nd RSSI >>
+WCDMA2100 2nd RSSI AGC -85.0 dBm, -289.00 , -520.00 , -170.00 , P , 80 ,,, 
+
+// << WCDMA900(BC8) 3012(DL) 2nd RSSI >>
+WCDMA900 2nd RSSI AGC -85.0 dBm, -300.00 , -520.00 , -170.00 , P , 81 ,,, 
+
+// << FTM Mode Change >>
+FTM Mode : Off,,,, P , 82 , 1 , 1 , 1 
+eMMC EFS Sync,,,, P , 85 , 1 , 1 , 1 
+
+// << Band Setting >>
+END BAND : AUTO,,,, P , 88 , 1 , 1 , 1 
+FINAL Test END, P, , , P, 88
+LTE FINAL END, P, , , P, 89
+FactoLog Off,   1.00 ,   1.00 ,   1.00 , P , 89 ,,, 
+
+#END
+RESULT : PASS
+ERROR-CODE : 
+TEST-TIME : 90
+RF TEST-TIME : 45
+NON-RF TEST-TIME : 45
+//PASS_AVERAGE_TIME : 1511828489
+//Total : 11 Pass : 11 Fail : 0
+//FAIL_RATE : 0%
+
+
+
+
+#INIT
+MODEL : GT-N7105
+P/N : CMAF7E10FF1F59F
+S/W : N7105ZHALJ4
+DATE : 2013/02/21
+TIME : 23:06:45
+TESTCODE : TOP42
+LOGVERSION : Ver 2.4
+INSTRUMENT : IQXS3178/LitePoint/IQxstream
+FIRMWARE : 1.20.0
+FIRMWARE_GPRF Gen/Meas/Sig : //
+FIRMWARE_GSM Gen/Meas/Sig : //
+FIRMWARE_WCDMA Gen/Meas/Sig : //
+FIRMWARE_LTE Gen/Meas/Sig : //
+FIRMWARE_1xEV-DO Gen/Meas/Sig : //
+FIRMWARE_CDMA2000 Gen/Meas/Sig : //
+FIRMWARE_TD-SCDMA Gen/Meas/Sig : //
+FIRMWARE_WiMAX Gen/Meas/Sig : //
+FIRMWARE_WLAN Gen/Meas/Sig : //
+WAVEFORM : 
+PC_CPU : 3.39 GHz/8-Core
+PC_RAM(Available) : 3558 MB
+PC_DISK(C-Drive free/Total) : 85188/122001 MB
+PC_OS : Microsoft Windows 7 Enterprise Edition (build 7600) 32-bit
+JIG : 1
+PROGRAM : DASEUL_Runtime_Ver_3.1.62.0
+ENTERPRISE : 
+INIFILE : GT-N7105_FINAL_AUTO_Ver_3.1.60.3_T1
+IMEINO : 
+SKU : 
+HW : 
+
+#TEST
+/*================================================================================
+Test Conditions, Measured Value, Lower Limit, Upper Limit, P/F, Sec, Code, Code Lsl, Code Usl
+================================================================================*/
+// Model info - Booting Time: 60 
+Booting Time,  34.00 ,   0.00 ,  34.00 , P , 37 ,,, 
+Final Call connect Type - NonSignaling,   1.00 ,   1.00 ,   1.00 , P , 37 ,,, 
+Line Type - Block Cell,   1.00 ,   1.00 ,   1.00 , P , 37 ,,, 
+
+// << RF Loss Check >>
+710MHz LOSS,  -7.28 , -25.00 ,   0.00 , P , 37 ,,, 
+750MHz LOSS,  -7.36 , -25.00 ,   0.00 , P , 37 ,,, 
+810MHz LOSS,  -7.21 , -25.00 ,   0.00 , P , 37 ,,, 
+950MHz LOSS,  -7.52 , -25.00 ,   0.00 , P , 37 ,,, 
+1710MHz LOSS,  -8.05 , -25.00 ,   0.00 , P , 37 ,,, 
+1790MHz LOSS,  -8.07 , -25.00 ,   0.00 , P , 37 ,,, 
+1810MHz LOSS,  -8.08 , -25.00 ,   0.00 , P , 37 ,,, 
+1910MHz LOSS,  -8.20 , -25.00 ,   0.00 , P , 37 ,,, 
+1930MHz LOSS,  -8.17 , -25.00 ,   0.00 , P , 37 ,,, 
+1990MHz LOSS,  -8.17 , -25.00 ,   0.00 , P , 37 ,,, 
+2100MHz LOSS,  -8.34 , -25.00 ,   0.00 , P , 37 ,,, 
+2170MHz LOSS,  -8.41 , -25.00 ,   0.00 , P , 37 ,,, 
+2200MHz LOSS,  -8.24 , -25.00 ,   0.00 , P , 37 ,,, 
+2400MHz LOSS,  -8.46 , -25.00 ,   0.00 , P , 37 ,,, 
+2700MHz LOSS,  -8.46 , -25.00 ,   0.00 , P , 37 ,,, 
+
+// << Initial Non-RF >>
+Model Name Read, GT-N7105, GT-N7105, GT-N7105, P, 37
+FactoLog On,   1.00 ,   1.00 ,   1.00 , P , 37 ,,, 
+
+// << Process Omission Check >>
+RF CAL SKIP, P, , , P, 37
+FINAL Test START, E, , , P, 37
+LTE FINAL START, E, , , P, 37
+LCD Off,   1.00 ,   1.00 ,   1.00 , P , 38 ,,, 
+Enter Test Mode,   1.00 ,   1.00 ,   1.00 , P , 40 ,,, 
+
+// << LTE03 19255(UL) >>
+LTE03 TEST CHANNEL, 19255.00 , 19200.00 , 19949.00 , P , 45 ,,, 
+LTE03 Tx Power,  21.20 ,  20.50 ,  24.50 , P , 46 ,,, 
+LTE03 Low EVM,   2.08 ,   0.00 ,  17.50 , P , 46 ,,, 
+LTE03 High EVM,  13.43 ,   0.00 ,  17.50 , P , 46 ,,, 
+LTE03 I/Q Offset, -37.90 , -100.00 , -25.00 , P , 46 ,,, 
+LTE03 Frequency Error,   4.81 , -170.00 , 170.00 , P , 46 ,,, 
+LTE03 RX Ref-Sens -86.0 dBm,   0.00 ,   0.00 ,   5.00 , P , 47 ,,, 
+LTE03 RX 2nd RSSI -85.0 dBm, -84.60 , -95.00 , -75.00 , P , 48 ,,, 
+
+// << LTE07 20805(UL) >>
+LTE07 TEST CHANNEL, 20805.00 , 20750.00 , 20750.00 , P , 49 ,,, 
+LTE07 RX Ref-Sens -87.0 dBm,   0.10 ,   0.00 ,   5.00 , P , 51 ,,, 
+LTE07 Tx Power,  21.00 ,  20.50 ,  24.50 , P , 52 ,,, 
+LTE07 Low EVM,   3.23 ,   0.00 ,  17.50 , P , 52 ,,, 
+LTE07 High EVM,  14.48 ,   0.00 ,  17.50 , P , 52 ,,, 
+LTE07 I/Q Offset, -34.82 , -100.00 , -25.00 , P , 52 ,,, 
+LTE07 Frequency Error, -30.92 , -170.00 , 170.00 , P , 52 ,,, 
+LTE07 RX 2nd RSSI -85.0 dBm, -84.70 , -95.00 , -75.00 , P , 52 ,,, 
+
+// << LTE08 21505(UL) >>
+LTE08 TEST CHANNEL, 21505.00 , 21450.00 , 21450.00 , P , 53 ,,, 
+LTE08 Tx Power,  21.70 ,  20.50 ,  24.50 , P , 55 ,,, 
+LTE08 Low EVM,   1.15 ,   0.00 ,  17.50 , P , 55 ,,, 
+LTE08 High EVM,  14.41 ,   0.00 ,  17.50 , P , 55 ,,, 
+LTE08 I/Q Offset, -40.32 , -100.00 , -25.00 , P , 55 ,,, 
+LTE08 Frequency Error,  -7.27 , -80.00 ,  80.00 , P , 55 ,,, 
+LTE08 RX Ref-Sens -86.0 dBm,   0.10 ,   0.00 ,   5.00 , P , 56 ,,, 
+LTE08 RX 2nd RSSI -86.0 dBm, -86.40 , -95.00 , -75.00 , P , 57 ,,, 
+
+// << LTE20 24205(UL) >>
+LTE20 TEST CHANNEL, 24205.00 , 24150.00 , 24150.00 , P , 58 ,,, 
+LTE20 Tx Power,  21.85 ,  20.50 ,  24.50 , P , 59 ,,, 
+LTE20 Low EVM,   1.37 ,   0.00 ,  17.50 , P , 59 ,,, 
+LTE20 High EVM,  10.02 ,   0.00 ,  17.50 , P , 59 ,,, 
+LTE20 I/Q Offset, -39.87 , -100.00 , -25.00 , P , 59 ,,, 
+LTE20 Frequency Error,  -0.69 , -80.00 ,  80.00 , P , 59 ,,, 
+LTE20 RX Ref-Sens -86.0 dBm,   0.20 ,   0.00 ,   5.00 , P , 60 ,,, 
+LTE20 RX 2nd RSSI -85.0 dBm, -84.70 , -95.00 , -75.00 , P , 61 ,,, 
+
+// << WCDMA2100(BC1) 10570(DL) >>
+WCDMA2100 TEST CHANNEL, 10570.00 , 10562.00 , 10838.00 , P , 62 ,,, 
+WCDMA2100 Max Output Power,  22.74 ,  21.30 ,  23.70 , P , 63 ,,, 
+WCDMA2100 EVM,   2.46 ,   0.00 ,  15.50 , P , 63 ,,, 
+WCDMA2100 Frequency Error,  11.78 , -180.00 , 180.00 , P , 63 ,,, 
+WCDMA2100 BER -106.7 dBm,   0.00 ,   0.00 ,   0.08 , P , 66 ,,, 
+WCDMA2100 RSCP -75.0 dBm,   0.00 ,  -4.00 ,   4.00 , P , 66 ,,, 
+
+// << WCDMA900(BC8) 2959(DL) >>
+WCDMA900 TEST CHANNEL, 2959.00 , 2937.00 , 3088.00 , P , 67 ,,, 
+WCDMA900 Max Output Power,  21.93 ,  21.30 ,  23.70 , P , 68 ,,, 
+WCDMA900 EVM,   1.20 ,   0.00 ,  15.50 , P , 68 ,,, 
+WCDMA900 Frequency Error,   0.87 , -80.00 ,  80.00 , P , 68 ,,, 
+WCDMA900 BER -105.0 dBm,   0.00 ,   0.00 ,   0.08 , P , 70 ,,, 
+WCDMA900 RSCP -75.0 dBm,  -0.10 ,  -4.00 ,   4.00 , P , 71 ,,, 
+
+// << GSM900 CH: 980 >>
+GSM900 TEST CHANNEL, 980.00 , 975.00 , 1023.00 , P , 73 ,,, 
+GSM900 TX Power 5 Level,  33.54 ,  31.30 ,  33.70 , P , 75 ,,, 
+GSM900 Phase Error RMS,   0.88 ,   0.00 ,   4.50 , P , 75 ,,, 
+GSM900 Phase Error Peak,   4.46 ,   0.00 ,  18.00 , P , 75 ,,, 
+GSM900 Frequency Error,  13.50 , -80.00 ,  80.00 , P , 75 ,,, 
+GSM900 BER -103.0 dBm,   0.03 ,   0.00 ,   2.40 , P , 75 ,,, 
+GSM900 RX Level -103.0 dBm,   1.00 ,  -3.00 ,   3.00 , P , 75 ,,, 
+
+// << DCS1800 CH: 517 >>
+DCS1800 TEST CHANNEL, 517.00 , 512.00 , 885.00 , P , 76 ,,, 
+DCS1800 TX Power 0 Level,  29.90 ,  28.30 ,  30.70 , P , 77 ,,, 
+DCS1800 Phase Error RMS,   1.20 ,   0.00 ,   4.50 , P , 77 ,,, 
+DCS1800 Phase Error Peak,   5.95 ,   0.00 ,  18.00 , P , 77 ,,, 
+DCS1800 Frequency Error,   6.90 , -170.00 , 170.00 , P , 77 ,,, 
+DCS1800 BER -103.0 dBm,   0.03 ,   0.00 ,   2.40 , P , 78 ,,, 
+DCS1800 RX Level -103.0 dBm,   1.00 ,  -3.00 ,   3.00 , P , 78 ,,, 
+
+// << WCDMA2100(BC1) 10693(DL) 2nd RSSI >>
+WCDMA2100 2nd RSSI AGC -85.0 dBm, -293.00 , -520.00 , -170.00 , P , 80 ,,, 
+
+// << WCDMA900(BC8) 3012(DL) 2nd RSSI >>
+WCDMA900 2nd RSSI AGC -85.0 dBm, -299.00 , -520.00 , -170.00 , P , 81 ,,, 
+
+// << FTM Mode Change >>
+FTM Mode : Off,,,, P , 82 , 1 , 1 , 1 
+eMMC EFS Sync,,,, P , 85 , 1 , 1 , 1 
+
+// << Band Setting >>
+END BAND : AUTO,,,, P , 88 , 1 , 1 , 1 
+FINAL Test END, P, , , P, 89
+LTE FINAL END, P, , , P, 89
+FactoLog Off,   1.00 ,   1.00 ,   1.00 , P , 89 ,,, 
+
+#END
+RESULT : PASS
+ERROR-CODE : 
+TEST-TIME : 90
+RF TEST-TIME : 46
+NON-RF TEST-TIME : 44
+//PASS_AVERAGE_TIME : 1511828489
+//Total : 12 Pass : 12 Fail : 0
+//FAIL_RATE : 0%
+
+
+
+
+#INIT
+MODEL : GT-N7105
+P/N : CMAF7E10FF1F59F
+S/W : N7105ZHALJ4
+DATE : 2013/02/21
+TIME : 23:08:36
+TESTCODE : TOP42
+LOGVERSION : Ver 2.4
+INSTRUMENT : IQXS3178/LitePoint/IQxstream
+FIRMWARE : 1.20.0
+FIRMWARE_GPRF Gen/Meas/Sig : //
+FIRMWARE_GSM Gen/Meas/Sig : //
+FIRMWARE_WCDMA Gen/Meas/Sig : //
+FIRMWARE_LTE Gen/Meas/Sig : //
+FIRMWARE_1xEV-DO Gen/Meas/Sig : //
+FIRMWARE_CDMA2000 Gen/Meas/Sig : //
+FIRMWARE_TD-SCDMA Gen/Meas/Sig : //
+FIRMWARE_WiMAX Gen/Meas/Sig : //
+FIRMWARE_WLAN Gen/Meas/Sig : //
+WAVEFORM : 
+PC_CPU : 3.39 GHz/8-Core
+PC_RAM(Available) : 3558 MB
+PC_DISK(C-Drive free/Total) : 85188/122001 MB
+PC_OS : Microsoft Windows 7 Enterprise Edition (build 7600) 32-bit
+JIG : 1
+PROGRAM : DASEUL_Runtime_Ver_3.1.62.0
+ENTERPRISE : 
+INIFILE : GT-N7105_FINAL_AUTO_Ver_3.1.60.3_T1
+IMEINO : 
+SKU : 
+HW : 
+
+#TEST
+/*================================================================================
+Test Conditions, Measured Value, Lower Limit, Upper Limit, P/F, Sec, Code, Code Lsl, Code Usl
+================================================================================*/
+// Model info - Booting Time: 60 
+Booting Time,  34.00 ,   0.00 ,  34.00 , P , 36 ,,, 
+Final Call connect Type - NonSignaling,   1.00 ,   1.00 ,   1.00 , P , 36 ,,, 
+Line Type - Block Cell,   1.00 ,   1.00 ,   1.00 , P , 36 ,,, 
+
+// << RF Loss Check >>
+710MHz LOSS,  -7.28 , -25.00 ,   0.00 , P , 36 ,,, 
+750MHz LOSS,  -7.36 , -25.00 ,   0.00 , P , 36 ,,, 
+810MHz LOSS,  -7.21 , -25.00 ,   0.00 , P , 36 ,,, 
+950MHz LOSS,  -7.52 , -25.00 ,   0.00 , P , 36 ,,, 
+1710MHz LOSS,  -8.05 , -25.00 ,   0.00 , P , 36 ,,, 
+1790MHz LOSS,  -8.07 , -25.00 ,   0.00 , P , 36 ,,, 
+1810MHz LOSS,  -8.08 , -25.00 ,   0.00 , P , 36 ,,, 
+1910MHz LOSS,  -8.20 , -25.00 ,   0.00 , P , 36 ,,, 
+1930MHz LOSS,  -8.17 , -25.00 ,   0.00 , P , 36 ,,, 
+1990MHz LOSS,  -8.17 , -25.00 ,   0.00 , P , 36 ,,, 
+2100MHz LOSS,  -8.34 , -25.00 ,   0.00 , P , 36 ,,, 
+2170MHz LOSS,  -8.41 , -25.00 ,   0.00 , P , 36 ,,, 
+2200MHz LOSS,  -8.24 , -25.00 ,   0.00 , P , 36 ,,, 
+2400MHz LOSS,  -8.46 , -25.00 ,   0.00 , P , 36 ,,, 
+2700MHz LOSS,  -8.46 , -25.00 ,   0.00 , P , 36 ,,, 
+
+// << Initial Non-RF >>
+Model Name Read, GT-N7105, GT-N7105, GT-N7105, P, 36
+FactoLog On,   1.00 ,   1.00 ,   1.00 , P , 36 ,,, 
+
+// << Process Omission Check >>
+RF CAL SKIP, P, , , P, 36
+FINAL Test START, E, , , P, 37
+LTE FINAL START, E, , , P, 37
+LCD Off,   1.00 ,   1.00 ,   1.00 , P , 37 ,,, 
+Enter Test Mode,   1.00 ,   1.00 ,   1.00 , P , 39 ,,, 
+
+// << LTE03 19255(UL) >>
+LTE03 TEST CHANNEL, 19255.00 , 19200.00 , 19949.00 , P , 44 ,,, 
+LTE03 Tx Power,  21.21 ,  20.50 ,  24.50 , P , 46 ,,, 
+LTE03 Low EVM,   2.19 ,   0.00 ,  17.50 , P , 46 ,,, 
+LTE03 High EVM,  14.57 ,   0.00 ,  17.50 , P , 46 ,,, 
+LTE03 I/Q Offset, -38.05 , -100.00 , -25.00 , P , 46 ,,, 
+LTE03 Frequency Error, -13.75 , -170.00 , 170.00 , P , 46 ,,, 
+LTE03 RX Ref-Sens -86.0 dBm,   0.00 ,   0.00 ,   5.00 , P , 46 ,,, 
+LTE03 RX 2nd RSSI -85.0 dBm, -84.60 , -95.00 , -75.00 , P , 47 ,,, 
+
+// << LTE07 20805(UL) >>
+LTE07 TEST CHANNEL, 20805.00 , 20750.00 , 20750.00 , P , 48 ,,, 
+LTE07 Tx Power,  21.06 ,  20.50 ,  24.50 , P , 50 ,,, 
+LTE07 Low EVM,   3.37 ,   0.00 ,  17.50 , P , 50 ,,, 
+LTE07 High EVM,  14.47 ,   0.00 ,  17.50 , P , 50 ,,, 
+LTE07 I/Q Offset, -34.76 , -100.00 , -25.00 , P , 50 ,,, 
+LTE07 Frequency Error, -20.68 , -170.00 , 170.00 , P , 50 ,,, 
+LTE07 RX Ref-Sens -87.0 dBm,   0.10 ,   0.00 ,   5.00 , P , 50 ,,, 
+LTE07 RX 2nd RSSI -85.0 dBm, -84.80 , -95.00 , -75.00 , P , 51 ,,, 
+
+// << LTE08 21505(UL) >>
+LTE08 TEST CHANNEL, 21505.00 , 21450.00 , 21450.00 , P , 52 ,,, 
+LTE08 Tx Power,  21.71 ,  20.50 ,  24.50 , P , 54 ,,, 
+LTE08 Low EVM,   1.13 ,   0.00 ,  17.50 , P , 54 ,,, 
+LTE08 High EVM,  12.91 ,   0.00 ,  17.50 , P , 54 ,,, 
+LTE08 I/Q Offset, -40.07 , -100.00 , -25.00 , P , 54 ,,, 
+LTE08 Frequency Error,  -3.98 , -80.00 ,  80.00 , P , 54 ,,, 
+LTE08 RX Ref-Sens -86.0 dBm,   0.00 ,   0.00 ,   5.00 , P , 54 ,,, 
+LTE08 RX 2nd RSSI -86.0 dBm, -86.40 , -95.00 , -75.00 , P , 55 ,,, 
+
+// << LTE20 24205(UL) >>
+LTE20 TEST CHANNEL, 24205.00 , 24150.00 , 24150.00 , P , 56 ,,, 
+LTE20 Tx Power,  21.86 ,  20.50 ,  24.50 , P , 58 ,,, 
+LTE20 Low EVM,   1.40 ,   0.00 ,  17.50 , P , 58 ,,, 
+LTE20 High EVM,   9.74 ,   0.00 ,  17.50 , P , 58 ,,, 
+LTE20 I/Q Offset, -39.76 , -100.00 , -25.00 , P , 58 ,,, 
+LTE20 Frequency Error,   1.37 , -80.00 ,  80.00 , P , 58 ,,, 
+LTE20 RX Ref-Sens -86.0 dBm,   0.20 ,   0.00 ,   5.00 , P , 58 ,,, 
+LTE20 RX 2nd RSSI -85.0 dBm, -84.70 , -95.00 , -75.00 , P , 59 ,,, 
+
+// << WCDMA2100(BC1) 10570(DL) >>
+WCDMA2100 TEST CHANNEL, 10570.00 , 10562.00 , 10838.00 , P , 61 ,,, 
+WCDMA2100 Max Output Power,  22.54 ,  21.30 ,  23.70 , P , 62 ,,, 
+WCDMA2100 EVM,   2.20 ,   0.00 ,  15.50 , P , 62 ,,, 
+WCDMA2100 Frequency Error,   8.15 , -180.00 , 180.00 , P , 62 ,,, 
+WCDMA2100 BER -106.7 dBm,   0.00 ,   0.00 ,   0.08 , P , 64 ,,, 
+WCDMA2100 RSCP -75.0 dBm,   0.00 ,  -4.00 ,   4.00 , P , 65 ,,, 
+
+// << WCDMA900(BC8) 2959(DL) >>
+WCDMA900 TEST CHANNEL, 2959.00 , 2937.00 , 3088.00 , P , 66 ,,, 
+WCDMA900 Max Output Power,  22.09 ,  21.30 ,  23.70 , P , 67 ,,, 
+WCDMA900 EVM,   1.26 ,   0.00 ,  15.50 , P , 67 ,,, 
+WCDMA900 Frequency Error,   1.25 , -80.00 ,  80.00 , P , 67 ,,, 
+WCDMA900 BER -105.0 dBm,   0.00 ,   0.00 ,   0.08 , P , 69 ,,, 
+WCDMA900 RSCP -75.0 dBm,  -0.10 ,  -4.00 ,   4.00 , P , 70 ,,, 
+
+// << GSM900 CH: 980 >>
+GSM900 TEST CHANNEL, 980.00 , 975.00 , 1023.00 , P , 72 ,,, 
+GSM900 TX Power 5 Level,  33.55 ,  31.30 ,  33.70 , P , 73 ,,, 
+GSM900 Phase Error RMS,   0.89 ,   0.00 ,   4.50 , P , 73 ,,, 
+GSM900 Phase Error Peak,   4.84 ,   0.00 ,  18.00 , P , 73 ,,, 
+GSM900 Frequency Error,  12.40 , -80.00 ,  80.00 , P , 73 ,,, 
+GSM900 BER -103.0 dBm,   0.02 ,   0.00 ,   2.40 , P , 74 ,,, 
+GSM900 RX Level -103.0 dBm,   1.00 ,  -3.00 ,   3.00 , P , 74 ,,, 
+
+// << DCS1800 CH: 517 >>
+DCS1800 TEST CHANNEL, 517.00 , 512.00 , 885.00 , P , 75 ,,, 
+DCS1800 TX Power 0 Level,  29.91 ,  28.30 ,  30.70 , P , 76 ,,, 
+DCS1800 Phase Error RMS,   1.19 ,   0.00 ,   4.50 , P , 76 ,,, 
+DCS1800 Phase Error Peak,   5.78 ,   0.00 ,  18.00 , P , 76 ,,, 
+DCS1800 Frequency Error,  14.60 , -170.00 , 170.00 , P , 76 ,,, 
+DCS1800 BER -103.0 dBm,   0.01 ,   0.00 ,   2.40 , P , 77 ,,, 
+DCS1800 RX Level -103.0 dBm,   1.00 ,  -3.00 ,   3.00 , P , 77 ,,, 
+
+// << WCDMA2100(BC1) 10693(DL) 2nd RSSI >>
+WCDMA2100 2nd RSSI AGC -85.0 dBm, -289.00 , -520.00 , -170.00 , P , 79 ,,, 
+
+// << WCDMA900(BC8) 3012(DL) 2nd RSSI >>
+WCDMA900 2nd RSSI AGC -85.0 dBm, -300.00 , -520.00 , -170.00 , P , 80 ,,, 
+
+// << FTM Mode Change >>
+FTM Mode : Off,,,, P , 81 , 1 , 1 , 1 
+eMMC EFS Sync,,,, P , 84 , 1 , 1 , 1 
+
+// << Band Setting >>
+END BAND : AUTO,,,, P , 87 , 1 , 1 , 1 
+FINAL Test END, P, , , P, 88
+LTE FINAL END, P, , , P, 88
+FactoLog Off,   1.00 ,   1.00 ,   1.00 , P , 88 ,,, 
+
+#END
+RESULT : PASS
+ERROR-CODE : 
+TEST-TIME : 89
+RF TEST-TIME : 45
+NON-RF TEST-TIME : 44
+//PASS_AVERAGE_TIME : 1511828489
+//Total : 13 Pass : 13 Fail : 0
+//FAIL_RATE : 0%
+
+
+
+
+#INIT
+MODEL : GT-N7105
+P/N : CMAF7E10FF1F59F
+S/W : N7105ZHALJ4
+DATE : 2013/02/21
+TIME : 23:10:28
+TESTCODE : TOP42
+LOGVERSION : Ver 2.4
+INSTRUMENT : IQXS3178/LitePoint/IQxstream
+FIRMWARE : 1.20.0
+FIRMWARE_GPRF Gen/Meas/Sig : //
+FIRMWARE_GSM Gen/Meas/Sig : //
+FIRMWARE_WCDMA Gen/Meas/Sig : //
+FIRMWARE_LTE Gen/Meas/Sig : //
+FIRMWARE_1xEV-DO Gen/Meas/Sig : //
+FIRMWARE_CDMA2000 Gen/Meas/Sig : //
+FIRMWARE_TD-SCDMA Gen/Meas/Sig : //
+FIRMWARE_WiMAX Gen/Meas/Sig : //
+FIRMWARE_WLAN Gen/Meas/Sig : //
+WAVEFORM : 
+PC_CPU : 3.39 GHz/8-Core
+PC_RAM(Available) : 3558 MB
+PC_DISK(C-Drive free/Total) : 85188/122001 MB
+PC_OS : Microsoft Windows 7 Enterprise Edition (build 7600) 32-bit
+JIG : 1
+PROGRAM : DASEUL_Runtime_Ver_3.1.62.0
+ENTERPRISE : 
+INIFILE : GT-N7105_FINAL_AUTO_Ver_3.1.60.3_T1
+IMEINO : 
+SKU : 
+HW : 
+
+#TEST
+/*================================================================================
+Test Conditions, Measured Value, Lower Limit, Upper Limit, P/F, Sec, Code, Code Lsl, Code Usl
+================================================================================*/
+// Model info - Booting Time: 60 
+Booting Time,  34.00 ,   0.00 ,  34.00 , P , 37 ,,, 
+Final Call connect Type - NonSignaling,   1.00 ,   1.00 ,   1.00 , P , 37 ,,, 
+Line Type - Block Cell,   1.00 ,   1.00 ,   1.00 , P , 37 ,,, 
+
+// << RF Loss Check >>
+710MHz LOSS,  -7.28 , -25.00 ,   0.00 , P , 37 ,,, 
+750MHz LOSS,  -7.36 , -25.00 ,   0.00 , P , 37 ,,, 
+810MHz LOSS,  -7.21 , -25.00 ,   0.00 , P , 37 ,,, 
+950MHz LOSS,  -7.52 , -25.00 ,   0.00 , P , 37 ,,, 
+1710MHz LOSS,  -8.05 , -25.00 ,   0.00 , P , 37 ,,, 
+1790MHz LOSS,  -8.07 , -25.00 ,   0.00 , P , 37 ,,, 
+1810MHz LOSS,  -8.08 , -25.00 ,   0.00 , P , 37 ,,, 
+1910MHz LOSS,  -8.20 , -25.00 ,   0.00 , P , 37 ,,, 
+1930MHz LOSS,  -8.17 , -25.00 ,   0.00 , P , 37 ,,, 
+1990MHz LOSS,  -8.17 , -25.00 ,   0.00 , P , 37 ,,, 
+2100MHz LOSS,  -8.34 , -25.00 ,   0.00 , P , 37 ,,, 
+2170MHz LOSS,  -8.41 , -25.00 ,   0.00 , P , 37 ,,, 
+2200MHz LOSS,  -8.24 , -25.00 ,   0.00 , P , 37 ,,, 
+2400MHz LOSS,  -8.46 , -25.00 ,   0.00 , P , 37 ,,, 
+2700MHz LOSS,  -8.46 , -25.00 ,   0.00 , P , 37 ,,, 
+
+// << Initial Non-RF >>
+Model Name Read, GT-N7105, GT-N7105, GT-N7105, P, 37
+FactoLog On,   1.00 ,   1.00 ,   1.00 , P , 37 ,,, 
+
+// << Process Omission Check >>
+RF CAL SKIP, P, , , P, 37
+FINAL Test START, E, , , P, 37
+LTE FINAL START, E, , , P, 37
+LCD Off,   1.00 ,   1.00 ,   1.00 , P , 38 ,,, 
+Enter Test Mode,   1.00 ,   1.00 ,   1.00 , P , 40 ,,, 
+
+// << LTE03 19255(UL) >>
+LTE03 TEST CHANNEL, 19255.00 , 19200.00 , 19949.00 , P , 45 ,,, 
+LTE03 RX Ref-Sens -86.0 dBm,   0.00 ,   0.00 ,   5.00 , P , 47 ,,, 
+LTE03 Tx Power,  21.27 ,  20.50 ,  24.50 , P , 47 ,,, 
+LTE03 Low EVM,   2.13 ,   0.00 ,  17.50 , P , 47 ,,, 
+LTE03 High EVM,  13.68 ,   0.00 ,  17.50 , P , 47 ,,, 
+LTE03 I/Q Offset, -37.94 , -100.00 , -25.00 , P , 47 ,,, 
+LTE03 Frequency Error, -13.16 , -170.00 , 170.00 , P , 47 ,,, 
+LTE03 RX 2nd RSSI -85.0 dBm, -84.60 , -95.00 , -75.00 , P , 48 ,,, 
+
+// << LTE07 20805(UL) >>
+LTE07 TEST CHANNEL, 20805.00 , 20750.00 , 20750.00 , P , 49 ,,, 
+LTE07 Tx Power,  21.08 ,  20.50 ,  24.50 , P , 51 ,,, 
+LTE07 Low EVM,   3.31 ,   0.00 ,  17.50 , P , 51 ,,, 
+LTE07 High EVM,  14.07 ,   0.00 ,  17.50 , P , 51 ,,, 
+LTE07 I/Q Offset, -34.66 , -100.00 , -25.00 , P , 51 ,,, 
+LTE07 Frequency Error, -50.68 , -170.00 , 170.00 , P , 51 ,,, 
+LTE07 RX Ref-Sens -87.0 dBm,   0.20 ,   0.00 ,   5.00 , P , 52 ,,, 
+LTE07 RX 2nd RSSI -85.0 dBm, -84.70 , -95.00 , -75.00 , P , 53 ,,, 
+
+// << LTE08 21505(UL) >>
+LTE08 TEST CHANNEL, 21505.00 , 21450.00 , 21450.00 , P , 53 ,,, 
+LTE08 Tx Power,  21.72 ,  20.50 ,  24.50 , P , 55 ,,, 
+LTE08 Low EVM,   1.15 ,   0.00 ,  17.50 , P , 55 ,,, 
+LTE08 High EVM,  13.53 ,   0.00 ,  17.50 , P , 55 ,,, 
+LTE08 I/Q Offset, -40.45 , -100.00 , -25.00 , P , 55 ,,, 
+LTE08 Frequency Error,  -4.51 , -80.00 ,  80.00 , P , 55 ,,, 
+LTE08 RX Ref-Sens -86.0 dBm,   0.20 ,   0.00 ,   5.00 , P , 56 ,,, 
+LTE08 RX 2nd RSSI -86.0 dBm, -86.40 , -95.00 , -75.00 , P , 57 ,,, 
+
+// << LTE20 24205(UL) >>
+LTE20 TEST CHANNEL, 24205.00 , 24150.00 , 24150.00 , P , 58 ,,, 
+LTE20 Tx Power,  21.87 ,  20.50 ,  24.50 , P , 59 ,,, 
+LTE20 Low EVM,   1.42 ,   0.00 ,  17.50 , P , 59 ,,, 
+LTE20 High EVM,  10.70 ,   0.00 ,  17.50 , P , 59 ,,, 
+LTE20 I/Q Offset, -39.76 , -100.00 , -25.00 , P , 59 ,,, 
+LTE20 Frequency Error,   6.77 , -80.00 ,  80.00 , P , 59 ,,, 
+LTE20 RX Ref-Sens -86.0 dBm,   0.20 ,   0.00 ,   5.00 , P , 60 ,,, 
+LTE20 RX 2nd RSSI -85.0 dBm, -84.70 , -95.00 , -75.00 , P , 61 ,,, 
+
+// << WCDMA2100(BC1) 10570(DL) >>
+WCDMA2100 TEST CHANNEL, 10570.00 , 10562.00 , 10838.00 , P , 62 ,,, 
+WCDMA2100 Max Output Power,  22.53 ,  21.30 ,  23.70 , P , 64 ,,, 
+WCDMA2100 EVM,   2.21 ,   0.00 ,  15.50 , P , 64 ,,, 
+WCDMA2100 Frequency Error,   8.76 , -180.00 , 180.00 , P , 64 ,,, 
+WCDMA2100 BER -106.7 dBm,   0.00 ,   0.00 ,   0.08 , P , 66 ,,, 
+WCDMA2100 RSCP -75.0 dBm,   0.30 ,  -4.00 ,   4.00 , P , 66 ,,, 
+
+// << WCDMA900(BC8) 2959(DL) >>
+WCDMA900 TEST CHANNEL, 2959.00 , 2937.00 , 3088.00 , P , 67 ,,, 
+WCDMA900 Max Output Power,  21.99 ,  21.30 ,  23.70 , P , 68 ,,, 
+WCDMA900 EVM,   1.23 ,   0.00 ,  15.50 , P , 68 ,,, 
+WCDMA900 Frequency Error,   1.27 , -80.00 ,  80.00 , P , 68 ,,, 
+WCDMA900 BER -105.0 dBm,   0.00 ,   0.00 ,   0.08 , P , 71 ,,, 
+WCDMA900 RSCP -75.0 dBm,  -0.10 ,  -4.00 ,   4.00 , P , 71 ,,, 
+
+// << GSM900 CH: 980 >>
+GSM900 TEST CHANNEL, 980.00 , 975.00 , 1023.00 , P , 74 ,,, 
+GSM900 TX Power 5 Level,  32.96 ,  31.30 ,  33.70 , P , 75 ,,, 
+GSM900 Phase Error RMS,   0.85 ,   0.00 ,   4.50 , P , 75 ,,, 
+GSM900 Phase Error Peak,   4.13 ,   0.00 ,  18.00 , P , 75 ,,, 
+GSM900 Frequency Error,   7.20 , -80.00 ,  80.00 , P , 75 ,,, 
+GSM900 BER -103.0 dBm,   0.01 ,   0.00 ,   2.40 , P , 76 ,,, 
+GSM900 RX Level -103.0 dBm,   1.00 ,  -3.00 ,   3.00 , P , 76 ,,, 
+
+// << DCS1800 CH: 517 >>
+DCS1800 TEST CHANNEL, 517.00 , 512.00 , 885.00 , P , 76 ,,, 
+DCS1800 TX Power 0 Level,  29.92 ,  28.30 ,  30.70 , P , 78 ,,, 
+DCS1800 Phase Error RMS,   1.16 ,   0.00 ,   4.50 , P , 78 ,,, 
+DCS1800 Phase Error Peak,   5.58 ,   0.00 ,  18.00 , P , 78 ,,, 
+DCS1800 Frequency Error,   9.70 , -170.00 , 170.00 , P , 78 ,,, 
+DCS1800 BER -103.0 dBm,   0.00 ,   0.00 ,   2.40 , P , 78 ,,, 
+DCS1800 RX Level -103.0 dBm,   1.00 ,  -3.00 ,   3.00 , P , 79 ,,, 
+
+// << WCDMA2100(BC1) 10693(DL) 2nd RSSI >>
+WCDMA2100 2nd RSSI AGC -85.0 dBm, -287.00 , -520.00 , -170.00 , P , 80 ,,, 
+
+// << WCDMA900(BC8) 3012(DL) 2nd RSSI >>
+WCDMA900 2nd RSSI AGC -85.0 dBm, -300.00 , -520.00 , -170.00 , P , 82 ,,, 
+
+// << FTM Mode Change >>
+FTM Mode : Off,,,, P , 83 , 1 , 1 , 1 
+eMMC EFS Sync,,,, P , 86 , 1 , 1 , 1 
+
+// << Band Setting >>
+END BAND : AUTO,,,, P , 89 , 1 , 1 , 1 
+FINAL Test END, P, , , P, 89
+LTE FINAL END, P, , , P, 89
+FactoLog Off,   1.00 ,   1.00 ,   1.00 , P , 89 ,,, 
+
+#END
+RESULT : PASS
+ERROR-CODE : 
+TEST-TIME : 90
+RF TEST-TIME : 46
+NON-RF TEST-TIME : 44
+//PASS_AVERAGE_TIME : 1511828489
+//Total : 14 Pass : 14 Fail : 0
+//FAIL_RATE : 0%
+
+
+
+
+#INIT
+MODEL : GT-N7105
+P/N : CMAF7E10FF1F59F
+S/W : N7105ZHALJ4
+DATE : 2013/02/21
+TIME : 23:12:20
+TESTCODE : TOP42
+LOGVERSION : Ver 2.4
+INSTRUMENT : IQXS3178/LitePoint/IQxstream
+FIRMWARE : 1.20.0
+FIRMWARE_GPRF Gen/Meas/Sig : //
+FIRMWARE_GSM Gen/Meas/Sig : //
+FIRMWARE_WCDMA Gen/Meas/Sig : //
+FIRMWARE_LTE Gen/Meas/Sig : //
+FIRMWARE_1xEV-DO Gen/Meas/Sig : //
+FIRMWARE_CDMA2000 Gen/Meas/Sig : //
+FIRMWARE_TD-SCDMA Gen/Meas/Sig : //
+FIRMWARE_WiMAX Gen/Meas/Sig : //
+FIRMWARE_WLAN Gen/Meas/Sig : //
+WAVEFORM : 
+PC_CPU : 3.39 GHz/8-Core
+PC_RAM(Available) : 3558 MB
+PC_DISK(C-Drive free/Total) : 85188/122001 MB
+PC_OS : Microsoft Windows 7 Enterprise Edition (build 7600) 32-bit
+JIG : 1
+PROGRAM : DASEUL_Runtime_Ver_3.1.62.0
+ENTERPRISE : 
+INIFILE : GT-N7105_FINAL_AUTO_Ver_3.1.60.3_T1
+IMEINO : 
+SKU : 
+HW : 
+
+#TEST
+/*================================================================================
+Test Conditions, Measured Value, Lower Limit, Upper Limit, P/F, Sec, Code, Code Lsl, Code Usl
+================================================================================*/
+// Model info - Booting Time: 60 
+Booting Time,  34.00 ,   0.00 ,  34.00 , P , 37 ,,, 
+Final Call connect Type - NonSignaling,   1.00 ,   1.00 ,   1.00 , P , 37 ,,, 
+Line Type - Block Cell,   1.00 ,   1.00 ,   1.00 , P , 37 ,,, 
+
+// << RF Loss Check >>
+710MHz LOSS,  -7.28 , -25.00 ,   0.00 , P , 37 ,,, 
+750MHz LOSS,  -7.36 , -25.00 ,   0.00 , P , 37 ,,, 
+810MHz LOSS,  -7.21 , -25.00 ,   0.00 , P , 37 ,,, 
+950MHz LOSS,  -7.52 , -25.00 ,   0.00 , P , 37 ,,, 
+1710MHz LOSS,  -8.05 , -25.00 ,   0.00 , P , 37 ,,, 
+1790MHz LOSS,  -8.07 , -25.00 ,   0.00 , P , 37 ,,, 
+1810MHz LOSS,  -8.08 , -25.00 ,   0.00 , P , 37 ,,, 
+1910MHz LOSS,  -8.20 , -25.00 ,   0.00 , P , 37 ,,, 
+1930MHz LOSS,  -8.17 , -25.00 ,   0.00 , P , 37 ,,, 
+1990MHz LOSS,  -8.17 , -25.00 ,   0.00 , P , 37 ,,, 
+2100MHz LOSS,  -8.34 , -25.00 ,   0.00 , P , 37 ,,, 
+2170MHz LOSS,  -8.41 , -25.00 ,   0.00 , P , 37 ,,, 
+2200MHz LOSS,  -8.24 , -25.00 ,   0.00 , P , 37 ,,, 
+2400MHz LOSS,  -8.46 , -25.00 ,   0.00 , P , 37 ,,, 
+2700MHz LOSS,  -8.46 , -25.00 ,   0.00 , P , 37 ,,, 
+
+// << Initial Non-RF >>
+Model Name Read, GT-N7105, GT-N7105, GT-N7105, P, 37
+FactoLog On,   1.00 ,   1.00 ,   1.00 , P , 37 ,,, 
+
+// << Process Omission Check >>
+RF CAL SKIP, P, , , P, 37
+FINAL Test START, E, , , P, 37
+LTE FINAL START, E, , , P, 37
+LCD Off,   1.00 ,   1.00 ,   1.00 , P , 37 ,,, 
+Enter Test Mode,   1.00 ,   1.00 ,   1.00 , P , 40 ,,, 
+
+// << LTE03 19255(UL) >>
+LTE03 TEST CHANNEL, 19255.00 , 19200.00 , 19949.00 , P , 44 ,,, 
+LTE03 Tx Power,  21.23 ,  20.50 ,  24.50 , P , 47 ,,, 
+LTE03 Low EVM,   2.08 ,   0.00 ,  17.50 , P , 47 ,,, 
+LTE03 High EVM,  13.47 ,   0.00 ,  17.50 , P , 47 ,,, 
+LTE03 I/Q Offset, -37.90 , -100.00 , -25.00 , P , 47 ,,, 
+LTE03 Frequency Error,  -2.84 , -170.00 , 170.00 , P , 47 ,,, 
+LTE03 RX Ref-Sens -86.0 dBm,   0.20 ,   0.00 ,   5.00 , P , 47 ,,, 
+LTE03 RX 2nd RSSI -85.0 dBm, -84.60 , -95.00 , -75.00 , P , 48 ,,, 
+
+// << LTE07 20805(UL) >>
+LTE07 TEST CHANNEL, 20805.00 , 20750.00 , 20750.00 , P , 49 ,,, 
+LTE07 Tx Power,  21.11 ,  20.50 ,  24.50 , P , 51 ,,, 
+LTE07 Low EVM,   3.22 ,   0.00 ,  17.50 , P , 51 ,,, 
+LTE07 High EVM,  14.85 ,   0.00 ,  17.50 , P , 51 ,,, 
+LTE07 I/Q Offset, -34.65 , -100.00 , -25.00 , P , 51 ,,, 
+LTE07 Frequency Error, -18.09 , -170.00 , 170.00 , P , 51 ,,, 
+LTE07 RX Ref-Sens -87.0 dBm,   0.00 ,   0.00 ,   5.00 , P , 52 ,,, 
+LTE07 RX 2nd RSSI -85.0 dBm, -84.70 , -95.00 , -75.00 , P , 53 ,,, 
+
+// << LTE08 21505(UL) >>
+LTE08 TEST CHANNEL, 21505.00 , 21450.00 , 21450.00 , P , 53 ,,, 
+LTE08 RX Ref-Sens -86.0 dBm,   0.00 ,   0.00 ,   5.00 , P , 56 ,,, 
+LTE08 Tx Power,  21.69 ,  20.50 ,  24.50 , P , 56 ,,, 
+LTE08 Low EVM,   1.15 ,   0.00 ,  17.50 , P , 56 ,,, 
+LTE08 High EVM,  13.68 ,   0.00 ,  17.50 , P , 56 ,,, 
+LTE08 I/Q Offset, -40.24 , -100.00 , -25.00 , P , 56 ,,, 
+LTE08 Frequency Error,  -3.93 , -80.00 ,  80.00 , P , 56 ,,, 
+LTE08 RX 2nd RSSI -86.0 dBm, -86.40 , -95.00 , -75.00 , P , 57 ,,, 
+
+// << LTE20 24205(UL) >>
+LTE20 TEST CHANNEL, 24205.00 , 24150.00 , 24150.00 , P , 58 ,,, 
+LTE20 Tx Power,  21.84 ,  20.50 ,  24.50 , P , 60 ,,, 
+LTE20 Low EVM,   1.58 ,   0.00 ,  17.50 , P , 60 ,,, 
+LTE20 High EVM,   9.31 ,   0.00 ,  17.50 , P , 60 ,,, 
+LTE20 I/Q Offset, -40.91 , -100.00 , -25.00 , P , 60 ,,, 
+LTE20 Frequency Error,   6.70 , -80.00 ,  80.00 , P , 60 ,,, 
+LTE20 RX Ref-Sens -86.0 dBm,   0.10 ,   0.00 ,   5.00 , P , 60 ,,, 
+LTE20 RX 2nd RSSI -85.0 dBm, -84.70 , -95.00 , -75.00 , P , 61 ,,, 
+
+// << WCDMA2100(BC1) 10570(DL) >>
+WCDMA2100 TEST CHANNEL, 10570.00 , 10562.00 , 10838.00 , P , 63 ,,, 
+WCDMA2100 Max Output Power,  22.56 ,  21.30 ,  23.70 , P , 64 ,,, 
+WCDMA2100 EVM,   2.31 ,   0.00 ,  15.50 , P , 64 ,,, 
+WCDMA2100 Frequency Error,  10.29 , -180.00 , 180.00 , P , 64 ,,, 
+WCDMA2100 BER -106.7 dBm,   0.00 ,   0.00 ,   0.08 , P , 66 ,,, 
+WCDMA2100 RSCP -75.0 dBm,  -0.10 ,  -4.00 ,   4.00 , P , 67 ,,, 
+
+// << WCDMA900(BC8) 2959(DL) >>
+WCDMA900 TEST CHANNEL, 2959.00 , 2937.00 , 3088.00 , P , 67 ,,, 
+WCDMA900 Max Output Power,  21.98 ,  21.30 ,  23.70 , P , 69 ,,, 
+WCDMA900 EVM,   1.25 ,   0.00 ,  15.50 , P , 69 ,,, 
+WCDMA900 Frequency Error,   0.38 , -80.00 ,  80.00 , P , 69 ,,, 
+WCDMA900 BER -105.0 dBm,   0.00 ,   0.00 ,   0.08 , P , 71 ,,, 
+WCDMA900 RSCP -75.0 dBm,  -0.60 ,  -4.00 ,   4.00 , P , 72 ,,, 
+
+// << GSM900 CH: 980 >>
+GSM900 TEST CHANNEL, 980.00 , 975.00 , 1023.00 , P , 74 ,,, 
+GSM900 TX Power 5 Level,  32.97 ,  31.30 ,  33.70 , P , 75 ,,, 
+GSM900 Phase Error RMS,   0.88 ,   0.00 ,   4.50 , P , 75 ,,, 
+GSM900 Phase Error Peak,   4.65 ,   0.00 ,  18.00 , P , 75 ,,, 
+GSM900 Frequency Error,  10.10 , -80.00 ,  80.00 , P , 75 ,,, 
+GSM900 BER -103.0 dBm,   0.02 ,   0.00 ,   2.40 , P , 76 ,,, 
+GSM900 RX Level -103.0 dBm,   1.00 ,  -3.00 ,   3.00 , P , 76 ,,, 
+
+// << DCS1800 CH: 517 >>
+DCS1800 TEST CHANNEL, 517.00 , 512.00 , 885.00 , P , 77 ,,, 
+DCS1800 TX Power 0 Level,  29.93 ,  28.30 ,  30.70 , P , 78 ,,, 
+DCS1800 Phase Error RMS,   1.16 ,   0.00 ,   4.50 , P , 78 ,,, 
+DCS1800 Phase Error Peak,   5.61 ,   0.00 ,  18.00 , P , 78 ,,, 
+DCS1800 Frequency Error,  -8.90 , -170.00 , 170.00 , P , 78 ,,, 
+DCS1800 BER -103.0 dBm,   0.01 ,   0.00 ,   2.40 , P , 79 ,,, 
+DCS1800 RX Level -103.0 dBm,   1.00 ,  -3.00 ,   3.00 , P , 79 ,,, 
+
+// << WCDMA2100(BC1) 10693(DL) 2nd RSSI >>
+WCDMA2100 2nd RSSI AGC -85.0 dBm, -293.00 , -520.00 , -170.00 , P , 81 ,,, 
+
+// << WCDMA900(BC8) 3012(DL) 2nd RSSI >>
+WCDMA900 2nd RSSI AGC -85.0 dBm, -300.00 , -520.00 , -170.00 , P , 82 ,,, 
+
+// << FTM Mode Change >>
+FTM Mode : Off,,,, P , 83 , 1 , 1 , 1 
+eMMC EFS Sync,,,, P , 86 , 1 , 1 , 1 
+
+// << Band Setting >>
+END BAND : AUTO,,,, P , 89 , 1 , 1 , 1 
+FINAL Test END, P, , , P, 89
+LTE FINAL END, P, , , P, 89
+FactoLog Off,   1.00 ,   1.00 ,   1.00 , P , 90 ,,, 
+
+#END
+RESULT : PASS
+ERROR-CODE : 
+TEST-TIME : 91
+RF TEST-TIME : 47
+NON-RF TEST-TIME : 44
+//PASS_AVERAGE_TIME : 1511828489
+//Total : 15 Pass : 15 Fail : 0
+//FAIL_RATE : 0%
+
+
+
+
+#INIT
+MODEL : GT-N7105
+P/N : CMAF7E10FF1F59F
+S/W : N7105ZHALJ4
+DATE : 2013/02/21
+TIME : 23:14:13
+TESTCODE : TOP42
+LOGVERSION : Ver 2.4
+INSTRUMENT : IQXS3178/LitePoint/IQxstream
+FIRMWARE : 1.20.0
+FIRMWARE_GPRF Gen/Meas/Sig : //
+FIRMWARE_GSM Gen/Meas/Sig : //
+FIRMWARE_WCDMA Gen/Meas/Sig : //
+FIRMWARE_LTE Gen/Meas/Sig : //
+FIRMWARE_1xEV-DO Gen/Meas/Sig : //
+FIRMWARE_CDMA2000 Gen/Meas/Sig : //
+FIRMWARE_TD-SCDMA Gen/Meas/Sig : //
+FIRMWARE_WiMAX Gen/Meas/Sig : //
+FIRMWARE_WLAN Gen/Meas/Sig : //
+WAVEFORM : 
+PC_CPU : 3.39 GHz/8-Core
+PC_RAM(Available) : 3558 MB
+PC_DISK(C-Drive free/Total) : 85188/122001 MB
+PC_OS : Microsoft Windows 7 Enterprise Edition (build 7600) 32-bit
+JIG : 1
+PROGRAM : DASEUL_Runtime_Ver_3.1.62.0
+ENTERPRISE : 
+INIFILE : GT-N7105_FINAL_AUTO_Ver_3.1.60.3_T1
+IMEINO : 
+SKU : 
+HW : 
+
+#TEST
+/*================================================================================
+Test Conditions, Measured Value, Lower Limit, Upper Limit, P/F, Sec, Code, Code Lsl, Code Usl
+================================================================================*/
+// Model info - Booting Time: 60 
+Booting Time,  34.00 ,   0.00 ,  34.00 , P , 37 ,,, 
+Final Call connect Type - NonSignaling,   1.00 ,   1.00 ,   1.00 , P , 37 ,,, 
+Line Type - Block Cell,   1.00 ,   1.00 ,   1.00 , P , 37 ,,, 
+
+// << RF Loss Check >>
+710MHz LOSS,  -7.28 , -25.00 ,   0.00 , P , 37 ,,, 
+750MHz LOSS,  -7.36 , -25.00 ,   0.00 , P , 37 ,,, 
+810MHz LOSS,  -7.21 , -25.00 ,   0.00 , P , 37 ,,, 
+950MHz LOSS,  -7.52 , -25.00 ,   0.00 , P , 37 ,,, 
+1710MHz LOSS,  -8.05 , -25.00 ,   0.00 , P , 37 ,,, 
+1790MHz LOSS,  -8.07 , -25.00 ,   0.00 , P , 37 ,,, 
+1810MHz LOSS,  -8.08 , -25.00 ,   0.00 , P , 37 ,,, 
+1910MHz LOSS,  -8.20 , -25.00 ,   0.00 , P , 37 ,,, 
+1930MHz LOSS,  -8.17 , -25.00 ,   0.00 , P , 37 ,,, 
+1990MHz LOSS,  -8.17 , -25.00 ,   0.00 , P , 37 ,,, 
+2100MHz LOSS,  -8.34 , -25.00 ,   0.00 , P , 37 ,,, 
+2170MHz LOSS,  -8.41 , -25.00 ,   0.00 , P , 37 ,,, 
+2200MHz LOSS,  -8.24 , -25.00 ,   0.00 , P , 37 ,,, 
+2400MHz LOSS,  -8.46 , -25.00 ,   0.00 , P , 37 ,,, 
+2700MHz LOSS,  -8.46 , -25.00 ,   0.00 , P , 37 ,,, 
+
+// << Initial Non-RF >>
+Model Name Read, GT-N7105, GT-N7105, GT-N7105, P, 37
+FactoLog On,   1.00 ,   1.00 ,   1.00 , P , 37 ,,, 
+
+// << Process Omission Check >>
+RF CAL SKIP, P, , , P, 37
+FINAL Test START, E, , , P, 37
+LTE FINAL START, E, , , P, 37
+LCD Off,   1.00 ,   1.00 ,   1.00 , P , 37 ,,, 
+Enter Test Mode,   1.00 ,   1.00 ,   1.00 , P , 40 ,,, 
+
+// << LTE03 19255(UL) >>
+LTE03 TEST CHANNEL, 19255.00 , 19200.00 , 19949.00 , P , 44 ,,, 
+LTE03 Tx Power,  21.24 ,  20.50 ,  24.50 , P , 47 ,,, 
+LTE03 Low EVM,   2.07 ,   0.00 ,  17.50 , P , 47 ,,, 
+LTE03 High EVM,  14.46 ,   0.00 ,  17.50 , P , 47 ,,, 
+LTE03 I/Q Offset, -37.93 , -100.00 , -25.00 , P , 47 ,,, 
+LTE03 Frequency Error,  -0.20 , -170.00 , 170.00 , P , 47 ,,, 
+LTE03 RX Ref-Sens -86.0 dBm,   0.00 ,   0.00 ,   5.00 , P , 47 ,,, 
+LTE03 RX 2nd RSSI -85.0 dBm, -84.60 , -95.00 , -75.00 , P , 48 ,,, 
+
+// << LTE07 20805(UL) >>
+LTE07 TEST CHANNEL, 20805.00 , 20750.00 , 20750.00 , P , 49 ,,, 
+LTE07 Tx Power,  21.12 ,  20.50 ,  24.50 , P , 51 ,,, 
+LTE07 Low EVM,   3.48 ,   0.00 ,  17.50 , P , 51 ,,, 
+LTE07 High EVM,  14.16 ,   0.00 ,  17.50 , P , 51 ,,, 
+LTE07 I/Q Offset, -34.94 , -100.00 , -25.00 , P , 51 ,,, 
+LTE07 Frequency Error, -41.50 , -170.00 , 170.00 , P , 51 ,,, 
+LTE07 RX Ref-Sens -87.0 dBm,   0.20 ,   0.00 ,   5.00 , P , 51 ,,, 
+LTE07 RX 2nd RSSI -85.0 dBm, -84.70 , -95.00 , -75.00 , P , 52 ,,, 
+
+// << LTE08 21505(UL) >>
+LTE08 TEST CHANNEL, 21505.00 , 21450.00 , 21450.00 , P , 53 ,,, 
+LTE08 Tx Power,  21.64 ,  20.50 ,  24.50 , P , 55 ,,, 
+LTE08 Low EVM,   1.16 ,   0.00 ,  17.50 , P , 55 ,,, 
+LTE08 High EVM,  13.82 ,   0.00 ,  17.50 , P , 55 ,,, 
+LTE08 I/Q Offset, -40.22 , -100.00 , -25.00 , P , 55 ,,, 
+LTE08 Frequency Error,  -3.26 , -80.00 ,  80.00 , P , 55 ,,, 
+LTE08 RX Ref-Sens -86.0 dBm,   0.10 ,   0.00 ,   5.00 , P , 56 ,,, 
+LTE08 RX 2nd RSSI -86.0 dBm, -86.40 , -95.00 , -75.00 , P , 57 ,,, 
+
+// << LTE20 24205(UL) >>
+LTE20 TEST CHANNEL, 24205.00 , 24150.00 , 24150.00 , P , 57 ,,, 
+LTE20 Tx Power,  21.91 ,  20.50 ,  24.50 , P , 59 ,,, 
+LTE20 Low EVM,   1.42 ,   0.00 ,  17.50 , P , 59 ,,, 
+LTE20 High EVM,  11.85 ,   0.00 ,  17.50 , P , 59 ,,, 
+LTE20 I/Q Offset, -39.75 , -100.00 , -25.00 , P , 59 ,,, 
+LTE20 Frequency Error,   3.53 , -80.00 ,  80.00 , P , 59 ,,, 
+LTE20 RX Ref-Sens -86.0 dBm,   0.20 ,   0.00 ,   5.00 , P , 60 ,,, 
+LTE20 RX 2nd RSSI -85.0 dBm, -84.70 , -95.00 , -75.00 , P , 61 ,,, 
+
+// << WCDMA2100(BC1) 10570(DL) >>
+WCDMA2100 TEST CHANNEL, 10570.00 , 10562.00 , 10838.00 , P , 62 ,,, 
+WCDMA2100 Max Output Power,  22.59 ,  21.30 ,  23.70 , P , 63 ,,, 
+WCDMA2100 EVM,   2.03 ,   0.00 ,  15.50 , P , 63 ,,, 
+WCDMA2100 Frequency Error,  10.42 , -180.00 , 180.00 , P , 63 ,,, 
+WCDMA2100 BER -106.7 dBm,   0.00 ,   0.00 ,   0.08 , P , 66 ,,, 
+WCDMA2100 RSCP -75.0 dBm,   0.20 ,  -4.00 ,   4.00 , P , 66 ,,, 
+
+// << WCDMA900(BC8) 2959(DL) >>
+WCDMA900 TEST CHANNEL, 2959.00 , 2937.00 , 3088.00 , P , 67 ,,, 
+WCDMA900 Max Output Power,  22.00 ,  21.30 ,  23.70 , P , 68 ,,, 
+WCDMA900 EVM,   1.17 ,   0.00 ,  15.50 , P , 68 ,,, 
+WCDMA900 Frequency Error,  -0.00 , -80.00 ,  80.00 , P , 68 ,,, 
+WCDMA900 BER -105.0 dBm,   0.00 ,   0.00 ,   0.08 , P , 70 ,,, 
+WCDMA900 RSCP -75.0 dBm,  -0.60 ,  -4.00 ,   4.00 , P , 71 ,,, 
+
+// << GSM900 CH: 980 >>
+GSM900 TEST CHANNEL, 980.00 , 975.00 , 1023.00 , P , 73 ,,, 
+GSM900 TX Power 5 Level,  32.94 ,  31.30 ,  33.70 , P , 75 ,,, 
+GSM900 Phase Error RMS,   0.85 ,   0.00 ,   4.50 , P , 75 ,,, 
+GSM900 Phase Error Peak,   4.46 ,   0.00 ,  18.00 , P , 75 ,,, 
+GSM900 Frequency Error,   5.30 , -80.00 ,  80.00 , P , 75 ,,, 
+GSM900 BER -103.0 dBm,   0.00 ,   0.00 ,   2.40 , P , 75 ,,, 
+GSM900 RX Level -103.0 dBm,   1.00 ,  -3.00 ,   3.00 , P , 75 ,,, 
+
+// << DCS1800 CH: 517 >>
+DCS1800 TEST CHANNEL, 517.00 , 512.00 , 885.00 , P , 76 ,,, 
+DCS1800 TX Power 0 Level,  29.94 ,  28.30 ,  30.70 , P , 77 ,,, 
+DCS1800 Phase Error RMS,   1.15 ,   0.00 ,   4.50 , P , 77 ,,, 
+DCS1800 Phase Error Peak,   5.68 ,   0.00 ,  18.00 , P , 77 ,,, 
+DCS1800 Frequency Error,  -2.10 , -170.00 , 170.00 , P , 77 ,,, 
+DCS1800 BER -103.0 dBm,   0.00 ,   0.00 ,   2.40 , P , 78 ,,, 
+DCS1800 RX Level -103.0 dBm,   1.00 ,  -3.00 ,   3.00 , P , 78 ,,, 
+
+// << WCDMA2100(BC1) 10693(DL) 2nd RSSI >>
+WCDMA2100 2nd RSSI AGC -85.0 dBm, -289.00 , -520.00 , -170.00 , P , 80 ,,, 
+
+// << WCDMA900(BC8) 3012(DL) 2nd RSSI >>
+WCDMA900 2nd RSSI AGC -85.0 dBm, -300.00 , -520.00 , -170.00 , P , 81 ,,, 
+
+// << FTM Mode Change >>
+FTM Mode : Off,,,, P , 82 , 1 , 1 , 1 
+eMMC EFS Sync,,,, P , 85 , 1 , 1 , 1 
+
+// << Band Setting >>
+END BAND : AUTO,,,, P , 88 , 1 , 1 , 1 
+FINAL Test END, P, , , P, 89
+LTE FINAL END, P, , , P, 89
+FactoLog Off,   1.00 ,   1.00 ,   1.00 , P , 89 ,,, 
+
+#END
+RESULT : PASS
+ERROR-CODE : 
+TEST-TIME : 90
+RF TEST-TIME : 46
+NON-RF TEST-TIME : 44
+//PASS_AVERAGE_TIME : 1511828489
+//Total : 16 Pass : 16 Fail : 0
+//FAIL_RATE : 0%
+
+
+
+
+#INIT
+MODEL : GT-N7105
+P/N : CMAF7E10FF1F59F
+S/W : N7105ZHALJ4
+DATE : 2013/02/21
+TIME : 23:16:06
+TESTCODE : TOP42
+LOGVERSION : Ver 2.4
+INSTRUMENT : IQXS3178/LitePoint/IQxstream
+FIRMWARE : 1.20.0
+FIRMWARE_GPRF Gen/Meas/Sig : //
+FIRMWARE_GSM Gen/Meas/Sig : //
+FIRMWARE_WCDMA Gen/Meas/Sig : //
+FIRMWARE_LTE Gen/Meas/Sig : //
+FIRMWARE_1xEV-DO Gen/Meas/Sig : //
+FIRMWARE_CDMA2000 Gen/Meas/Sig : //
+FIRMWARE_TD-SCDMA Gen/Meas/Sig : //
+FIRMWARE_WiMAX Gen/Meas/Sig : //
+FIRMWARE_WLAN Gen/Meas/Sig : //
+WAVEFORM : 
+PC_CPU : 3.39 GHz/8-Core
+PC_RAM(Available) : 3558 MB
+PC_DISK(C-Drive free/Total) : 85188/122001 MB
+PC_OS : Microsoft Windows 7 Enterprise Edition (build 7600) 32-bit
+JIG : 1
+PROGRAM : DASEUL_Runtime_Ver_3.1.62.0
+ENTERPRISE : 
+INIFILE : GT-N7105_FINAL_AUTO_Ver_3.1.60.3_T1
+IMEINO : 
+SKU : 
+HW : 
+
+#TEST
+/*================================================================================
+Test Conditions, Measured Value, Lower Limit, Upper Limit, P/F, Sec, Code, Code Lsl, Code Usl
+================================================================================*/
+// Model info - Booting Time: 60 
+Booting Time,  34.00 ,   0.00 ,  34.00 , P , 37 ,,, 
+Final Call connect Type - NonSignaling,   1.00 ,   1.00 ,   1.00 , P , 37 ,,, 
+Line Type - Block Cell,   1.00 ,   1.00 ,   1.00 , P , 37 ,,, 
+
+// << RF Loss Check >>
+710MHz LOSS,  -7.28 , -25.00 ,   0.00 , P , 37 ,,, 
+750MHz LOSS,  -7.36 , -25.00 ,   0.00 , P , 37 ,,, 
+810MHz LOSS,  -7.21 , -25.00 ,   0.00 , P , 37 ,,, 
+950MHz LOSS,  -7.52 , -25.00 ,   0.00 , P , 37 ,,, 
+1710MHz LOSS,  -8.05 , -25.00 ,   0.00 , P , 37 ,,, 
+1790MHz LOSS,  -8.07 , -25.00 ,   0.00 , P , 37 ,,, 
+1810MHz LOSS,  -8.08 , -25.00 ,   0.00 , P , 37 ,,, 
+1910MHz LOSS,  -8.20 , -25.00 ,   0.00 , P , 37 ,,, 
+1930MHz LOSS,  -8.17 , -25.00 ,   0.00 , P , 37 ,,, 
+1990MHz LOSS,  -8.17 , -25.00 ,   0.00 , P , 37 ,,, 
+2100MHz LOSS,  -8.34 , -25.00 ,   0.00 , P , 37 ,,, 
+2170MHz LOSS,  -8.41 , -25.00 ,   0.00 , P , 37 ,,, 
+2200MHz LOSS,  -8.24 , -25.00 ,   0.00 , P , 37 ,,, 
+2400MHz LOSS,  -8.46 , -25.00 ,   0.00 , P , 37 ,,, 
+2700MHz LOSS,  -8.46 , -25.00 ,   0.00 , P , 37 ,,, 
+
+// << Initial Non-RF >>
+Model Name Read, GT-N7105, GT-N7105, GT-N7105, P, 37
+FactoLog On,   1.00 ,   1.00 ,   1.00 , P , 37 ,,, 
+
+// << Process Omission Check >>
+RF CAL SKIP, P, , , P, 37
+FINAL Test START, E, , , P, 37
+LTE FINAL START, E, , , P, 37
+LCD Off,   1.00 ,   1.00 ,   1.00 , P , 37 ,,, 
+Enter Test Mode,   1.00 ,   1.00 ,   1.00 , P , 40 ,,, 
+
+// << LTE03 19255(UL) >>
+LTE03 TEST CHANNEL, 19255.00 , 19200.00 , 19949.00 , P , 44 ,,, 
+LTE03 Tx Power,  21.24 ,  20.50 ,  24.50 , P , 47 ,,, 
+LTE03 Low EVM,   2.11 ,   0.00 ,  17.50 , P , 47 ,,, 
+LTE03 High EVM,  14.46 ,   0.00 ,  17.50 , P , 47 ,,, 
+LTE03 I/Q Offset, -37.84 , -100.00 , -25.00 , P , 47 ,,, 
+LTE03 Frequency Error,   2.33 , -170.00 , 170.00 , P , 47 ,,, 
+LTE03 RX Ref-Sens -86.0 dBm,   0.20 ,   0.00 ,   5.00 , P , 47 ,,, 
+LTE03 RX 2nd RSSI -85.0 dBm, -84.60 , -95.00 , -75.00 , P , 48 ,,, 
+
+// << LTE07 20805(UL) >>
+LTE07 TEST CHANNEL, 20805.00 , 20750.00 , 20750.00 , P , 49 ,,, 
+LTE07 Tx Power,  21.03 ,  20.50 ,  24.50 , P , 51 ,,, 
+LTE07 Low EVM,   3.47 ,   0.00 ,  17.50 , P , 51 ,,, 
+LTE07 High EVM,  13.66 ,   0.00 ,  17.50 , P , 51 ,,, 
+LTE07 I/Q Offset, -34.77 , -100.00 , -25.00 , P , 51 ,,, 
+LTE07 Frequency Error, -33.28 , -170.00 , 170.00 , P , 51 ,,, 
+LTE07 RX Ref-Sens -87.0 dBm,   0.10 ,   0.00 ,   5.00 , P , 52 ,,, 
+LTE07 RX 2nd RSSI -85.0 dBm, -84.70 , -95.00 , -75.00 , P , 52 ,,, 
+
+// << LTE08 21505(UL) >>
+LTE08 TEST CHANNEL, 21505.00 , 21450.00 , 21450.00 , P , 53 ,,, 
+LTE08 Tx Power,  21.66 ,  20.50 ,  24.50 , P , 55 ,,, 
+LTE08 Low EVM,   1.19 ,   0.00 ,  17.50 , P , 55 ,,, 
+LTE08 High EVM,  14.98 ,   0.00 ,  17.50 , P , 55 ,,, 
+LTE08 I/Q Offset, -40.19 , -100.00 , -25.00 , P , 55 ,,, 
+LTE08 Frequency Error,  -1.20 , -80.00 ,  80.00 , P , 55 ,,, 
+LTE08 RX Ref-Sens -86.0 dBm,   0.29 ,   0.00 ,   5.00 , P , 56 ,,, 
+LTE08 RX 2nd RSSI -86.0 dBm, -86.40 , -95.00 , -75.00 , P , 57 ,,, 
+
+// << LTE20 24205(UL) >>
+LTE20 TEST CHANNEL, 24205.00 , 24150.00 , 24150.00 , P , 58 ,,, 
+LTE20 Tx Power,  21.90 ,  20.50 ,  24.50 , P , 60 ,,, 
+LTE20 Low EVM,   1.38 ,   0.00 ,  17.50 , P , 60 ,,, 
+LTE20 High EVM,   8.97 ,   0.00 ,  17.50 , P , 60 ,,, 
+LTE20 I/Q Offset, -39.76 , -100.00 , -25.00 , P , 60 ,,, 
+LTE20 Frequency Error,   0.89 , -80.00 ,  80.00 , P , 60 ,,, 
+LTE20 RX Ref-Sens -86.0 dBm,   0.20 ,   0.00 ,   5.00 , P , 60 ,,, 
+LTE20 RX 2nd RSSI -85.0 dBm, -84.70 , -95.00 , -75.00 , P , 61 ,,, 
+
+// << WCDMA2100(BC1) 10570(DL) >>
+WCDMA2100 TEST CHANNEL, 10570.00 , 10562.00 , 10838.00 , P , 64 ,,, 
+WCDMA2100 Max Output Power,  22.57 ,  21.30 ,  23.70 , P , 65 ,,, 
+WCDMA2100 EVM,   2.08 ,   0.00 ,  15.50 , P , 65 ,,, 
+WCDMA2100 Frequency Error,   8.19 , -180.00 , 180.00 , P , 65 ,,, 
+WCDMA2100 BER -106.7 dBm,   0.00 ,   0.00 ,   0.08 , P , 67 ,,, 
+WCDMA2100 RSCP -75.0 dBm,   0.00 ,  -4.00 ,   4.00 , P , 68 ,,, 
+
+// << WCDMA900(BC8) 2959(DL) >>
+WCDMA900 TEST CHANNEL, 2959.00 , 2937.00 , 3088.00 , P , 68 ,,, 
+WCDMA900 Max Output Power,  22.11 ,  21.30 ,  23.70 , P , 70 ,,, 
+WCDMA900 EVM,   1.18 ,   0.00 ,  15.50 , P , 70 ,,, 
+WCDMA900 Frequency Error,   0.51 , -80.00 ,  80.00 , P , 70 ,,, 
+WCDMA900 BER -105.0 dBm,   0.00 ,   0.00 ,   0.08 , P , 72 ,,, 
+WCDMA900 RSCP -75.0 dBm,  -0.10 ,  -4.00 ,   4.00 , P , 72 ,,, 
+
+// << GSM900 CH: 980 >>
+GSM900 TEST CHANNEL, 980.00 , 975.00 , 1023.00 , P , 75 ,,, 
+GSM900 TX Power 5 Level,  32.95 ,  31.30 ,  33.70 , P , 76 ,,, 
+GSM900 Phase Error RMS,   0.84 ,   0.00 ,   4.50 , P , 76 ,,, 
+GSM900 Phase Error Peak,   4.30 ,   0.00 ,  18.00 , P , 76 ,,, 
+GSM900 Frequency Error,   7.40 , -80.00 ,  80.00 , P , 76 ,,, 
+GSM900 BER -103.0 dBm,   0.02 ,   0.00 ,   2.40 , P , 77 ,,, 
+GSM900 RX Level -103.0 dBm,   1.00 ,  -3.00 ,   3.00 , P , 77 ,,, 
+
+// << DCS1800 CH: 517 >>
+DCS1800 TEST CHANNEL, 517.00 , 512.00 , 885.00 , P , 77 ,,, 
+DCS1800 TX Power 0 Level,  29.95 ,  28.30 ,  30.70 , P , 79 ,,, 
+DCS1800 Phase Error RMS,   1.14 ,   0.00 ,   4.50 , P , 79 ,,, 
+DCS1800 Phase Error Peak,   6.02 ,   0.00 ,  18.00 , P , 79 ,,, 
+DCS1800 Frequency Error,  -3.30 , -170.00 , 170.00 , P , 79 ,,, 
+DCS1800 BER -103.0 dBm,   0.01 ,   0.00 ,   2.40 , P , 79 ,,, 
+DCS1800 RX Level -103.0 dBm,   1.00 ,  -3.00 ,   3.00 , P , 80 ,,, 
+
+// << WCDMA2100(BC1) 10693(DL) 2nd RSSI >>
+WCDMA2100 2nd RSSI AGC -85.0 dBm, -291.00 , -520.00 , -170.00 , P , 81 ,,, 
+
+// << WCDMA900(BC8) 3012(DL) 2nd RSSI >>
+WCDMA900 2nd RSSI AGC -85.0 dBm, -300.00 , -520.00 , -170.00 , P , 83 ,,, 
+
+// << FTM Mode Change >>
+FTM Mode : Off,,,, P , 84 , 1 , 1 , 1 
+eMMC EFS Sync,,,, P , 87 , 1 , 1 , 1 
+
+// << Band Setting >>
+END BAND : AUTO,,,, P , 90 , 1 , 1 , 1 
+FINAL Test END, P, , , P, 90
+LTE FINAL END, P, , , P, 90
+FactoLog Off,   1.00 ,   1.00 ,   1.00 , P , 91 ,,, 
+
+#END
+RESULT : PASS
+ERROR-CODE : 
+TEST-TIME : 91
+RF TEST-TIME : 47
+NON-RF TEST-TIME : 44
+//PASS_AVERAGE_TIME : 1511828489
+//Total : 17 Pass : 17 Fail : 0
+//FAIL_RATE : 0%
+
+
+
+
+#INIT
+MODEL : GT-N7105
+P/N : CMAF7E10FF1F59F
+S/W : N7105ZHALJ4
+DATE : 2013/02/21
+TIME : 23:17:59
+TESTCODE : TOP42
+LOGVERSION : Ver 2.4
+INSTRUMENT : IQXS3178/LitePoint/IQxstream
+FIRMWARE : 1.20.0
+FIRMWARE_GPRF Gen/Meas/Sig : //
+FIRMWARE_GSM Gen/Meas/Sig : //
+FIRMWARE_WCDMA Gen/Meas/Sig : //
+FIRMWARE_LTE Gen/Meas/Sig : //
+FIRMWARE_1xEV-DO Gen/Meas/Sig : //
+FIRMWARE_CDMA2000 Gen/Meas/Sig : //
+FIRMWARE_TD-SCDMA Gen/Meas/Sig : //
+FIRMWARE_WiMAX Gen/Meas/Sig : //
+FIRMWARE_WLAN Gen/Meas/Sig : //
+WAVEFORM : 
+PC_CPU : 3.39 GHz/8-Core
+PC_RAM(Available) : 3558 MB
+PC_DISK(C-Drive free/Total) : 85188/122001 MB
+PC_OS : Microsoft Windows 7 Enterprise Edition (build 7600) 32-bit
+JIG : 1
+PROGRAM : DASEUL_Runtime_Ver_3.1.62.0
+ENTERPRISE : 
+INIFILE : GT-N7105_FINAL_AUTO_Ver_3.1.60.3_T1
+IMEINO : 
+SKU : 
+HW : 
+
+#TEST
+/*================================================================================
+Test Conditions, Measured Value, Lower Limit, Upper Limit, P/F, Sec, Code, Code Lsl, Code Usl
+================================================================================*/
+// Model info - Booting Time: 60 
+Booting Time,  34.00 ,   0.00 ,  34.00 , P , 36 ,,, 
+Final Call connect Type - NonSignaling,   1.00 ,   1.00 ,   1.00 , P , 36 ,,, 
+Line Type - Block Cell,   1.00 ,   1.00 ,   1.00 , P , 36 ,,, 
+
+// << RF Loss Check >>
+710MHz LOSS,  -7.28 , -25.00 ,   0.00 , P , 36 ,,, 
+750MHz LOSS,  -7.36 , -25.00 ,   0.00 , P , 36 ,,, 
+810MHz LOSS,  -7.21 , -25.00 ,   0.00 , P , 36 ,,, 
+950MHz LOSS,  -7.52 , -25.00 ,   0.00 , P , 36 ,,, 
+1710MHz LOSS,  -8.05 , -25.00 ,   0.00 , P , 36 ,,, 
+1790MHz LOSS,  -8.07 , -25.00 ,   0.00 , P , 36 ,,, 
+1810MHz LOSS,  -8.08 , -25.00 ,   0.00 , P , 36 ,,, 
+1910MHz LOSS,  -8.20 , -25.00 ,   0.00 , P , 36 ,,, 
+1930MHz LOSS,  -8.17 , -25.00 ,   0.00 , P , 36 ,,, 
+1990MHz LOSS,  -8.17 , -25.00 ,   0.00 , P , 36 ,,, 
+2100MHz LOSS,  -8.34 , -25.00 ,   0.00 , P , 36 ,,, 
+2170MHz LOSS,  -8.41 , -25.00 ,   0.00 , P , 36 ,,, 
+2200MHz LOSS,  -8.24 , -25.00 ,   0.00 , P , 36 ,,, 
+2400MHz LOSS,  -8.46 , -25.00 ,   0.00 , P , 36 ,,, 
+2700MHz LOSS,  -8.46 , -25.00 ,   0.00 , P , 36 ,,, 
+
+// << Initial Non-RF >>
+Model Name Read, GT-N7105, GT-N7105, GT-N7105, P, 36
+FactoLog On,   1.00 ,   1.00 ,   1.00 , P , 36 ,,, 
+
+// << Process Omission Check >>
+RF CAL SKIP, P, , , P, 37
+FINAL Test START, E, , , P, 37
+LTE FINAL START, E, , , P, 37
+LCD Off,   1.00 ,   1.00 ,   1.00 , P , 37 ,,, 
+Enter Test Mode,   1.00 ,   1.00 ,   1.00 , P , 39 ,,, 
+
+// << LTE03 19255(UL) >>
+LTE03 TEST CHANNEL, 19255.00 , 19200.00 , 19949.00 , P , 44 ,,, 
+LTE03 Tx Power,  21.28 ,  20.50 ,  24.50 , P , 46 ,,, 
+LTE03 Low EVM,   2.14 ,   0.00 ,  17.50 , P , 46 ,,, 
+LTE03 High EVM,  13.79 ,   0.00 ,  17.50 , P , 46 ,,, 
+LTE03 I/Q Offset, -37.98 , -100.00 , -25.00 , P , 46 ,,, 
+LTE03 Frequency Error,  13.93 , -170.00 , 170.00 , P , 46 ,,, 
+LTE03 RX Ref-Sens -86.0 dBm,   0.00 ,   0.00 ,   5.00 , P , 46 ,,, 
+LTE03 RX 2nd RSSI -85.0 dBm, -84.60 , -95.00 , -75.00 , P , 47 ,,, 
+
+// << LTE07 20805(UL) >>
+LTE07 TEST CHANNEL, 20805.00 , 20750.00 , 20750.00 , P , 48 ,,, 
+LTE07 Tx Power,  21.04 ,  20.50 ,  24.50 , P , 50 ,,, 
+LTE07 Low EVM,   3.45 ,   0.00 ,  17.50 , P , 50 ,,, 
+LTE07 High EVM,  14.89 ,   0.00 ,  17.50 , P , 50 ,,, 
+LTE07 I/Q Offset, -34.55 , -100.00 , -25.00 , P , 50 ,,, 
+LTE07 Frequency Error, -28.00 , -170.00 , 170.00 , P , 50 ,,, 
+LTE07 RX Ref-Sens -87.0 dBm,   0.20 ,   0.00 ,   5.00 , P , 50 ,,, 
+LTE07 RX 2nd RSSI -85.0 dBm, -84.70 , -95.00 , -75.00 , P , 51 ,,, 
+
+// << LTE08 21505(UL) >>
+LTE08 TEST CHANNEL, 21505.00 , 21450.00 , 21450.00 , P , 52 ,,, 
+LTE08 Tx Power,  21.67 ,  20.50 ,  24.50 , P , 54 ,,, 
+LTE08 Low EVM,   1.16 ,   0.00 ,  17.50 , P , 54 ,,, 
+LTE08 High EVM,  12.60 ,   0.00 ,  17.50 , P , 54 ,,, 
+LTE08 I/Q Offset, -40.30 , -100.00 , -25.00 , P , 54 ,,, 
+LTE08 Frequency Error,  -2.33 , -80.00 ,  80.00 , P , 54 ,,, 
+LTE08 RX Ref-Sens -86.0 dBm,   0.00 ,   0.00 ,   5.00 , P , 55 ,,, 
+LTE08 RX 2nd RSSI -86.0 dBm, -86.40 , -95.00 , -75.00 , P , 56 ,,, 
+
+// << LTE20 24205(UL) >>
+LTE20 TEST CHANNEL, 24205.00 , 24150.00 , 24150.00 , P , 56 ,,, 
+LTE20 Tx Power,  21.92 ,  20.50 ,  24.50 , P , 58 ,,, 
+LTE20 Low EVM,   1.39 ,   0.00 ,  17.50 , P , 58 ,,, 
+LTE20 High EVM,  10.26 ,   0.00 ,  17.50 , P , 58 ,,, 
+LTE20 I/Q Offset, -39.85 , -100.00 , -25.00 , P , 58 ,,, 
+LTE20 Frequency Error,   1.92 , -80.00 ,  80.00 , P , 58 ,,, 
+LTE20 RX Ref-Sens -86.0 dBm,   0.20 ,   0.00 ,   5.00 , P , 59 ,,, 
+LTE20 RX 2nd RSSI -85.0 dBm, -84.70 , -95.00 , -75.00 , P , 60 ,,, 
+
+// << WCDMA2100(BC1) 10570(DL) >>
+WCDMA2100 TEST CHANNEL, 10570.00 , 10562.00 , 10838.00 , P , 61 ,,, 
+WCDMA2100 Max Output Power,  22.59 ,  21.30 ,  23.70 , P , 62 ,,, 
+WCDMA2100 EVM,   2.22 ,   0.00 ,  15.50 , P , 62 ,,, 
+WCDMA2100 Frequency Error,  10.30 , -180.00 , 180.00 , P , 62 ,,, 
+WCDMA2100 BER -106.7 dBm,   0.00 ,   0.00 ,   0.08 , P , 65 ,,, 
+WCDMA2100 RSCP -75.0 dBm,   0.10 ,  -4.00 ,   4.00 , P , 65 ,,, 
+
+// << WCDMA900(BC8) 2959(DL) >>
+WCDMA900 TEST CHANNEL, 2959.00 , 2937.00 , 3088.00 , P , 66 ,,, 
+WCDMA900 Max Output Power,  22.13 ,  21.30 ,  23.70 , P , 67 ,,, 
+WCDMA900 EVM,   1.23 ,   0.00 ,  15.50 , P , 67 ,,, 
+WCDMA900 Frequency Error,   1.58 , -80.00 ,  80.00 , P , 67 ,,, 
+WCDMA900 BER -105.0 dBm,   0.00 ,   0.00 ,   0.08 , P , 69 ,,, 
+WCDMA900 RSCP -75.0 dBm,  -0.10 ,  -4.00 ,   4.00 , P , 70 ,,, 
+
+// << GSM900 CH: 980 >>
+GSM900 TEST CHANNEL, 980.00 , 975.00 , 1023.00 , P , 72 ,,, 
+GSM900 TX Power 5 Level,  32.96 ,  31.30 ,  33.70 , P , 74 ,,, 
+GSM900 Phase Error RMS,   0.87 ,   0.00 ,   4.50 , P , 74 ,,, 
+GSM900 Phase Error Peak,   4.32 ,   0.00 ,  18.00 , P , 74 ,,, 
+GSM900 Frequency Error,  -0.70 , -80.00 ,  80.00 , P , 74 ,,, 
+GSM900 BER -103.0 dBm,   0.02 ,   0.00 ,   2.40 , P , 74 ,,, 
+GSM900 RX Level -103.0 dBm,   1.00 ,  -3.00 ,   3.00 , P , 74 ,,, 
+
+// << DCS1800 CH: 517 >>
+DCS1800 TEST CHANNEL, 517.00 , 512.00 , 885.00 , P , 75 ,,, 
+DCS1800 TX Power 0 Level,  30.00 ,  28.30 ,  30.70 , P , 76 ,,, 
+DCS1800 Phase Error RMS,   1.16 ,   0.00 ,   4.50 , P , 76 ,,, 
+DCS1800 Phase Error Peak,   5.50 ,   0.00 ,  18.00 , P , 76 ,,, 
+DCS1800 Frequency Error,  -6.40 , -170.00 , 170.00 , P , 76 ,,, 
+DCS1800 BER -103.0 dBm,   0.01 ,   0.00 ,   2.40 , P , 77 ,,, 
+DCS1800 RX Level -103.0 dBm,   1.00 ,  -3.00 ,   3.00 , P , 77 ,,, 
+
+// << WCDMA2100(BC1) 10693(DL) 2nd RSSI >>
+WCDMA2100 2nd RSSI AGC -85.0 dBm, -292.00 , -520.00 , -170.00 , P , 79 ,,, 
+
+// << WCDMA900(BC8) 3012(DL) 2nd RSSI >>
+WCDMA900 2nd RSSI AGC -85.0 dBm, -300.00 , -520.00 , -170.00 , P , 80 ,,, 
+
+// << FTM Mode Change >>
+FTM Mode : Off,,,, P , 81 , 1 , 1 , 1 
+eMMC EFS Sync,,,, P , 84 , 1 , 1 , 1 
+
+// << Band Setting >>
+END BAND : AUTO,,,, P , 87 , 1 , 1 , 1 
+FINAL Test END, P, , , P, 88
+LTE FINAL END, P, , , P, 88
+FactoLog Off,   1.00 ,   1.00 ,   1.00 , P , 88 ,,, 
+
+#END
+RESULT : PASS
+ERROR-CODE : 
+TEST-TIME : 89
+RF TEST-TIME : 45
+NON-RF TEST-TIME : 44
+//PASS_AVERAGE_TIME : 1511828489
+//Total : 18 Pass : 18 Fail : 0
+//FAIL_RATE : 0%
+
+
+
+
+#INIT
+MODEL : GT-N7105
+P/N : CMAF7E10FF1F59F
+S/W : N7105ZHALJ4
+DATE : 2013/02/21
+TIME : 23:19:50
+TESTCODE : TOP42
+LOGVERSION : Ver 2.4
+INSTRUMENT : IQXS3178/LitePoint/IQxstream
+FIRMWARE : 1.20.0
+FIRMWARE_GPRF Gen/Meas/Sig : //
+FIRMWARE_GSM Gen/Meas/Sig : //
+FIRMWARE_WCDMA Gen/Meas/Sig : //
+FIRMWARE_LTE Gen/Meas/Sig : //
+FIRMWARE_1xEV-DO Gen/Meas/Sig : //
+FIRMWARE_CDMA2000 Gen/Meas/Sig : //
+FIRMWARE_TD-SCDMA Gen/Meas/Sig : //
+FIRMWARE_WiMAX Gen/Meas/Sig : //
+FIRMWARE_WLAN Gen/Meas/Sig : //
+WAVEFORM : 
+PC_CPU : 3.39 GHz/8-Core
+PC_RAM(Available) : 3558 MB
+PC_DISK(C-Drive free/Total) : 85188/122001 MB
+PC_OS : Microsoft Windows 7 Enterprise Edition (build 7600) 32-bit
+JIG : 1
+PROGRAM : DASEUL_Runtime_Ver_3.1.62.0
+ENTERPRISE : 
+INIFILE : GT-N7105_FINAL_AUTO_Ver_3.1.60.3_T1
+IMEINO : 
+SKU : 
+HW : 
+
+#TEST
+/*================================================================================
+Test Conditions, Measured Value, Lower Limit, Upper Limit, P/F, Sec, Code, Code Lsl, Code Usl
+================================================================================*/
+// Model info - Booting Time: 60 
+Booting Time,  34.00 ,   0.00 ,  34.00 , P , 36 ,,, 
+Final Call connect Type - NonSignaling,   1.00 ,   1.00 ,   1.00 , P , 36 ,,, 
+Line Type - Block Cell,   1.00 ,   1.00 ,   1.00 , P , 36 ,,, 
+
+// << RF Loss Check >>
+710MHz LOSS,  -7.28 , -25.00 ,   0.00 , P , 36 ,,, 
+750MHz LOSS,  -7.36 , -25.00 ,   0.00 , P , 36 ,,, 
+810MHz LOSS,  -7.21 , -25.00 ,   0.00 , P , 36 ,,, 
+950MHz LOSS,  -7.52 , -25.00 ,   0.00 , P , 36 ,,, 
+1710MHz LOSS,  -8.05 , -25.00 ,   0.00 , P , 36 ,,, 
+1790MHz LOSS,  -8.07 , -25.00 ,   0.00 , P , 36 ,,, 
+1810MHz LOSS,  -8.08 , -25.00 ,   0.00 , P , 36 ,,, 
+1910MHz LOSS,  -8.20 , -25.00 ,   0.00 , P , 36 ,,, 
+1930MHz LOSS,  -8.17 , -25.00 ,   0.00 , P , 36 ,,, 
+1990MHz LOSS,  -8.17 , -25.00 ,   0.00 , P , 36 ,,, 
+2100MHz LOSS,  -8.34 , -25.00 ,   0.00 , P , 36 ,,, 
+2170MHz LOSS,  -8.41 , -25.00 ,   0.00 , P , 36 ,,, 
+2200MHz LOSS,  -8.24 , -25.00 ,   0.00 , P , 36 ,,, 
+2400MHz LOSS,  -8.46 , -25.00 ,   0.00 , P , 36 ,,, 
+2700MHz LOSS,  -8.46 , -25.00 ,   0.00 , P , 36 ,,, 
+
+// << Initial Non-RF >>
+Model Name Read, GT-N7105, GT-N7105, GT-N7105, P, 36
+FactoLog On,   1.00 ,   1.00 ,   1.00 , P , 37 ,,, 
+
+// << Process Omission Check >>
+RF CAL SKIP, P, , , P, 37
+FINAL Test START, E, , , P, 37
+LTE FINAL START, E, , , P, 37
+LCD Off,   1.00 ,   1.00 ,   1.00 , P , 37 ,,, 
+Enter Test Mode,   1.00 ,   1.00 ,   1.00 , P , 39 ,,, 
+
+// << LTE03 19255(UL) >>
+LTE03 TEST CHANNEL, 19255.00 , 19200.00 , 19949.00 , P , 44 ,,, 
+LTE03 RX Ref-Sens -86.0 dBm,   0.10 ,   0.00 ,   5.00 , P , 46 ,,, 
+LTE03 Tx Power,  21.32 ,  20.50 ,  24.50 , P , 48 ,,, 
+LTE03 Low EVM,   2.12 ,   0.00 ,  17.50 , P , 48 ,,, 
+LTE03 High EVM,  14.45 ,   0.00 ,  17.50 , P , 48 ,,, 
+LTE03 I/Q Offset, -37.90 , -100.00 , -25.00 , P , 48 ,,, 
+LTE03 Frequency Error,   0.84 , -170.00 , 170.00 , P , 48 ,,, 
+LTE03 RX 2nd RSSI -85.0 dBm, -84.60 , -95.00 , -75.00 , P , 48 ,,, 
+
+// << LTE07 20805(UL) >>
+LTE07 TEST CHANNEL, 20805.00 , 20750.00 , 20750.00 , P , 49 ,,, 
+LTE07 Tx Power,  21.16 ,  20.50 ,  24.50 , P , 51 ,,, 
+LTE07 Low EVM,   3.24 ,   0.00 ,  17.50 , P , 51 ,,, 
+LTE07 High EVM,  13.91 ,   0.00 ,  17.50 , P , 51 ,,, 
+LTE07 I/Q Offset, -34.63 , -100.00 , -25.00 , P , 51 ,,, 
+LTE07 Frequency Error,  -8.74 , -170.00 , 170.00 , P , 51 ,,, 
+LTE07 RX Ref-Sens -87.0 dBm,   0.20 ,   0.00 ,   5.00 , P , 52 ,,, 
+LTE07 RX 2nd RSSI -85.0 dBm, -84.70 , -95.00 , -75.00 , P , 53 ,,, 
+
+// << LTE08 21505(UL) >>
+LTE08 TEST CHANNEL, 21505.00 , 21450.00 , 21450.00 , P , 54 ,,, 
+LTE08 Tx Power,  21.67 ,  20.50 ,  24.50 , P , 55 ,,, 
+LTE08 Low EVM,   1.12 ,   0.00 ,  17.50 , P , 55 ,,, 
+LTE08 High EVM,  14.02 ,   0.00 ,  17.50 , P , 55 ,,, 
+LTE08 I/Q Offset, -39.88 , -100.00 , -25.00 , P , 55 ,,, 
+LTE08 Frequency Error,  -2.71 , -80.00 ,  80.00 , P , 55 ,,, 
+LTE08 RX Ref-Sens -86.0 dBm,   0.00 ,   0.00 ,   5.00 , P , 56 ,,, 
+LTE08 RX 2nd RSSI -86.0 dBm, -86.40 , -95.00 , -75.00 , P , 57 ,,, 
+
+// << LTE20 24205(UL) >>
+LTE20 TEST CHANNEL, 24205.00 , 24150.00 , 24150.00 , P , 58 ,,, 
+LTE20 Tx Power,  21.97 ,  20.50 ,  24.50 , P , 59 ,,, 
+LTE20 Low EVM,   1.38 ,   0.00 ,  17.50 , P , 59 ,,, 
+LTE20 High EVM,   8.93 ,   0.00 ,  17.50 , P , 59 ,,, 
+LTE20 I/Q Offset, -39.75 , -100.00 , -25.00 , P , 59 ,,, 
+LTE20 Frequency Error,  -0.66 , -80.00 ,  80.00 , P , 59 ,,, 
+LTE20 RX Ref-Sens -86.0 dBm,   0.20 ,   0.00 ,   5.00 , P , 60 ,,, 
+LTE20 RX 2nd RSSI -85.0 dBm, -84.70 , -95.00 , -75.00 , P , 61 ,,, 
+
+// << WCDMA2100(BC1) 10570(DL) >>
+WCDMA2100 TEST CHANNEL, 10570.00 , 10562.00 , 10838.00 , P , 63 ,,, 
+WCDMA2100 Max Output Power,  22.63 ,  21.30 ,  23.70 , P , 64 ,,, 
+WCDMA2100 EVM,   2.42 ,   0.00 ,  15.50 , P , 64 ,,, 
+WCDMA2100 Frequency Error,   5.78 , -180.00 , 180.00 , P , 64 ,,, 
+WCDMA2100 BER -106.7 dBm,   0.00 ,   0.00 ,   0.08 , P , 66 ,,, 
+WCDMA2100 RSCP -75.0 dBm,  -0.10 ,  -4.00 ,   4.00 , P , 66 ,,, 
+
+// << WCDMA900(BC8) 2959(DL) >>
+WCDMA900 TEST CHANNEL, 2959.00 , 2937.00 , 3088.00 , P , 67 ,,, 
+WCDMA900 Max Output Power,  22.02 ,  21.30 ,  23.70 , P , 68 ,,, 
+WCDMA900 EVM,   1.29 ,   0.00 ,  15.50 , P , 68 ,,, 
+WCDMA900 Frequency Error,   1.11 , -80.00 ,  80.00 , P , 68 ,,, 
+WCDMA900 BER -105.0 dBm,   0.00 ,   0.00 ,   0.08 , P , 71 ,,, 
+WCDMA900 RSCP -75.0 dBm,  -0.10 ,  -4.00 ,   4.00 , P , 71 ,,, 
+
+// << GSM900 CH: 980 >>
+GSM900 TEST CHANNEL, 980.00 , 975.00 , 1023.00 , P , 74 ,,, 
+GSM900 TX Power 5 Level,  32.97 ,  31.30 ,  33.70 , P , 75 ,,, 
+GSM900 Phase Error RMS,   0.86 ,   0.00 ,   4.50 , P , 75 ,,, 
+GSM900 Phase Error Peak,   4.09 ,   0.00 ,  18.00 , P , 75 ,,, 
+GSM900 Frequency Error,   8.20 , -80.00 ,  80.00 , P , 75 ,,, 
+GSM900 BER -103.0 dBm,   0.01 ,   0.00 ,   2.40 , P , 75 ,,, 
+GSM900 RX Level -103.0 dBm,   1.00 ,  -3.00 ,   3.00 , P , 76 ,,, 
+
+// << DCS1800 CH: 517 >>
+DCS1800 TEST CHANNEL, 517.00 , 512.00 , 885.00 , P , 76 ,,, 
+DCS1800 TX Power 0 Level,  29.93 ,  28.30 ,  30.70 , P , 77 ,,, 
+DCS1800 Phase Error RMS,   1.25 ,   0.00 ,   4.50 , P , 77 ,,, 
+DCS1800 Phase Error Peak,   5.88 ,   0.00 ,  18.00 , P , 77 ,,, 
+DCS1800 Frequency Error,  -3.30 , -170.00 , 170.00 , P , 77 ,,, 
+DCS1800 BER -103.0 dBm,   0.02 ,   0.00 ,   2.40 , P , 78 ,,, 
+DCS1800 RX Level -103.0 dBm,   1.00 ,  -3.00 ,   3.00 , P , 79 ,,, 
+
+// << WCDMA2100(BC1) 10693(DL) 2nd RSSI >>
+WCDMA2100 2nd RSSI AGC -85.0 dBm, -291.00 , -520.00 , -170.00 , P , 80 ,,, 
+
+// << WCDMA900(BC8) 3012(DL) 2nd RSSI >>
+WCDMA900 2nd RSSI AGC -85.0 dBm, -300.00 , -520.00 , -170.00 , P , 81 ,,, 
+
+// << FTM Mode Change >>
+FTM Mode : Off,,,, P , 83 , 1 , 1 , 1 
+eMMC EFS Sync,,,, P , 86 , 1 , 1 , 1 
+
+// << Band Setting >>
+END BAND : AUTO,,,, P , 89 , 1 , 1 , 1 
+FINAL Test END, P, , , P, 89
+LTE FINAL END, P, , , P, 89
+FactoLog Off,   1.00 ,   1.00 ,   1.00 , P , 89 ,,, 
+
+#END
+RESULT : PASS
+ERROR-CODE : 
+TEST-TIME : 90
+RF TEST-TIME : 46
+NON-RF TEST-TIME : 44
+//PASS_AVERAGE_TIME : 1511828489
+//Total : 19 Pass : 19 Fail : 0
+//FAIL_RATE : 0%
+
+
+
+
+#INIT
+MODEL : GT-N7105
+P/N : CMAF7E10FF1F59F
+S/W : N7105ZHALJ4
+DATE : 2013/02/21
+TIME : 23:21:43
+TESTCODE : TOP42
+LOGVERSION : Ver 2.4
+INSTRUMENT : IQXS3178/LitePoint/IQxstream
+FIRMWARE : 1.20.0
+FIRMWARE_GPRF Gen/Meas/Sig : //
+FIRMWARE_GSM Gen/Meas/Sig : //
+FIRMWARE_WCDMA Gen/Meas/Sig : //
+FIRMWARE_LTE Gen/Meas/Sig : //
+FIRMWARE_1xEV-DO Gen/Meas/Sig : //
+FIRMWARE_CDMA2000 Gen/Meas/Sig : //
+FIRMWARE_TD-SCDMA Gen/Meas/Sig : //
+FIRMWARE_WiMAX Gen/Meas/Sig : //
+FIRMWARE_WLAN Gen/Meas/Sig : //
+WAVEFORM : 
+PC_CPU : 3.39 GHz/8-Core
+PC_RAM(Available) : 3558 MB
+PC_DISK(C-Drive free/Total) : 85188/122001 MB
+PC_OS : Microsoft Windows 7 Enterprise Edition (build 7600) 32-bit
+JIG : 1
+PROGRAM : DASEUL_Runtime_Ver_3.1.62.0
+ENTERPRISE : 
+INIFILE : GT-N7105_FINAL_AUTO_Ver_3.1.60.3_T1
+IMEINO : 
+SKU : 
+HW : 
+
+#TEST
+/*================================================================================
+Test Conditions, Measured Value, Lower Limit, Upper Limit, P/F, Sec, Code, Code Lsl, Code Usl
+================================================================================*/
+// Model info - Booting Time: 60 
+Booting Time,  34.00 ,   0.00 ,  34.00 , P , 37 ,,, 
+Final Call connect Type - NonSignaling,   1.00 ,   1.00 ,   1.00 , P , 37 ,,, 
+Line Type - Block Cell,   1.00 ,   1.00 ,   1.00 , P , 37 ,,, 
+
+// << RF Loss Check >>
+710MHz LOSS,  -7.28 , -25.00 ,   0.00 , P , 37 ,,, 
+750MHz LOSS,  -7.36 , -25.00 ,   0.00 , P , 37 ,,, 
+810MHz LOSS,  -7.21 , -25.00 ,   0.00 , P , 37 ,,, 
+950MHz LOSS,  -7.52 , -25.00 ,   0.00 , P , 37 ,,, 
+1710MHz LOSS,  -8.05 , -25.00 ,   0.00 , P , 37 ,,, 
+1790MHz LOSS,  -8.07 , -25.00 ,   0.00 , P , 37 ,,, 
+1810MHz LOSS,  -8.08 , -25.00 ,   0.00 , P , 37 ,,, 
+1910MHz LOSS,  -8.20 , -25.00 ,   0.00 , P , 37 ,,, 
+1930MHz LOSS,  -8.17 , -25.00 ,   0.00 , P , 37 ,,, 
+1990MHz LOSS,  -8.17 , -25.00 ,   0.00 , P , 37 ,,, 
+2100MHz LOSS,  -8.34 , -25.00 ,   0.00 , P , 37 ,,, 
+2170MHz LOSS,  -8.41 , -25.00 ,   0.00 , P , 37 ,,, 
+2200MHz LOSS,  -8.24 , -25.00 ,   0.00 , P , 37 ,,, 
+2400MHz LOSS,  -8.46 , -25.00 ,   0.00 , P , 37 ,,, 
+2700MHz LOSS,  -8.46 , -25.00 ,   0.00 , P , 37 ,,, 
+
+// << Initial Non-RF >>
+Model Name Read, GT-N7105, GT-N7105, GT-N7105, P, 37
+FactoLog On,   1.00 ,   1.00 ,   1.00 , P , 37 ,,, 
+
+// << Process Omission Check >>
+RF CAL SKIP, P, , , P, 37
+FINAL Test START, E, , , P, 38
+LTE FINAL START, E, , , P, 38
+LCD Off,   1.00 ,   1.00 ,   1.00 , P , 38 ,,, 
+Enter Test Mode,   1.00 ,   1.00 ,   1.00 , P , 40 ,,, 
+
+// << LTE03 19255(UL) >>
+LTE03 TEST CHANNEL, 19255.00 , 19200.00 , 19949.00 , P , 45 ,,, 
+LTE03 Tx Power,  21.29 ,  20.50 ,  24.50 , P , 47 ,,, 
+LTE03 Low EVM,   2.13 ,   0.00 ,  17.50 , P , 47 ,,, 
+LTE03 High EVM,  13.80 ,   0.00 ,  17.50 , P , 47 ,,, 
+LTE03 I/Q Offset, -38.00 , -100.00 , -25.00 , P , 47 ,,, 
+LTE03 Frequency Error,   2.11 , -170.00 , 170.00 , P , 47 ,,, 
+LTE03 RX Ref-Sens -86.0 dBm,   0.20 ,   0.00 ,   5.00 , P , 47 ,,, 
+LTE03 RX 2nd RSSI -85.0 dBm, -84.60 , -95.00 , -75.00 , P , 48 ,,, 
+
+// << LTE07 20805(UL) >>
+LTE07 TEST CHANNEL, 20805.00 , 20750.00 , 20750.00 , P , 49 ,,, 
+LTE07 Tx Power,  21.19 ,  20.50 ,  24.50 , P , 51 ,,, 
+LTE07 Low EVM,   3.31 ,   0.00 ,  17.50 , P , 51 ,,, 
+LTE07 High EVM,  12.82 ,   0.00 ,  17.50 , P , 51 ,,, 
+LTE07 I/Q Offset, -35.00 , -100.00 , -25.00 , P , 51 ,,, 
+LTE07 Frequency Error, -35.11 , -170.00 , 170.00 , P , 51 ,,, 
+LTE07 RX Ref-Sens -87.0 dBm,   0.29 ,   0.00 ,   5.00 , P , 51 ,,, 
+LTE07 RX 2nd RSSI -85.0 dBm, -84.70 , -95.00 , -75.00 , P , 52 ,,, 
+
+// << LTE08 21505(UL) >>
+LTE08 TEST CHANNEL, 21505.00 , 21450.00 , 21450.00 , P , 53 ,,, 
+LTE08 RX Ref-Sens -86.0 dBm,   0.10 ,   0.00 ,   5.00 , P , 55 ,,, 
+LTE08 Low EVM,   1.13 ,   0.00 ,  17.50 , P , 55 ,,, 
+LTE08 Tx Power,  21.67 ,  20.50 ,  24.50 , P , 55 ,,, 
+LTE08 High EVM,  13.73 ,   0.00 ,  17.50 , P , 55 ,,, 
+LTE08 I/Q Offset, -40.14 , -100.00 , -25.00 , P , 55 ,,, 
+LTE08 Low EVM,   1.13 ,   0.00 ,  17.50 , P , 55 ,,, 
+LTE08 Frequency Error,   0.05 , -80.00 ,  80.00 , P , 55 ,,, 
+LTE08 High EVM,  13.73 ,   0.00 ,  17.50 , P , 55 ,,, 
+LTE08 I/Q Offset, -40.14 , -100.00 , -25.00 , P , 55 ,,, 
+LTE08 Frequency Error,   0.05 , -80.00 ,  80.00 , P , 55 ,,, 
+LTE08 RX 2nd RSSI -86.0 dBm, -86.40 , -95.00 , -75.00 , P , 56 ,,, 
+
+// << LTE20 24205(UL) >>
+LTE20 TEST CHANNEL, 24205.00 , 24150.00 , 24150.00 , P , 57 ,,, 
+LTE20 Tx Power,  21.95 ,  20.50 ,  24.50 , P , 59 ,,, 
+LTE20 Low EVM,   1.40 ,   0.00 ,  17.50 , P , 59 ,,, 
+LTE20 High EVM,   9.68 ,   0.00 ,  17.50 , P , 59 ,,, 
+LTE20 I/Q Offset, -39.78 , -100.00 , -25.00 , P , 59 ,,, 
+LTE20 Frequency Error,  -6.07 , -80.00 ,  80.00 , P , 59 ,,, 
+LTE20 RX Ref-Sens -86.0 dBm,   0.20 ,   0.00 ,   5.00 , P , 59 ,,, 
+LTE20 RX 2nd RSSI -85.0 dBm, -84.70 , -95.00 , -75.00 , P , 60 ,,, 
+
+// << WCDMA2100(BC1) 10570(DL) >>
+WCDMA2100 TEST CHANNEL, 10570.00 , 10562.00 , 10838.00 , P , 62 ,,, 
+WCDMA2100 Max Output Power,  22.76 ,  21.30 ,  23.70 , P , 63 ,,, 
+WCDMA2100 EVM,   2.12 ,   0.00 ,  15.50 , P , 63 ,,, 
+WCDMA2100 Frequency Error,   7.19 , -180.00 , 180.00 , P , 63 ,,, 
+WCDMA2100 BER -106.7 dBm,   0.00 ,   0.00 ,   0.08 , P , 65 ,,, 
+WCDMA2100 RSCP -75.0 dBm,  -0.10 ,  -4.00 ,   4.00 , P , 66 ,,, 
+
+// << WCDMA900(BC8) 2959(DL) >>
+WCDMA900 TEST CHANNEL, 2959.00 , 2937.00 , 3088.00 , P , 67 ,,, 
+WCDMA900 Max Output Power,  22.16 ,  21.30 ,  23.70 , P , 68 ,,, 
+WCDMA900 EVM,   1.34 ,   0.00 ,  15.50 , P , 68 ,,, 
+WCDMA900 Frequency Error,   1.27 , -80.00 ,  80.00 , P , 68 ,,, 
+WCDMA900 BER -105.0 dBm,   0.00 ,   0.00 ,   0.08 , P , 70 ,,, 
+WCDMA900 RSCP -75.0 dBm,  -0.20 ,  -4.00 ,   4.00 , P , 71 ,,, 
+
+// << GSM900 CH: 980 >>
+GSM900 TEST CHANNEL, 980.00 , 975.00 , 1023.00 , P , 73 ,,, 
+GSM900 TX Power 5 Level,  32.98 ,  31.30 ,  33.70 , P , 74 ,,, 
+GSM900 Phase Error RMS,   0.84 ,   0.00 ,   4.50 , P , 74 ,,, 
+GSM900 Phase Error Peak,   4.14 ,   0.00 ,  18.00 , P , 74 ,,, 
+GSM900 Frequency Error,   5.60 , -80.00 ,  80.00 , P , 74 ,,, 
+GSM900 BER -103.0 dBm,   0.02 ,   0.00 ,   2.40 , P , 75 ,,, 
+GSM900 RX Level -103.0 dBm,   1.00 ,  -3.00 ,   3.00 , P , 75 ,,, 
+
+// << DCS1800 CH: 517 >>
+DCS1800 TEST CHANNEL, 517.00 , 512.00 , 885.00 , P , 76 ,,, 
+DCS1800 TX Power 0 Level,  29.94 ,  28.30 ,  30.70 , P , 77 ,,, 
+DCS1800 Phase Error RMS,   1.16 ,   0.00 ,   4.50 , P , 77 ,,, 
+DCS1800 Phase Error Peak,   5.60 ,   0.00 ,  18.00 , P , 77 ,,, 
+DCS1800 Frequency Error,  10.10 , -170.00 , 170.00 , P , 77 ,,, 
+DCS1800 BER -103.0 dBm,   0.01 ,   0.00 ,   2.40 , P , 78 ,,, 
+DCS1800 RX Level -103.0 dBm,   1.00 ,  -3.00 ,   3.00 , P , 78 ,,, 
+
+// << WCDMA2100(BC1) 10693(DL) 2nd RSSI >>
+WCDMA2100 2nd RSSI AGC -85.0 dBm, -292.00 , -520.00 , -170.00 , P , 80 ,,, 
+
+// << WCDMA900(BC8) 3012(DL) 2nd RSSI >>
+WCDMA900 2nd RSSI AGC -85.0 dBm, -300.00 , -520.00 , -170.00 , P , 81 ,,, 
+
+// << FTM Mode Change >>
+FTM Mode : Off,,,, P , 82 , 1 , 1 , 1 
+eMMC EFS Sync,,,, P , 85 , 1 , 1 , 1 
+
+// << Band Setting >>
+END BAND : AUTO,,,, P , 88 , 1 , 1 , 1 
+FINAL Test END, P, , , P, 88
+LTE FINAL END, P, , , P, 89
+FactoLog Off,   1.00 ,   1.00 ,   1.00 , P , 89 ,,, 
+
+#END
+RESULT : PASS
+ERROR-CODE : 
+TEST-TIME : 90
+RF TEST-TIME : 45
+NON-RF TEST-TIME : 45
+//PASS_AVERAGE_TIME : 1511828489
+//Total : 20 Pass : 20 Fail : 0
+//FAIL_RATE : 0%
+
+
+
+
+#INIT
+MODEL : GT-N7105
+P/N : CMAF7E10FF1F59F
+S/W : N7105ZHALJ4
+DATE : 2013/02/21
+TIME : 23:23:36
+TESTCODE : TOP42
+LOGVERSION : Ver 2.4
+INSTRUMENT : IQXS3178/LitePoint/IQxstream
+FIRMWARE : 1.20.0
+FIRMWARE_GPRF Gen/Meas/Sig : //
+FIRMWARE_GSM Gen/Meas/Sig : //
+FIRMWARE_WCDMA Gen/Meas/Sig : //
+FIRMWARE_LTE Gen/Meas/Sig : //
+FIRMWARE_1xEV-DO Gen/Meas/Sig : //
+FIRMWARE_CDMA2000 Gen/Meas/Sig : //
+FIRMWARE_TD-SCDMA Gen/Meas/Sig : //
+FIRMWARE_WiMAX Gen/Meas/Sig : //
+FIRMWARE_WLAN Gen/Meas/Sig : //
+WAVEFORM : 
+PC_CPU : 3.39 GHz/8-Core
+PC_RAM(Available) : 3558 MB
+PC_DISK(C-Drive free/Total) : 85188/122001 MB
+PC_OS : Microsoft Windows 7 Enterprise Edition (build 7600) 32-bit
+JIG : 1
+PROGRAM : DASEUL_Runtime_Ver_3.1.62.0
+ENTERPRISE : 
+INIFILE : GT-N7105_FINAL_AUTO_Ver_3.1.60.3_T1
+IMEINO : 
+SKU : 
+HW : 
+
+#TEST
+/*================================================================================
+Test Conditions, Measured Value, Lower Limit, Upper Limit, P/F, Sec, Code, Code Lsl, Code Usl
+================================================================================*/
+// Model info - Booting Time: 60 
+Booting Time,  35.00 ,   0.00 ,  35.00 , P , 37 ,,, 
+Final Call connect Type - NonSignaling,   1.00 ,   1.00 ,   1.00 , P , 37 ,,, 
+Line Type - Block Cell,   1.00 ,   1.00 ,   1.00 , P , 37 ,,, 
+
+// << RF Loss Check >>
+710MHz LOSS,  -7.28 , -25.00 ,   0.00 , P , 37 ,,, 
+750MHz LOSS,  -7.36 , -25.00 ,   0.00 , P , 37 ,,, 
+810MHz LOSS,  -7.21 , -25.00 ,   0.00 , P , 37 ,,, 
+950MHz LOSS,  -7.52 , -25.00 ,   0.00 , P , 37 ,,, 
+1710MHz LOSS,  -8.05 , -25.00 ,   0.00 , P , 37 ,,, 
+1790MHz LOSS,  -8.07 , -25.00 ,   0.00 , P , 37 ,,, 
+1810MHz LOSS,  -8.08 , -25.00 ,   0.00 , P , 37 ,,, 
+1910MHz LOSS,  -8.20 , -25.00 ,   0.00 , P , 37 ,,, 
+1930MHz LOSS,  -8.17 , -25.00 ,   0.00 , P , 37 ,,, 
+1990MHz LOSS,  -8.17 , -25.00 ,   0.00 , P , 37 ,,, 
+2100MHz LOSS,  -8.34 , -25.00 ,   0.00 , P , 37 ,,, 
+2170MHz LOSS,  -8.41 , -25.00 ,   0.00 , P , 37 ,,, 
+2200MHz LOSS,  -8.24 , -25.00 ,   0.00 , P , 37 ,,, 
+2400MHz LOSS,  -8.46 , -25.00 ,   0.00 , P , 37 ,,, 
+2700MHz LOSS,  -8.46 , -25.00 ,   0.00 , P , 37 ,,, 
+
+// << Initial Non-RF >>
+Model Name Read, GT-N7105, GT-N7105, GT-N7105, P, 37
+FactoLog On,   1.00 ,   1.00 ,   1.00 , P , 37 ,,, 
+
+// << Process Omission Check >>
+RF CAL SKIP, P, , , P, 38
+FINAL Test START, E, , , P, 38
+LTE FINAL START, E, , , P, 38
+LCD Off,   1.00 ,   1.00 ,   1.00 , P , 38 ,,, 
+Enter Test Mode,   1.00 ,   1.00 ,   1.00 , P , 40 ,,, 
+
+// << LTE03 19255(UL) >>
+LTE03 TEST CHANNEL, 19255.00 , 19200.00 , 19949.00 , P , 45 ,,, 
+LTE03 Tx Power,  21.30 ,  20.50 ,  24.50 , P , 47 ,,, 
+LTE03 Low EVM,   2.22 ,   0.00 ,  17.50 , P , 47 ,,, 
+LTE03 High EVM,  14.99 ,   0.00 ,  17.50 , P , 47 ,,, 
+LTE03 I/Q Offset, -37.88 , -100.00 , -25.00 , P , 47 ,,, 
+LTE03 Frequency Error,  -9.53 , -170.00 , 170.00 , P , 47 ,,, 
+LTE03 RX Ref-Sens -86.0 dBm,   0.20 ,   0.00 ,   5.00 , P , 47 ,,, 
+LTE03 RX 2nd RSSI -85.0 dBm, -84.60 , -95.00 , -75.00 , P , 48 ,,, 
+
+// << LTE07 20805(UL) >>
+LTE07 TEST CHANNEL, 20805.00 , 20750.00 , 20750.00 , P , 49 ,,, 
+LTE07 Tx Power,  21.10 ,  20.50 ,  24.50 , P , 51 ,,, 
+LTE07 Low EVM,   3.40 ,   0.00 ,  17.50 , P , 51 ,,, 
+LTE07 High EVM,  14.81 ,   0.00 ,  17.50 , P , 51 ,,, 
+LTE07 I/Q Offset, -34.71 , -100.00 , -25.00 , P , 51 ,,, 
+LTE07 Frequency Error, -29.02 , -170.00 , 170.00 , P , 51 ,,, 
+LTE07 RX Ref-Sens -87.0 dBm,   0.20 ,   0.00 ,   5.00 , P , 51 ,,, 
+LTE07 RX 2nd RSSI -85.0 dBm, -84.70 , -95.00 , -75.00 , P , 52 ,,, 
+
+// << LTE08 21505(UL) >>
+LTE08 TEST CHANNEL, 21505.00 , 21450.00 , 21450.00 , P , 53 ,,, 
+LTE08 Tx Power,  21.70 ,  20.50 ,  24.50 , P , 55 ,,, 
+LTE08 Low EVM,   1.16 ,   0.00 ,  17.50 , P , 55 ,,, 
+LTE08 High EVM,  12.76 ,   0.00 ,  17.50 , P , 55 ,,, 
+LTE08 I/Q Offset, -39.90 , -100.00 , -25.00 , P , 55 ,,, 
+LTE08 Frequency Error,   0.43 , -80.00 ,  80.00 , P , 55 ,,, 
+LTE08 RX Ref-Sens -86.0 dBm,   0.20 ,   0.00 ,   5.00 , P , 56 ,,, 
+LTE08 RX 2nd RSSI -86.0 dBm, -86.40 , -95.00 , -75.00 , P , 57 ,,, 
+
+// << LTE20 24205(UL) >>
+LTE20 TEST CHANNEL, 24205.00 , 24150.00 , 24150.00 , P , 57 ,,, 
+LTE20 Tx Power,  21.96 ,  20.50 ,  24.50 , P , 59 ,,, 
+LTE20 Low EVM,   1.43 ,   0.00 ,  17.50 , P , 59 ,,, 
+LTE20 High EVM,  10.57 ,   0.00 ,  17.50 , P , 59 ,,, 
+LTE20 I/Q Offset, -39.74 , -100.00 , -25.00 , P , 59 ,,, 
+LTE20 Frequency Error,  -2.14 , -80.00 ,  80.00 , P , 59 ,,, 
+LTE20 RX Ref-Sens -86.0 dBm,   0.20 ,   0.00 ,   5.00 , P , 60 ,,, 
+LTE20 RX 2nd RSSI -85.0 dBm, -84.70 , -95.00 , -75.00 , P , 61 ,,, 
+
+// << WCDMA2100(BC1) 10570(DL) >>
+WCDMA2100 TEST CHANNEL, 10570.00 , 10562.00 , 10838.00 , P , 62 ,,, 
+WCDMA2100 Max Output Power,  22.65 ,  21.30 ,  23.70 , P , 63 ,,, 
+WCDMA2100 EVM,   2.28 ,   0.00 ,  15.50 , P , 63 ,,, 
+WCDMA2100 Frequency Error,   9.88 , -180.00 , 180.00 , P , 63 ,,, 
+WCDMA2100 BER -106.7 dBm,   0.00 ,   0.00 ,   0.08 , P , 66 ,,, 
+WCDMA2100 RSCP -75.0 dBm,   0.00 ,  -4.00 ,   4.00 , P , 66 ,,, 
+
+// << WCDMA900(BC8) 2959(DL) >>
+WCDMA900 TEST CHANNEL, 2959.00 , 2937.00 , 3088.00 , P , 67 ,,, 
+WCDMA900 Max Output Power,  22.05 ,  21.30 ,  23.70 , P , 68 ,,, 
+WCDMA900 EVM,   1.19 ,   0.00 ,  15.50 , P , 68 ,,, 
+WCDMA900 Frequency Error,   0.62 , -80.00 ,  80.00 , P , 68 ,,, 
+WCDMA900 BER -105.0 dBm,   0.00 ,   0.00 ,   0.08 , P , 70 ,,, 
+WCDMA900 RSCP -75.0 dBm,  -0.70 ,  -4.00 ,   4.00 , P , 71 ,,, 
+
+// << GSM900 CH: 980 >>
+GSM900 TEST CHANNEL, 980.00 , 975.00 , 1023.00 , P , 73 ,,, 
+GSM900 TX Power 5 Level,  32.95 ,  31.30 ,  33.70 , P , 75 ,,, 
+GSM900 Phase Error RMS,   0.85 ,   0.00 ,   4.50 , P , 75 ,,, 
+GSM900 Phase Error Peak,   4.40 ,   0.00 ,  18.00 , P , 75 ,,, 
+GSM900 Frequency Error,   5.70 , -80.00 ,  80.00 , P , 75 ,,, 
+GSM900 BER -103.0 dBm,   0.01 ,   0.00 ,   2.40 , P , 75 ,,, 
+GSM900 RX Level -103.0 dBm,   1.00 ,  -3.00 ,   3.00 , P , 75 ,,, 
+
+// << DCS1800 CH: 517 >>
+DCS1800 TEST CHANNEL, 517.00 , 512.00 , 885.00 , P , 76 ,,, 
+DCS1800 TX Power 0 Level,  29.94 ,  28.30 ,  30.70 , P , 77 ,,, 
+DCS1800 Phase Error RMS,   1.15 ,   0.00 ,   4.50 , P , 77 ,,, 
+DCS1800 Phase Error Peak,   5.47 ,   0.00 ,  18.00 , P , 77 ,,, 
+DCS1800 Frequency Error,   5.30 , -170.00 , 170.00 , P , 77 ,,, 
+DCS1800 BER -103.0 dBm,   0.01 ,   0.00 ,   2.40 , P , 78 ,,, 
+DCS1800 RX Level -103.0 dBm,   1.00 ,  -3.00 ,   3.00 , P , 78 ,,, 
+
+// << WCDMA2100(BC1) 10693(DL) 2nd RSSI >>
+WCDMA2100 2nd RSSI AGC -85.0 dBm, -291.00 , -520.00 , -170.00 , P , 80 ,,, 
+
+// << WCDMA900(BC8) 3012(DL) 2nd RSSI >>
+WCDMA900 2nd RSSI AGC -85.0 dBm, -301.00 , -520.00 , -170.00 , P , 81 ,,, 
+
+// << FTM Mode Change >>
+FTM Mode : Off,,,, P , 82 , 1 , 1 , 1 
+eMMC EFS Sync,,,, P , 85 , 1 , 1 , 1 
+
+// << Band Setting >>
+END BAND : AUTO,,,, P , 88 , 1 , 1 , 1 
+FINAL Test END, P, , , P, 89
+LTE FINAL END, P, , , P, 89
+FactoLog Off,   1.00 ,   1.00 ,   1.00 , P , 89 ,,, 
+
+#END
+RESULT : PASS
+ERROR-CODE : 
+TEST-TIME : 90
+RF TEST-TIME : 45
+NON-RF TEST-TIME : 45
+//PASS_AVERAGE_TIME : 1511828489
+//Total : 21 Pass : 21 Fail : 0
+//FAIL_RATE : 0%
+
+
+
+
+#INIT
+MODEL : GT-N7105
+P/N : CMAF7E10FF1F59F
+S/W : N7105ZHALJ4
+DATE : 2013/02/21
+TIME : 23:25:28
+TESTCODE : TOP42
+LOGVERSION : Ver 2.4
+INSTRUMENT : IQXS3178/LitePoint/IQxstream
+FIRMWARE : 1.20.0
+FIRMWARE_GPRF Gen/Meas/Sig : //
+FIRMWARE_GSM Gen/Meas/Sig : //
+FIRMWARE_WCDMA Gen/Meas/Sig : //
+FIRMWARE_LTE Gen/Meas/Sig : //
+FIRMWARE_1xEV-DO Gen/Meas/Sig : //
+FIRMWARE_CDMA2000 Gen/Meas/Sig : //
+FIRMWARE_TD-SCDMA Gen/Meas/Sig : //
+FIRMWARE_WiMAX Gen/Meas/Sig : //
+FIRMWARE_WLAN Gen/Meas/Sig : //
+WAVEFORM : 
+PC_CPU : 3.39 GHz/8-Core
+PC_RAM(Available) : 3558 MB
+PC_DISK(C-Drive free/Total) : 85188/122001 MB
+PC_OS : Microsoft Windows 7 Enterprise Edition (build 7600) 32-bit
+JIG : 1
+PROGRAM : DASEUL_Runtime_Ver_3.1.62.0
+ENTERPRISE : 
+INIFILE : GT-N7105_FINAL_AUTO_Ver_3.1.60.3_T1
+IMEINO : 
+SKU : 
+HW : 
+
+#TEST
+/*================================================================================
+Test Conditions, Measured Value, Lower Limit, Upper Limit, P/F, Sec, Code, Code Lsl, Code Usl
+================================================================================*/
+// Model info - Booting Time: 60 
+Booting Time,  35.00 ,   0.00 ,  35.00 , P , 37 ,,, 
+Final Call connect Type - NonSignaling,   1.00 ,   1.00 ,   1.00 , P , 37 ,,, 
+Line Type - Block Cell,   1.00 ,   1.00 ,   1.00 , P , 37 ,,, 
+
+// << RF Loss Check >>
+710MHz LOSS,  -7.28 , -25.00 ,   0.00 , P , 37 ,,, 
+750MHz LOSS,  -7.36 , -25.00 ,   0.00 , P , 37 ,,, 
+810MHz LOSS,  -7.21 , -25.00 ,   0.00 , P , 37 ,,, 
+950MHz LOSS,  -7.52 , -25.00 ,   0.00 , P , 37 ,,, 
+1710MHz LOSS,  -8.05 , -25.00 ,   0.00 , P , 37 ,,, 
+1790MHz LOSS,  -8.07 , -25.00 ,   0.00 , P , 37 ,,, 
+1810MHz LOSS,  -8.08 , -25.00 ,   0.00 , P , 37 ,,, 
+1910MHz LOSS,  -8.20 , -25.00 ,   0.00 , P , 37 ,,, 
+1930MHz LOSS,  -8.17 , -25.00 ,   0.00 , P , 37 ,,, 
+1990MHz LOSS,  -8.17 , -25.00 ,   0.00 , P , 37 ,,, 
+2100MHz LOSS,  -8.34 , -25.00 ,   0.00 , P , 37 ,,, 
+2170MHz LOSS,  -8.41 , -25.00 ,   0.00 , P , 37 ,,, 
+2200MHz LOSS,  -8.24 , -25.00 ,   0.00 , P , 37 ,,, 
+2400MHz LOSS,  -8.46 , -25.00 ,   0.00 , P , 37 ,,, 
+2700MHz LOSS,  -8.46 , -25.00 ,   0.00 , P , 37 ,,, 
+
+// << Initial Non-RF >>
+Model Name Read, GT-N7105, GT-N7105, GT-N7105, P, 37
+FactoLog On,   1.00 ,   1.00 ,   1.00 , P , 38 ,,, 
+
+// << Process Omission Check >>
+RF CAL SKIP, P, , , P, 38
+FINAL Test START, E, , , P, 38
+LTE FINAL START, E, , , P, 38
+LCD Off,   1.00 ,   1.00 ,   1.00 , P , 38 ,,, 
+Enter Test Mode,   1.00 ,   1.00 ,   1.00 , P , 40 ,,, 
+
+// << LTE03 19255(UL) >>
+LTE03 TEST CHANNEL, 19255.00 , 19200.00 , 19949.00 , P , 45 ,,, 
+LTE03 Tx Power,  21.31 ,  20.50 ,  24.50 , P , 47 ,,, 
+LTE03 Low EVM,   2.10 ,   0.00 ,  17.50 , P , 47 ,,, 
+LTE03 High EVM,  13.82 ,   0.00 ,  17.50 , P , 47 ,,, 
+LTE03 I/Q Offset, -37.70 , -100.00 , -25.00 , P , 47 ,,, 
+LTE03 Frequency Error, -16.61 , -170.00 , 170.00 , P , 47 ,,, 
+LTE03 RX Ref-Sens -86.0 dBm,   0.10 ,   0.00 ,   5.00 , P , 47 ,,, 
+LTE03 RX 2nd RSSI -85.0 dBm, -84.60 , -95.00 , -75.00 , P , 48 ,,, 
+
+// << LTE07 20805(UL) >>
+LTE07 TEST CHANNEL, 20805.00 , 20750.00 , 20750.00 , P , 49 ,,, 
+LTE07 Tx Power,  21.12 ,  20.50 ,  24.50 , P , 51 ,,, 
+LTE07 Low EVM,   3.40 ,   0.00 ,  17.50 , P , 51 ,,, 
+LTE07 High EVM,  13.60 ,   0.00 ,  17.50 , P , 51 ,,, 
+LTE07 I/Q Offset, -34.91 , -100.00 , -25.00 , P , 51 ,,, 
+LTE07 Frequency Error, -24.87 , -170.00 , 170.00 , P , 51 ,,, 
+LTE07 RX Ref-Sens -87.0 dBm,   0.20 ,   0.00 ,   5.00 , P , 52 ,,, 
+LTE07 RX 2nd RSSI -85.0 dBm, -84.70 , -95.00 , -75.00 , P , 52 ,,, 
+
+// << LTE08 21505(UL) >>
+LTE08 TEST CHANNEL, 21505.00 , 21450.00 , 21450.00 , P , 53 ,,, 
+LTE08 Tx Power,  21.71 ,  20.50 ,  24.50 , P , 55 ,,, 
+LTE08 Low EVM,   1.16 ,   0.00 ,  17.50 , P , 55 ,,, 
+LTE08 High EVM,  14.12 ,   0.00 ,  17.50 , P , 55 ,,, 
+LTE08 I/Q Offset, -39.95 , -100.00 , -25.00 , P , 55 ,,, 
+LTE08 Frequency Error,   0.50 , -80.00 ,  80.00 , P , 55 ,,, 
+LTE08 RX Ref-Sens -86.0 dBm,   0.00 ,   0.00 ,   5.00 , P , 56 ,,, 
+LTE08 RX 2nd RSSI -86.0 dBm, -86.40 , -95.00 , -75.00 , P , 57 ,,, 
+
+// << LTE20 24205(UL) >>
+LTE20 TEST CHANNEL, 24205.00 , 24150.00 , 24150.00 , P , 58 ,,, 
+LTE20 Tx Power,  21.96 ,  20.50 ,  24.50 , P , 59 ,,, 
+LTE20 Low EVM,   1.38 ,   0.00 ,  17.50 , P , 59 ,,, 
+LTE20 High EVM,   8.55 ,   0.00 ,  17.50 , P , 59 ,,, 
+LTE20 I/Q Offset, -39.80 , -100.00 , -25.00 , P , 59 ,,, 
+LTE20 Frequency Error,   3.00 , -80.00 ,  80.00 , P , 59 ,,, 
+LTE20 RX Ref-Sens -86.0 dBm,   0.20 ,   0.00 ,   5.00 , P , 60 ,,, 
+LTE20 RX 2nd RSSI -85.0 dBm, -84.70 , -95.00 , -75.00 , P , 61 ,,, 
+
+// << WCDMA2100(BC1) 10570(DL) >>
+WCDMA2100 TEST CHANNEL, 10570.00 , 10562.00 , 10838.00 , P , 62 ,,, 
+WCDMA2100 Max Output Power,  22.65 ,  21.30 ,  23.70 , P , 64 ,,, 
+WCDMA2100 EVM,   2.18 ,   0.00 ,  15.50 , P , 64 ,,, 
+WCDMA2100 Frequency Error,  10.81 , -180.00 , 180.00 , P , 64 ,,, 
+WCDMA2100 BER -106.7 dBm,   0.00 ,   0.00 ,   0.08 , P , 66 ,,, 
+WCDMA2100 RSCP -75.0 dBm,  -0.30 ,  -4.00 ,   4.00 , P , 66 ,,, 
+
+// << WCDMA900(BC8) 2959(DL) >>
+WCDMA900 TEST CHANNEL, 2959.00 , 2937.00 , 3088.00 , P , 67 ,,, 
+WCDMA900 Max Output Power,  22.17 ,  21.30 ,  23.70 , P , 68 ,,, 
+WCDMA900 EVM,   1.25 ,   0.00 ,  15.50 , P , 68 ,,, 
+WCDMA900 Frequency Error,  -0.45 , -80.00 ,  80.00 , P , 68 ,,, 
+WCDMA900 BER -105.0 dBm,   0.00 ,   0.00 ,   0.08 , P , 70 ,,, 
+WCDMA900 RSCP -75.0 dBm,   0.00 ,  -4.00 ,   4.00 , P , 71 ,,, 
+
+// << GSM900 CH: 980 >>
+GSM900 TEST CHANNEL, 980.00 , 975.00 , 1023.00 , P , 73 ,,, 
+GSM900 TX Power 5 Level,  32.96 ,  31.30 ,  33.70 , P , 75 ,,, 
+GSM900 Phase Error RMS,   0.83 ,   0.00 ,   4.50 , P , 75 ,,, 
+GSM900 Phase Error Peak,   4.14 ,   0.00 ,  18.00 , P , 75 ,,, 
+GSM900 Frequency Error,   6.90 , -80.00 ,  80.00 , P , 75 ,,, 
+GSM900 BER -103.0 dBm,   0.02 ,   0.00 ,   2.40 , P , 75 ,,, 
+GSM900 RX Level -103.0 dBm,   1.00 ,  -3.00 ,   3.00 , P , 75 ,,, 
+
+// << DCS1800 CH: 517 >>
+DCS1800 TEST CHANNEL, 517.00 , 512.00 , 885.00 , P , 76 ,,, 
+DCS1800 TX Power 0 Level,  29.95 ,  28.30 ,  30.70 , P , 77 ,,, 
+DCS1800 Phase Error RMS,   1.17 ,   0.00 ,   4.50 , P , 77 ,,, 
+DCS1800 Phase Error Peak,   5.44 ,   0.00 ,  18.00 , P , 77 ,,, 
+DCS1800 Frequency Error,   8.20 , -170.00 , 170.00 , P , 77 ,,, 
+DCS1800 BER -103.0 dBm,   0.01 ,   0.00 ,   2.40 , P , 78 ,,, 
+DCS1800 RX Level -103.0 dBm,   1.00 ,  -3.00 ,   3.00 , P , 78 ,,, 
+
+// << WCDMA2100(BC1) 10693(DL) 2nd RSSI >>
+WCDMA2100 2nd RSSI AGC -85.0 dBm, -291.00 , -520.00 , -170.00 , P , 80 ,,, 
+
+// << WCDMA900(BC8) 3012(DL) 2nd RSSI >>
+WCDMA900 2nd RSSI AGC -85.0 dBm, -300.00 , -520.00 , -170.00 , P , 81 ,,, 
+
+// << FTM Mode Change >>
+FTM Mode : Off,,,, P , 82 , 1 , 1 , 1 
+eMMC EFS Sync,,,, P , 85 , 1 , 1 , 1 
+
+// << Band Setting >>
+END BAND : AUTO,,,, P , 88 , 1 , 1 , 1 
+FINAL Test END, P, , , P, 89
+LTE FINAL END, P, , , P, 89
+FactoLog Off,   1.00 ,   1.00 ,   1.00 , P , 89 ,,, 
+
+#END
+RESULT : PASS
+ERROR-CODE : 
+TEST-TIME : 90
+RF TEST-TIME : 45
+NON-RF TEST-TIME : 45
+//PASS_AVERAGE_TIME : 1511828489
+//Total : 22 Pass : 22 Fail : 0
+//FAIL_RATE : 0%
+
+
+
+
+#INIT
+MODEL : GT-N7105
+P/N : CMAF7E10FF1F59F
+S/W : N7105ZHALJ4
+DATE : 2013/02/21
+TIME : 23:27:20
+TESTCODE : TOP42
+LOGVERSION : Ver 2.4
+INSTRUMENT : IQXS3178/LitePoint/IQxstream
+FIRMWARE : 1.20.0
+FIRMWARE_GPRF Gen/Meas/Sig : //
+FIRMWARE_GSM Gen/Meas/Sig : //
+FIRMWARE_WCDMA Gen/Meas/Sig : //
+FIRMWARE_LTE Gen/Meas/Sig : //
+FIRMWARE_1xEV-DO Gen/Meas/Sig : //
+FIRMWARE_CDMA2000 Gen/Meas/Sig : //
+FIRMWARE_TD-SCDMA Gen/Meas/Sig : //
+FIRMWARE_WiMAX Gen/Meas/Sig : //
+FIRMWARE_WLAN Gen/Meas/Sig : //
+WAVEFORM : 
+PC_CPU : 3.39 GHz/8-Core
+PC_RAM(Available) : 3558 MB
+PC_DISK(C-Drive free/Total) : 85188/122001 MB
+PC_OS : Microsoft Windows 7 Enterprise Edition (build 7600) 32-bit
+JIG : 1
+PROGRAM : DASEUL_Runtime_Ver_3.1.62.0
+ENTERPRISE : 
+INIFILE : GT-N7105_FINAL_AUTO_Ver_3.1.60.3_T1
+IMEINO : 
+SKU : 
+HW : 
+
+#TEST
+/*================================================================================
+Test Conditions, Measured Value, Lower Limit, Upper Limit, P/F, Sec, Code, Code Lsl, Code Usl
+================================================================================*/
+// Model info - Booting Time: 60 
+Booting Time,  34.00 ,   0.00 ,  34.00 , P , 37 ,,, 
+Final Call connect Type - NonSignaling,   1.00 ,   1.00 ,   1.00 , P , 37 ,,, 
+Line Type - Block Cell,   1.00 ,   1.00 ,   1.00 , P , 37 ,,, 
+
+// << RF Loss Check >>
+710MHz LOSS,  -7.28 , -25.00 ,   0.00 , P , 37 ,,, 
+750MHz LOSS,  -7.36 , -25.00 ,   0.00 , P , 37 ,,, 
+810MHz LOSS,  -7.21 , -25.00 ,   0.00 , P , 37 ,,, 
+950MHz LOSS,  -7.52 , -25.00 ,   0.00 , P , 37 ,,, 
+1710MHz LOSS,  -8.05 , -25.00 ,   0.00 , P , 37 ,,, 
+1790MHz LOSS,  -8.07 , -25.00 ,   0.00 , P , 37 ,,, 
+1810MHz LOSS,  -8.08 , -25.00 ,   0.00 , P , 37 ,,, 
+1910MHz LOSS,  -8.20 , -25.00 ,   0.00 , P , 37 ,,, 
+1930MHz LOSS,  -8.17 , -25.00 ,   0.00 , P , 37 ,,, 
+1990MHz LOSS,  -8.17 , -25.00 ,   0.00 , P , 37 ,,, 
+2100MHz LOSS,  -8.34 , -25.00 ,   0.00 , P , 37 ,,, 
+2170MHz LOSS,  -8.41 , -25.00 ,   0.00 , P , 37 ,,, 
+2200MHz LOSS,  -8.24 , -25.00 ,   0.00 , P , 37 ,,, 
+2400MHz LOSS,  -8.46 , -25.00 ,   0.00 , P , 37 ,,, 
+2700MHz LOSS,  -8.46 , -25.00 ,   0.00 , P , 37 ,,, 
+
+// << Initial Non-RF >>
+Model Name Read, GT-N7105, GT-N7105, GT-N7105, P, 37
+FactoLog On,   1.00 ,   1.00 ,   1.00 , P , 37 ,,, 
+
+// << Process Omission Check >>
+RF CAL SKIP, P, , , P, 37
+FINAL Test START, E, , , P, 37
+LTE FINAL START, E, , , P, 37
+LCD Off,   1.00 ,   1.00 ,   1.00 , P , 37 ,,, 
+Enter Test Mode,   1.00 ,   1.00 ,   1.00 , P , 40 ,,, 
+
+// << LTE03 19255(UL) >>
+LTE03 TEST CHANNEL, 19255.00 , 19200.00 , 19949.00 , P , 44 ,,, 
+LTE03 Tx Power,  21.30 ,  20.50 ,  24.50 , P , 46 ,,, 
+LTE03 Low EVM,   2.12 ,   0.00 ,  17.50 , P , 46 ,,, 
+LTE03 High EVM,  14.47 ,   0.00 ,  17.50 , P , 46 ,,, 
+LTE03 I/Q Offset, -37.75 , -100.00 , -25.00 , P , 46 ,,, 
+LTE03 Frequency Error,   9.61 , -170.00 , 170.00 , P , 46 ,,, 
+LTE03 RX Ref-Sens -86.0 dBm,   0.10 ,   0.00 ,   5.00 , P , 47 ,,, 
+LTE03 RX 2nd RSSI -85.0 dBm, -84.60 , -95.00 , -75.00 , P , 48 ,,, 
+
+// << LTE07 20805(UL) >>
+LTE07 TEST CHANNEL, 20805.00 , 20750.00 , 20750.00 , P , 49 ,,, 
+LTE07 RX Ref-Sens -87.0 dBm,   0.20 ,   0.00 ,   5.00 , P , 51 ,,, 
+LTE07 Tx Power,  21.09 ,  20.50 ,  24.50 , P , 51 ,,, 
+LTE07 Low EVM,   3.30 ,   0.00 ,  17.50 , P , 51 ,,, 
+LTE07 High EVM,  14.66 ,   0.00 ,  17.50 , P , 51 ,,, 
+LTE07 I/Q Offset, -34.62 , -100.00 , -25.00 , P , 51 ,,, 
+LTE07 Frequency Error, -11.05 , -170.00 , 170.00 , P , 51 ,,, 
+LTE07 RX 2nd RSSI -85.0 dBm, -84.70 , -95.00 , -75.00 , P , 52 ,,, 
+
+// << LTE08 21505(UL) >>
+LTE08 TEST CHANNEL, 21505.00 , 21450.00 , 21450.00 , P , 53 ,,, 
+LTE08 Tx Power,  21.72 ,  20.50 ,  24.50 , P , 54 ,,, 
+LTE08 Low EVM,   1.16 ,   0.00 ,  17.50 , P , 54 ,,, 
+LTE08 High EVM,  13.25 ,   0.00 ,  17.50 , P , 54 ,,, 
+LTE08 I/Q Offset, -39.95 , -100.00 , -25.00 , P , 54 ,,, 
+LTE08 Frequency Error,   1.01 , -80.00 ,  80.00 , P , 54 ,,, 
+LTE08 RX Ref-Sens -86.0 dBm,   0.20 ,   0.00 ,   5.00 , P , 55 ,,, 
+LTE08 RX 2nd RSSI -86.0 dBm, -86.40 , -95.00 , -75.00 , P , 56 ,,, 
+
+// << LTE20 24205(UL) >>
+LTE20 TEST CHANNEL, 24205.00 , 24150.00 , 24150.00 , P , 57 ,,, 
+LTE20 Tx Power,  21.98 ,  20.50 ,  24.50 , P , 59 ,,, 
+LTE20 Low EVM,   1.41 ,   0.00 ,  17.50 , P , 59 ,,, 
+LTE20 High EVM,  10.54 ,   0.00 ,  17.50 , P , 59 ,,, 
+LTE20 I/Q Offset, -39.78 , -100.00 , -25.00 , P , 59 ,,, 
+LTE20 Frequency Error,   1.32 , -80.00 ,  80.00 , P , 59 ,,, 
+LTE20 RX Ref-Sens -86.0 dBm,   0.20 ,   0.00 ,   5.00 , P , 59 ,,, 
+LTE20 RX 2nd RSSI -85.0 dBm, -84.70 , -95.00 , -75.00 , P , 60 ,,, 
+
+// << WCDMA2100(BC1) 10570(DL) >>
+WCDMA2100 TEST CHANNEL, 10570.00 , 10562.00 , 10838.00 , P , 62 ,,, 
+WCDMA2100 Max Output Power,  22.58 ,  21.30 ,  23.70 , P , 63 ,,, 
+WCDMA2100 EVM,   2.38 ,   0.00 ,  15.50 , P , 63 ,,, 
+WCDMA2100 Frequency Error,   9.73 , -180.00 , 180.00 , P , 63 ,,, 
+WCDMA2100 BER -106.7 dBm,   0.00 ,   0.00 ,   0.08 , P , 65 ,,, 
+WCDMA2100 RSCP -75.0 dBm,  -0.10 ,  -4.00 ,   4.00 , P , 66 ,,, 
+
+// << WCDMA900(BC8) 2959(DL) >>
+WCDMA900 TEST CHANNEL, 2959.00 , 2937.00 , 3088.00 , P , 66 ,,, 
+WCDMA900 Max Output Power,  22.21 ,  21.30 ,  23.70 , P , 68 ,,, 
+WCDMA900 EVM,   1.26 ,   0.00 ,  15.50 , P , 68 ,,, 
+WCDMA900 Frequency Error,  -0.85 , -80.00 ,  80.00 , P , 68 ,,, 
+WCDMA900 BER -105.0 dBm,   0.00 ,   0.00 ,   0.08 , P , 70 ,,, 
+WCDMA900 RSCP -75.0 dBm,  -0.20 ,  -4.00 ,   4.00 , P , 70 ,,, 
+
+// << GSM900 CH: 980 >>
+GSM900 TEST CHANNEL, 980.00 , 975.00 , 1023.00 , P , 73 ,,, 
+GSM900 TX Power 5 Level,  32.96 ,  31.30 ,  33.70 , P , 74 ,,, 
+GSM900 Phase Error RMS,   0.85 ,   0.00 ,   4.50 , P , 74 ,,, 
+GSM900 Phase Error Peak,   4.33 ,   0.00 ,  18.00 , P , 74 ,,, 
+GSM900 Frequency Error,   8.80 , -80.00 ,  80.00 , P , 74 ,,, 
+GSM900 BER -103.0 dBm,   0.02 ,   0.00 ,   2.40 , P , 75 ,,, 
+GSM900 RX Level -103.0 dBm,   1.00 ,  -3.00 ,   3.00 , P , 75 ,,, 
+
+// << DCS1800 CH: 517 >>
+DCS1800 TEST CHANNEL, 517.00 , 512.00 , 885.00 , P , 75 ,,, 
+DCS1800 TX Power 0 Level,  29.96 ,  28.30 ,  30.70 , P , 77 ,,, 
+DCS1800 Phase Error RMS,   1.15 ,   0.00 ,   4.50 , P , 77 ,,, 
+DCS1800 Phase Error Peak,   5.54 ,   0.00 ,  18.00 , P , 77 ,,, 
+DCS1800 Frequency Error,  15.90 , -170.00 , 170.00 , P , 77 ,,, 
+DCS1800 BER -103.0 dBm,   0.00 ,   0.00 ,   2.40 , P , 77 ,,, 
+DCS1800 RX Level -103.0 dBm,   1.00 ,  -3.00 ,   3.00 , P , 78 ,,, 
+
+// << WCDMA2100(BC1) 10693(DL) 2nd RSSI >>
+WCDMA2100 2nd RSSI AGC -85.0 dBm, -291.00 , -520.00 , -170.00 , P , 79 ,,, 
+
+// << WCDMA900(BC8) 3012(DL) 2nd RSSI >>
+WCDMA900 2nd RSSI AGC -85.0 dBm, -300.00 , -520.00 , -170.00 , P , 81 ,,, 
+
+// << FTM Mode Change >>
+FTM Mode : Off,,,, P , 82 , 1 , 1 , 1 
+eMMC EFS Sync,,,, P , 85 , 1 , 1 , 1 
+
+// << Band Setting >>
+END BAND : AUTO,,,, P , 88 , 1 , 1 , 1 
+FINAL Test END, P, , , P, 88
+LTE FINAL END, P, , , P, 88
+FactoLog Off,   1.00 ,   1.00 ,   1.00 , P , 89 ,,, 
+
+#END
+RESULT : PASS
+ERROR-CODE : 
+TEST-TIME : 89
+RF TEST-TIME : 45
+NON-RF TEST-TIME : 44
+//PASS_AVERAGE_TIME : 1511828489
+//Total : 23 Pass : 23 Fail : 0
+//FAIL_RATE : 0%
+
+
+
+
+#INIT
+MODEL : GT-N7105
+P/N : CMAF7E10FF1F59F
+S/W : N7105ZHALJ4
+DATE : 2013/02/21
+TIME : 23:29:11
+TESTCODE : TOP42
+LOGVERSION : Ver 2.4
+INSTRUMENT : IQXS3178/LitePoint/IQxstream
+FIRMWARE : 1.20.0
+FIRMWARE_GPRF Gen/Meas/Sig : //
+FIRMWARE_GSM Gen/Meas/Sig : //
+FIRMWARE_WCDMA Gen/Meas/Sig : //
+FIRMWARE_LTE Gen/Meas/Sig : //
+FIRMWARE_1xEV-DO Gen/Meas/Sig : //
+FIRMWARE_CDMA2000 Gen/Meas/Sig : //
+FIRMWARE_TD-SCDMA Gen/Meas/Sig : //
+FIRMWARE_WiMAX Gen/Meas/Sig : //
+FIRMWARE_WLAN Gen/Meas/Sig : //
+WAVEFORM : 
+PC_CPU : 3.39 GHz/8-Core
+PC_RAM(Available) : 3558 MB
+PC_DISK(C-Drive free/Total) : 85188/122001 MB
+PC_OS : Microsoft Windows 7 Enterprise Edition (build 7600) 32-bit
+JIG : 1
+PROGRAM : DASEUL_Runtime_Ver_3.1.62.0
+ENTERPRISE : 
+INIFILE : GT-N7105_FINAL_AUTO_Ver_3.1.60.3_T1
+IMEINO : 
+SKU : 
+HW : 
+
+#TEST
+/*================================================================================
+Test Conditions, Measured Value, Lower Limit, Upper Limit, P/F, Sec, Code, Code Lsl, Code Usl
+================================================================================*/
+// Model info - Booting Time: 60 
+Booting Time,  34.00 ,   0.00 ,  34.00 , P , 36 ,,, 
+Final Call connect Type - NonSignaling,   1.00 ,   1.00 ,   1.00 , P , 36 ,,, 
+Line Type - Block Cell,   1.00 ,   1.00 ,   1.00 , P , 36 ,,, 
+
+// << RF Loss Check >>
+710MHz LOSS,  -7.28 , -25.00 ,   0.00 , P , 36 ,,, 
+750MHz LOSS,  -7.36 , -25.00 ,   0.00 , P , 36 ,,, 
+810MHz LOSS,  -7.21 , -25.00 ,   0.00 , P , 36 ,,, 
+950MHz LOSS,  -7.52 , -25.00 ,   0.00 , P , 36 ,,, 
+1710MHz LOSS,  -8.05 , -25.00 ,   0.00 , P , 36 ,,, 
+1790MHz LOSS,  -8.07 , -25.00 ,   0.00 , P , 36 ,,, 
+1810MHz LOSS,  -8.08 , -25.00 ,   0.00 , P , 36 ,,, 
+1910MHz LOSS,  -8.20 , -25.00 ,   0.00 , P , 36 ,,, 
+1930MHz LOSS,  -8.17 , -25.00 ,   0.00 , P , 36 ,,, 
+1990MHz LOSS,  -8.17 , -25.00 ,   0.00 , P , 36 ,,, 
+2100MHz LOSS,  -8.34 , -25.00 ,   0.00 , P , 36 ,,, 
+2170MHz LOSS,  -8.41 , -25.00 ,   0.00 , P , 36 ,,, 
+2200MHz LOSS,  -8.24 , -25.00 ,   0.00 , P , 36 ,,, 
+2400MHz LOSS,  -8.46 , -25.00 ,   0.00 , P , 36 ,,, 
+2700MHz LOSS,  -8.46 , -25.00 ,   0.00 , P , 36 ,,, 
+
+// << Initial Non-RF >>
+Model Name Read, GT-N7105, GT-N7105, GT-N7105, P, 37
+FactoLog On,   1.00 ,   1.00 ,   1.00 , P , 37 ,,, 
+
+// << Process Omission Check >>
+RF CAL SKIP, P, , , P, 37
+FINAL Test START, E, , , P, 37
+LTE FINAL START, E, , , P, 37
+LCD Off,   1.00 ,   1.00 ,   1.00 , P , 37 ,,, 
+Enter Test Mode,   1.00 ,   1.00 ,   1.00 , P , 40 ,,, 
+
+// << LTE03 19255(UL) >>
+LTE03 TEST CHANNEL, 19255.00 , 19200.00 , 19949.00 , P , 44 ,,, 
+LTE03 RX Ref-Sens -86.0 dBm,   0.20 ,   0.00 ,   5.00 , P , 47 ,,, 
+LTE03 Tx Power,  21.37 ,  20.50 ,  24.50 , P , 47 ,,, 
+LTE03 Low EVM,   2.17 ,   0.00 ,  17.50 , P , 47 ,,, 
+LTE03 High EVM,  14.58 ,   0.00 ,  17.50 , P , 47 ,,, 
+LTE03 I/Q Offset, -37.91 , -100.00 , -25.00 , P , 47 ,,, 
+LTE03 Frequency Error,   2.57 , -170.00 , 170.00 , P , 47 ,,, 
+LTE03 RX 2nd RSSI -85.0 dBm, -84.60 , -95.00 , -75.00 , P , 47 ,,, 
+
+// << LTE07 20805(UL) >>
+LTE07 TEST CHANNEL, 20805.00 , 20750.00 , 20750.00 , P , 48 ,,, 
+LTE07 RX Ref-Sens -87.0 dBm,   0.20 ,   0.00 ,   5.00 , P , 51 ,,, 
+LTE07 Tx Power,  21.10 ,  20.50 ,  24.50 , P , 51 ,,, 
+LTE07 Low EVM,   3.56 ,   0.00 ,  17.50 , P , 51 ,,, 
+LTE07 High EVM,  13.91 ,   0.00 ,  17.50 , P , 51 ,,, 
+LTE07 I/Q Offset, -34.54 , -100.00 , -25.00 , P , 51 ,,, 
+LTE07 Frequency Error, -48.75 , -170.00 , 170.00 , P , 51 ,,, 
+LTE07 RX 2nd RSSI -85.0 dBm, -84.70 , -95.00 , -75.00 , P , 52 ,,, 
+
+// << LTE08 21505(UL) >>
+LTE08 TEST CHANNEL, 21505.00 , 21450.00 , 21450.00 , P , 53 ,,, 
+LTE08 Tx Power,  21.73 ,  20.50 ,  24.50 , P , 54 ,,, 
+LTE08 Low EVM,   1.13 ,   0.00 ,  17.50 , P , 54 ,,, 
+LTE08 High EVM,  12.20 ,   0.00 ,  17.50 , P , 54 ,,, 
+LTE08 I/Q Offset, -39.90 , -100.00 , -25.00 , P , 54 ,,, 
+LTE08 Frequency Error,  -0.97 , -80.00 ,  80.00 , P , 54 ,,, 
+LTE08 RX Ref-Sens -86.0 dBm,   0.20 ,   0.00 ,   5.00 , P , 55 ,,, 
+LTE08 RX 2nd RSSI -86.0 dBm, -86.40 , -95.00 , -75.00 , P , 56 ,,, 
+
+// << LTE20 24205(UL) >>
+LTE20 TEST CHANNEL, 24205.00 , 24150.00 , 24150.00 , P , 57 ,,, 
+LTE20 Tx Power,  21.98 ,  20.50 ,  24.50 , P , 58 ,,, 
+LTE20 Low EVM,   1.42 ,   0.00 ,  17.50 , P , 58 ,,, 
+LTE20 High EVM,  10.88 ,   0.00 ,  17.50 , P , 58 ,,, 
+LTE20 I/Q Offset, -39.76 , -100.00 , -25.00 , P , 58 ,,, 
+LTE20 Frequency Error,   2.84 , -80.00 ,  80.00 , P , 58 ,,, 
+LTE20 RX Ref-Sens -86.0 dBm,   0.20 ,   0.00 ,   5.00 , P , 59 ,,, 
+LTE20 RX 2nd RSSI -85.0 dBm, -84.70 , -95.00 , -75.00 , P , 60 ,,, 
+
+// << WCDMA2100(BC1) 10570(DL) >>
+WCDMA2100 TEST CHANNEL, 10570.00 , 10562.00 , 10838.00 , P , 62 ,,, 
+WCDMA2100 Max Output Power,  22.79 ,  21.30 ,  23.70 , P , 63 ,,, 
+WCDMA2100 EVM,   2.13 ,   0.00 ,  15.50 , P , 63 ,,, 
+WCDMA2100 Frequency Error,   8.99 , -180.00 , 180.00 , P , 63 ,,, 
+WCDMA2100 BER -106.7 dBm,   0.00 ,   0.00 ,   0.08 , P , 65 ,,, 
+WCDMA2100 RSCP -75.0 dBm,   0.00 ,  -4.00 ,   4.00 , P , 65 ,,, 
+
+// << WCDMA900(BC8) 2959(DL) >>
+WCDMA900 TEST CHANNEL, 2959.00 , 2937.00 , 3088.00 , P , 66 ,,, 
+WCDMA900 Max Output Power,  22.21 ,  21.30 ,  23.70 , P , 67 ,,, 
+WCDMA900 EVM,   1.28 ,   0.00 ,  15.50 , P , 67 ,,, 
+WCDMA900 Frequency Error,   1.87 , -80.00 ,  80.00 , P , 67 ,,, 
+WCDMA900 BER -105.0 dBm,   0.00 ,   0.00 ,   0.08 , P , 70 ,,, 
+WCDMA900 RSCP -75.0 dBm,  -0.50 ,  -4.00 ,   4.00 , P , 70 ,,, 
+
+// << GSM900 CH: 980 >>
+GSM900 TEST CHANNEL, 980.00 , 975.00 , 1023.00 , P , 73 ,,, 
+GSM900 TX Power 5 Level,  32.97 ,  31.30 ,  33.70 , P , 74 ,,, 
+GSM900 Phase Error RMS,   0.88 ,   0.00 ,   4.50 , P , 74 ,,, 
+GSM900 Phase Error Peak,   4.36 ,   0.00 ,  18.00 , P , 74 ,,, 
+GSM900 Frequency Error,  15.70 , -80.00 ,  80.00 , P , 74 ,,, 
+GSM900 BER -103.0 dBm,   0.02 ,   0.00 ,   2.40 , P , 75 ,,, 
+GSM900 RX Level -103.0 dBm,   1.00 ,  -3.00 ,   3.00 , P , 75 ,,, 
+
+// << DCS1800 CH: 517 >>
+DCS1800 TEST CHANNEL, 517.00 , 512.00 , 885.00 , P , 75 ,,, 
+DCS1800 TX Power 0 Level,  29.92 ,  28.30 ,  30.70 , P , 76 ,,, 
+DCS1800 Phase Error RMS,   1.20 ,   0.00 ,   4.50 , P , 76 ,,, 
+DCS1800 Phase Error Peak,   5.85 ,   0.00 ,  18.00 , P , 76 ,,, 
+DCS1800 Frequency Error,   8.00 , -170.00 , 170.00 , P , 76 ,,, 
+DCS1800 BER -103.0 dBm,   0.01 ,   0.00 ,   2.40 , P , 77 ,,, 
+DCS1800 RX Level -103.0 dBm,   1.00 ,  -3.00 ,   3.00 , P , 78 ,,, 
+
+// << WCDMA2100(BC1) 10693(DL) 2nd RSSI >>
+WCDMA2100 2nd RSSI AGC -85.0 dBm, -289.00 , -520.00 , -170.00 , P , 79 ,,, 
+
+// << WCDMA900(BC8) 3012(DL) 2nd RSSI >>
+WCDMA900 2nd RSSI AGC -85.0 dBm, -300.00 , -520.00 , -170.00 , P , 81 ,,, 
+
+// << FTM Mode Change >>
+FTM Mode : Off,,,, P , 82 , 1 , 1 , 1 
+eMMC EFS Sync,,,, P , 85 , 1 , 1 , 1 
+
+// << Band Setting >>
+END BAND : AUTO,,,, P , 88 , 1 , 1 , 1 
+FINAL Test END, P, , , P, 88
+LTE FINAL END, P, , , P, 88
+FactoLog Off,   1.00 ,   1.00 ,   1.00 , P , 88 ,,, 
+
+#END
+RESULT : PASS
+ERROR-CODE : 
+TEST-TIME : 89
+RF TEST-TIME : 45
+NON-RF TEST-TIME : 44
+//PASS_AVERAGE_TIME : 1511828489
+//Total : 24 Pass : 24 Fail : 0
+//FAIL_RATE : 0%
+
+
+
+
+#INIT
+MODEL : GT-N7105
+P/N : CMAF7E10FF1F59F
+S/W : N7105ZHALJ4
+DATE : 2013/02/21
+TIME : 23:31:03
+TESTCODE : TOP42
+LOGVERSION : Ver 2.4
+INSTRUMENT : IQXS3178/LitePoint/IQxstream
+FIRMWARE : 1.20.0
+FIRMWARE_GPRF Gen/Meas/Sig : //
+FIRMWARE_GSM Gen/Meas/Sig : //
+FIRMWARE_WCDMA Gen/Meas/Sig : //
+FIRMWARE_LTE Gen/Meas/Sig : //
+FIRMWARE_1xEV-DO Gen/Meas/Sig : //
+FIRMWARE_CDMA2000 Gen/Meas/Sig : //
+FIRMWARE_TD-SCDMA Gen/Meas/Sig : //
+FIRMWARE_WiMAX Gen/Meas/Sig : //
+FIRMWARE_WLAN Gen/Meas/Sig : //
+WAVEFORM : 
+PC_CPU : 3.39 GHz/8-Core
+PC_RAM(Available) : 3558 MB
+PC_DISK(C-Drive free/Total) : 85188/122001 MB
+PC_OS : Microsoft Windows 7 Enterprise Edition (build 7600) 32-bit
+JIG : 1
+PROGRAM : DASEUL_Runtime_Ver_3.1.62.0
+ENTERPRISE : 
+INIFILE : GT-N7105_FINAL_AUTO_Ver_3.1.60.3_T1
+IMEINO : 
+SKU : 
+HW : 
+
+#TEST
+/*================================================================================
+Test Conditions, Measured Value, Lower Limit, Upper Limit, P/F, Sec, Code, Code Lsl, Code Usl
+================================================================================*/
+// Model info - Booting Time: 60 
+Booting Time,  34.00 ,   0.00 ,  34.00 , P , 37 ,,, 
+Final Call connect Type - NonSignaling,   1.00 ,   1.00 ,   1.00 , P , 37 ,,, 
+Line Type - Block Cell,   1.00 ,   1.00 ,   1.00 , P , 37 ,,, 
+
+// << RF Loss Check >>
+710MHz LOSS,  -7.28 , -25.00 ,   0.00 , P , 37 ,,, 
+750MHz LOSS,  -7.36 , -25.00 ,   0.00 , P , 37 ,,, 
+810MHz LOSS,  -7.21 , -25.00 ,   0.00 , P , 37 ,,, 
+950MHz LOSS,  -7.52 , -25.00 ,   0.00 , P , 37 ,,, 
+1710MHz LOSS,  -8.05 , -25.00 ,   0.00 , P , 37 ,,, 
+1790MHz LOSS,  -8.07 , -25.00 ,   0.00 , P , 37 ,,, 
+1810MHz LOSS,  -8.08 , -25.00 ,   0.00 , P , 37 ,,, 
+1910MHz LOSS,  -8.20 , -25.00 ,   0.00 , P , 37 ,,, 
+1930MHz LOSS,  -8.17 , -25.00 ,   0.00 , P , 37 ,,, 
+1990MHz LOSS,  -8.17 , -25.00 ,   0.00 , P , 37 ,,, 
+2100MHz LOSS,  -8.34 , -25.00 ,   0.00 , P , 37 ,,, 
+2170MHz LOSS,  -8.41 , -25.00 ,   0.00 , P , 37 ,,, 
+2200MHz LOSS,  -8.24 , -25.00 ,   0.00 , P , 37 ,,, 
+2400MHz LOSS,  -8.46 , -25.00 ,   0.00 , P , 37 ,,, 
+2700MHz LOSS,  -8.46 , -25.00 ,   0.00 , P , 37 ,,, 
+
+// << Initial Non-RF >>
+Model Name Read, GT-N7105, GT-N7105, GT-N7105, P, 37
+FactoLog On,   1.00 ,   1.00 ,   1.00 , P , 37 ,,, 
+
+// << Process Omission Check >>
+RF CAL SKIP, P, , , P, 37
+FINAL Test START, E, , , P, 37
+LTE FINAL START, E, , , P, 37
+LCD Off,   1.00 ,   1.00 ,   1.00 , P , 38 ,,, 
+Enter Test Mode,   1.00 ,   1.00 ,   1.00 , P , 40 ,,, 
+
+// << LTE03 19255(UL) >>
+LTE03 TEST CHANNEL, 19255.00 , 19200.00 , 19949.00 , P , 45 ,,, 
+LTE03 Tx Power,  21.47 ,  20.50 ,  24.50 , P , 46 ,,, 
+LTE03 Low EVM,   2.29 ,   0.00 ,  17.50 , P , 46 ,,, 
+LTE03 High EVM,  13.91 ,   0.00 ,  17.50 , P , 46 ,,, 
+LTE03 I/Q Offset, -38.29 , -100.00 , -25.00 , P , 46 ,,, 
+LTE03 Frequency Error,  10.46 , -170.00 , 170.00 , P , 46 ,,, 
+LTE03 RX Ref-Sens -86.0 dBm,   0.20 ,   0.00 ,   5.00 , P , 47 ,,, 
+LTE03 RX 2nd RSSI -85.0 dBm, -84.60 , -95.00 , -75.00 , P , 48 ,,, 
+
+// << LTE07 20805(UL) >>
+LTE07 TEST CHANNEL, 20805.00 , 20750.00 , 20750.00 , P , 49 ,,, 
+LTE07 Tx Power,  21.13 ,  20.50 ,  24.50 , P , 50 ,,, 
+LTE07 Low EVM,   3.31 ,   0.00 ,  17.50 , P , 50 ,,, 
+LTE07 High EVM,  13.83 ,   0.00 ,  17.50 , P , 50 ,,, 
+LTE07 I/Q Offset, -34.62 , -100.00 , -25.00 , P , 50 ,,, 
+LTE07 Frequency Error, -19.77 , -170.00 , 170.00 , P , 50 ,,, 
+LTE07 RX Ref-Sens -87.0 dBm,   0.20 ,   0.00 ,   5.00 , P , 51 ,,, 
+LTE07 RX 2nd RSSI -85.0 dBm, -84.70 , -95.00 , -75.00 , P , 52 ,,, 
+
+// << LTE08 21505(UL) >>
+LTE08 TEST CHANNEL, 21505.00 , 21450.00 , 21450.00 , P , 53 ,,, 
+LTE08 Tx Power,  21.72 ,  20.50 ,  24.50 , P , 55 ,,, 
+LTE08 Low EVM,   1.17 ,   0.00 ,  17.50 , P , 55 ,,, 
+LTE08 High EVM,  14.83 ,   0.00 ,  17.50 , P , 55 ,,, 
+LTE08 I/Q Offset, -40.35 , -100.00 , -25.00 , P , 55 ,,, 
+LTE08 Frequency Error,  -1.78 , -80.00 ,  80.00 , P , 55 ,,, 
+LTE08 RX Ref-Sens -86.0 dBm,   0.00 ,   0.00 ,   5.00 , P , 55 ,,, 
+LTE08 RX 2nd RSSI -86.0 dBm, -86.40 , -95.00 , -75.00 , P , 56 ,,, 
+
+// << LTE20 24205(UL) >>
+LTE20 TEST CHANNEL, 24205.00 , 24150.00 , 24150.00 , P , 57 ,,, 
+LTE20 Tx Power,  21.97 ,  20.50 ,  24.50 , P , 59 ,,, 
+LTE20 Low EVM,   1.40 ,   0.00 ,  17.50 , P , 59 ,,, 
+LTE20 High EVM,   9.57 ,   0.00 ,  17.50 , P , 59 ,,, 
+LTE20 I/Q Offset, -39.74 , -100.00 , -25.00 , P , 59 ,,, 
+LTE20 Frequency Error,  -8.59 , -80.00 ,  80.00 , P , 59 ,,, 
+LTE20 RX Ref-Sens -86.0 dBm,   0.20 ,   0.00 ,   5.00 , P , 59 ,,, 
+LTE20 RX 2nd RSSI -85.0 dBm, -84.70 , -95.00 , -75.00 , P , 60 ,,, 
+
+// << WCDMA2100(BC1) 10570(DL) >>
+WCDMA2100 TEST CHANNEL, 10570.00 , 10562.00 , 10838.00 , P , 62 ,,, 
+WCDMA2100 Max Output Power,  22.69 ,  21.30 ,  23.70 , P , 63 ,,, 
+WCDMA2100 EVM,   2.15 ,   0.00 ,  15.50 , P , 63 ,,, 
+WCDMA2100 Frequency Error,   7.52 , -180.00 , 180.00 , P , 63 ,,, 
+WCDMA2100 BER -106.7 dBm,   0.00 ,   0.00 ,   0.08 , P , 65 ,,, 
+WCDMA2100 RSCP -75.0 dBm,  -0.10 ,  -4.00 ,   4.00 , P , 66 ,,, 
+
+// << WCDMA900(BC8) 2959(DL) >>
+WCDMA900 TEST CHANNEL, 2959.00 , 2937.00 , 3088.00 , P , 66 ,,, 
+WCDMA900 Max Output Power,  21.98 ,  21.30 ,  23.70 , P , 68 ,,, 
+WCDMA900 EVM,   1.33 ,   0.00 ,  15.50 , P , 68 ,,, 
+WCDMA900 Frequency Error,   0.63 , -80.00 ,  80.00 , P , 68 ,,, 
+WCDMA900 BER -105.0 dBm,   0.00 ,   0.00 ,   0.08 , P , 70 ,,, 
+WCDMA900 RSCP -75.0 dBm,  -0.10 ,  -4.00 ,   4.00 , P , 70 ,,, 
+
+// << GSM900 CH: 980 >>
+GSM900 TEST CHANNEL, 980.00 , 975.00 , 1023.00 , P , 73 ,,, 
+GSM900 TX Power 5 Level,  32.94 ,  31.30 ,  33.70 , P , 74 ,,, 
+GSM900 Phase Error RMS,   0.85 ,   0.00 ,   4.50 , P , 74 ,,, 
+GSM900 Phase Error Peak,   4.13 ,   0.00 ,  18.00 , P , 74 ,,, 
+GSM900 Frequency Error,   7.30 , -80.00 ,  80.00 , P , 74 ,,, 
+GSM900 BER -103.0 dBm,   0.02 ,   0.00 ,   2.40 , P , 75 ,,, 
+GSM900 RX Level -103.0 dBm,   1.00 ,  -3.00 ,   3.00 , P , 75 ,,, 
+
+// << DCS1800 CH: 517 >>
+DCS1800 TEST CHANNEL, 517.00 , 512.00 , 885.00 , P , 76 ,,, 
+DCS1800 TX Power 0 Level,  29.97 ,  28.30 ,  30.70 , P , 77 ,,, 
+DCS1800 Phase Error RMS,   1.16 ,   0.00 ,   4.50 , P , 77 ,,, 
+DCS1800 Phase Error Peak,   5.42 ,   0.00 ,  18.00 , P , 77 ,,, 
+DCS1800 Frequency Error,   9.40 , -170.00 , 170.00 , P , 77 ,,, 
+DCS1800 BER -103.0 dBm,   0.01 ,   0.00 ,   2.40 , P , 78 ,,, 
+DCS1800 RX Level -103.0 dBm,   1.00 ,  -3.00 ,   3.00 , P , 78 ,,, 
+
+// << WCDMA2100(BC1) 10693(DL) 2nd RSSI >>
+WCDMA2100 2nd RSSI AGC -85.0 dBm, -285.00 , -520.00 , -170.00 , P , 80 ,,, 
+
+// << WCDMA900(BC8) 3012(DL) 2nd RSSI >>
+WCDMA900 2nd RSSI AGC -85.0 dBm, -300.00 , -520.00 , -170.00 , P , 81 ,,, 
+
+// << FTM Mode Change >>
+FTM Mode : Off,,,, P , 82 , 1 , 1 , 1 
+eMMC EFS Sync,,,, P , 85 , 1 , 1 , 1 
+
+// << Band Setting >>
+END BAND : AUTO,,,, P , 88 , 1 , 1 , 1 
+FINAL Test END, P, , , P, 89
+LTE FINAL END, P, , , P, 89
+FactoLog Off,   1.00 ,   1.00 ,   1.00 , P , 89 ,,, 
+
+#END
+RESULT : PASS
+ERROR-CODE : 
+TEST-TIME : 90
+RF TEST-TIME : 46
+NON-RF TEST-TIME : 44
+//PASS_AVERAGE_TIME : 1511828489
+//Total : 25 Pass : 25 Fail : 0
+//FAIL_RATE : 0%
+
+
+
+// Re-Test [1],,,,F 
