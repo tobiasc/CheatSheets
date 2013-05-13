@@ -1,0 +1,10 @@
+// Install Eclipse & NodeClipse
+http://www.nodeclipse.org/
+
+1. Download/Install Eclipse - http://www.eclipse.org/downloads/
+2. Install Express - sudo npm install -g express
+3. Install NodeClipse (from within Eclipse - Help->Install New Software...) - http://www.nodeclipse.org/updates
+4. Install JSHint (from within Eclipse - Help->Install New Software...) - http://github.eclipsesource.com/jshint-eclipse/updates/
+5. Specify Node.js path (Window->Preferences->Nodeclipse) - /usr/bin/node
+6. Specify Express path (Window->Preferences->Nodeclipse) - /usr/lib/node_modules/express/bin/express
+
