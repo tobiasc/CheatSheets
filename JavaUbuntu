@@ -1,0 +1,28 @@
+# Download file
+http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html
+
+# Untar file
+sudo tar xvzf jdk-7u55-linux-x64.tar.gz
+
+# Make folder
+sudo mkdir /usr/local/java
+sudo chmod 777 -R /usr/local/java
+
+# Copy files to new location
+cp -R jdk1.7.0_55/ /usr/local/java/
+
+# Set up the Java path
+sudo nano /etc/profile
+
+JAVA_HOME=/usr/local/java/jdk1.7.0_55
+PATH=$PATH:$HOME/bin:$JAVA_HOME/bin
+export JAVA_HOME
+export PATH
+
+sudo update-alternatives --install "/usr/bin/javac" "javac" "/usr/local/java/jdk1.7.0_55/bin/javac" 1
+sudo update-alternatives --set javac /usr/local/Java/jdk1.7.0_55/bin/javac
+
+. /etc/profile
+
+# Verify it works
+java -version
